@@ -1,6 +1,6 @@
 # Use the Polybase evaluation download
 
-Polybase 0.1.0-preview.1 is a free database evaluation preview. The package runs
+Polybase 0.1.0-preview.2 is a free database evaluation preview. The package runs
 locally without Rust, Cargo, Node, Docker or a cloud account. Its source is private.
 The hosted SaaS is coming soon and is not available in this download.
 
@@ -54,6 +54,36 @@ The CLI uses UTF-8 arguments. The console also supports hex bytes. Keys such as
 `projects/one` are ordinary byte keys; there is no SQL or document-field query
 planner. Raw CLI writes have no named request identity. A failed response can
 leave a write outcome uncertain; inspect recovered state/events before retrying.
+
+## Your records, your collections
+
+Choose any collection name and record ID. Collections are key-prefix conventions:
+`tasks/1` and `notes/1` are different records in the same database. There is no
+collection to register first, and no required business fields or document schema.
+
+```sh
+./bin/polybase batch ./my-db \
+  put tasks/1 '{"title":"Write a note","done":false}' \
+  put notes/1 'A first note' \
+  put sensors/room-a '{"temperature":21.5,"unit":"C"}'
+./bin/polybase get ./my-db tasks/1
+./bin/polybase get ./my-db notes/1
+./bin/polybase snapshot ./my-db
+./bin/polybase-console ./my-db
+```
+
+In the console, set **Collection / key prefix** to `tasks/`, `notes/`,
+`sensors/` or a prefix you choose, and keep **Any value** selected to see all
+records in that collection. Clear the prefix to see all collections together.
+Include the trailing slash: `tasks/` excludes a separate prefix such as
+`tasks-archive/`. The prefix remains a byte comparison, not a schema or hierarchy.
+
+Stage keys from several collections to update them in one atomic transaction.
+Records support insert, replacement and deletion, live query changes and recovery
+after reopening. Values are bytes: JSON is stored as you supply it, without field
+validation or document-field queries. Use **Hexadecimal** in the console for
+binary keys or values. These conventions also work in the optional three-node lab
+within its single partition and documented bounds.
 
 ## Uncertain console writes and retention
 
