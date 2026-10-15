@@ -13,3 +13,10 @@ Use any collection names: tasks, notes, projects, readings or your own records. 
 [Installation](INSTALLATION.md) · [Three-node lab](REPLICATION.md) · [Release notes](https://base.polymathlabs.xyz/release-notes.html)
 
 This repository contains distribution documentation and versioned executable assets. It contains no database source, database directories or user data.
+
+## 0.7.0-preview.1 release candidate
+
+The next candidate implements all twelve items in the [feature manifest](PREVIEW_0_7.md),
+with bounded APIs and explicit limitations. Publication requires matching native
+Linux/macOS packages, extracted-runtime checks, and website deployment. This
+checkout update alone does not publish a release or change the existing downloads.
