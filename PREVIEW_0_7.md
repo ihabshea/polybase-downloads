@@ -145,7 +145,10 @@ fail explicitly. Exporters using all-key snapshots must account for these rows.
 Definitions recover with the WAL and are included in backups. Actual postings
 are the existing bounded derived JSON equality index and rebuild from canonical
 state after reopen. Its budget can fall back to a verified full scan, reported by
-`indexed:false`. Definitions are resolved in a validated metadata read before
+`indexed:false`. This named search retains the current-head search scalar
+encoding semantics: numeric 1 and 1.0 have distinct index terms. Typed live
+JSON predicates instead use the mathematical comparisons documented above.
+Definitions are resolved in a validated metadata read before
 the search captures its own head; concurrent drop does not cancel a started
 search. No uniqueness, compound ordering, persistent index file or automatic
 historical planner is claimed.
