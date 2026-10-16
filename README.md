@@ -4,7 +4,7 @@ Official free evaluation downloads for Polybase, an independent database researc
 
 Get the preview and documentation at **https://base.polymathlabs.xyz/download.html**.
 
-The 0.1.0-preview.2 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains four executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
+The 0.8.0-preview.1 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains four executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
 
 Mac executables are ad-hoc signed and not notarized. Linux executables are unsigned. Use disposable data for this experimental preview. The [evaluation license](LICENSE) permits personal or internal evaluation, experimentation and development; production use and commercial redistribution are outside those terms.
 
@@ -18,11 +18,13 @@ This repository contains distribution documentation and versioned executable ass
 
 The 0.7.0-preview.1 prerelease is available in the versioned releases.
 
-## 0.8.0-preview.1 planning candidate
+## 0.8.0-preview.1
 
-Read [candidate release notes and measured qualification](RELEASE_0_8.md),
+Read [release notes and measured qualification](RELEASE_0_8.md),
 [the planner contract](PREVIEW_0_8.md) and
 [raw three-size/selectivity results](benchmarks/0.8.0-preview.1/results.json).
-These document actual implementation and benchmarks. A downloadable 0.8 build
-requires both native platform packages and extracted-runtime qualification;
-no 0.8 download availability is claimed by these documentation changes.
+Matching clean-source Mac and Linux evaluation archives are distributed through
+[the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v0.8.0-preview.1).
+Both pass 18 extracted-runtime checks, archive rejection, staging protection and
+runnable documentation examples. The Linux build and runtime qualification use
+an x86-64 Ubuntu 22.04 container under Docker emulation on Apple Silicon.

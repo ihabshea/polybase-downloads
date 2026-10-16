@@ -1,4 +1,4 @@
-# 0.8.0-preview.1 — query planning candidate and qualification
+# 0.8.0-preview.1 — query planning and qualification
 
 Fresh current-head JSON pages now choose Scan or IndexLookup. Eligible scalar
 `eq` predicates, including necessary equalities under nested `all`, can use a
@@ -80,9 +80,30 @@ For source maintainers:
 python3 scripts/run-planning-bench.py target/new-planning-evidence --sizes 1000 10000 100000 --samples 21
 ```
 
-Use an empty output directory. Before/after source digests must agree. Native
-Linux/macOS packages still require clean matching source and extracted-runtime
-receipts, including the new planner/forced-scan qualification marker. Publishing
-these candidate notes and measurements does not publish a downloadable 0.8 build.
-A website preview is not a production release. Existing 0.7 download assets must
-not be relabeled. Hosted SaaS remains forthcoming.
+Use an empty output directory. Before/after source digests must agree. Package
+qualification and downloadable assets are recorded separately below; the measured
+benchmark host above differs from the local release build environments. Existing
+0.7 assets remain unchanged. Hosted SaaS remains forthcoming.
+
+## Evaluation package publication
+
+Clean package source: `97765a338bd3db31d90859710e1daa17d4bb9f83`.
+The website refresh and merge do not change any binary or bundled-guide input.
+
+| Target | SHA-256 |
+| --- | --- |
+| Apple Silicon macOS 15+ | `67bd60c43f06e790e55d50615a9c5cd09fba7449b6fd3f980fee9f46c5a6ee4f` |
+| x86-64 Linux, glibc 2.35+ | `f8c3f5a8ed3eef97782ac1dc232c7f64cc40edb4acdefaa9cfac7297ee0c7fa5` |
+
+Both extracted packages pass 18 runtime checks, including the new planner,
+forced-scan parity, dropped-index fallback, restart, strict corruption handling
+and failover receipt preservation. Archive mutation rejection, staging protection
+and all five runnable documentation cases pass on both targets. Mac binaries
+are ad-hoc signed, not notarized. Linux qualification uses Ubuntu 22.04 under
+Docker x86-64 emulation on an Apple Silicon Mac. The staging check uses a
+600-second build timeout in that environment; its boundary assertions are unchanged.
+Hosted CI did not execute runner steps; these are local results.
+
+[Download the evaluation](https://base.polymathlabs.xyz/download.html).
+Checksums compare integrity and are not publisher signatures. Source remains
+private; hosted SaaS is coming soon.
