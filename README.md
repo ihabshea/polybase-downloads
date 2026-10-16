@@ -14,9 +14,15 @@ Use any collection names: tasks, notes, projects, readings or your own records. 
 
 This repository contains distribution documentation and versioned executable assets. It contains no database source, database directories or user data.
 
-## 0.7.0-preview.1 release candidate
+## 0.7.0-preview.1
 
-The next candidate implements all twelve items in the [feature manifest](PREVIEW_0_7.md),
-with bounded APIs and explicit limitations. Publication requires matching native
-Linux/macOS packages, extracted-runtime checks, and website deployment. This
-checkout update alone does not publish a release or change the existing downloads.
+The 0.7.0-preview.1 prerelease is available in the versioned releases.
+
+## 0.8.0-preview.1 planning candidate
+
+Read [candidate release notes and measured qualification](RELEASE_0_8.md),
+[the planner contract](PREVIEW_0_8.md) and
+[raw three-size/selectivity results](benchmarks/0.8.0-preview.1/results.json).
+These document actual implementation and benchmarks. A downloadable 0.8 build
+requires both native platform packages and extracted-runtime qualification;
+no 0.8 download availability is claimed by these documentation changes.
