@@ -28,3 +28,12 @@ Matching clean-source Mac and Linux evaluation archives are distributed through
 Both pass 18 extracted-runtime checks, archive rejection, staging protection and
 runnable documentation examples. The Linux build and runtime qualification use
 an x86-64 Ubuntu 22.04 container under Docker emulation on Apple Silicon.
+
+## 0.8.2 adaptive execution candidate
+
+Read [candidate release notes](RELEASE_0_8_2.md),
+[the adaptive execution contract](PREVIEW_0_8_2.md) and
+[raw 60-case qualification](benchmarks/0.8.2/results.json).
+This candidate adds selectivity costs, bounded AND/OR plans, snapshot-safe restart
+and additive diagnostics. Matching native packages and website deployment are
+pending; the qualified 0.8 downloads above remain available.
