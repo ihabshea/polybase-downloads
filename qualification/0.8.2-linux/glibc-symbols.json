@@ -1,0 +1,18 @@
+[
+  {
+    "binary": "polybase",
+    "max_glibc_symbol": "2.34"
+  },
+  {
+    "binary": "polybase-console",
+    "max_glibc_symbol": "2.34"
+  },
+  {
+    "binary": "polybase-node",
+    "max_glibc_symbol": "2.34"
+  },
+  {
+    "binary": "polybase-cluster-console",
+    "max_glibc_symbol": "2.34"
+  }
+]

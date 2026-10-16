@@ -35,10 +35,18 @@ Source tree SHA-256: `138a3238c1d29e84978f5ed08867a32ec59544a8e4928b30635b592b5e
 Benchmark executable SHA-256: `95974378f80590f8bb10dc926d324b9ece8a2ce2029f9eaeed695a8709557ef6`.
 UTC: `2026-10-16T22:54:13.601398+00:00`; `rustc 1.99.1 (58cf8f9c3 2026-10-13)`; `Linux-6.18.44-x86_64-with-glibc2.41`; 5 available CPUs and 35,743,784,960 reported RAM bytes.
 
-Local formatting, all-target/all-feature Clippy, full workspace recovery/correctness tests, Rust 1.89 compatibility, warning-free API docs and Rust/TypeScript HTTP compatibility suites pass. Tests include generated nested predicates, missing/null/numeric semantics, arbitrary byte ranges, invalid definitions, index budget failure, rebuild/reopen/checkpoint/compaction, subscription resume and a controlled adaptive restart while a fully installed writer waits to publish. Original public Rust structs are constructed/destructured externally to check source compatibility.
+Local formatting, all-target/all-feature Clippy, 198 all-feature workspace tests and 168 default engine tests, Rust 1.89 compatibility, warning-free API docs and Rust/TypeScript HTTP compatibility suites pass. Tests include generated nested predicates, missing/null/numeric semantics, arbitrary byte ranges, invalid definitions, index budget failure, rebuild/reopen/checkpoint/compaction, subscription resume and a controlled adaptive restart while a fully installed writer waits to publish. Original public Rust structs are constructed/destructured externally to check source compatibility.
 
 ## Publication status
 
 This is candidate documentation and measured evidence. No 0.8.2 binary download is claimed here. Matching clean-source native macOS/Linux package receipts and canonical website deployment remain release gates. Hosted CI currently fails before runner steps and a native macOS runner is unavailable in this Linux environment; no Sites deployment tool is available in this session. Existing qualified 0.8.0-preview.1 downloads remain available.
 
 For source maintainers, reproduce with `python3 scripts/run-adaptive-bench.py target/new-adaptive-evidence` from an empty destination on a clean checkout. The runner checks source/HEAD stability and retains raw measurements. The database implementation remains private; this repository publishes documentation and evaluation assets only.
+
+## Qualified local Linux candidate
+
+The clean-source Linux archive passes all 19 extracted-runtime checks, ten altered/unsafe archive cases, staging protection and five runnable documentation cases. The published 0.8 archive also passed a cross-version WAL/checkpoint, historical cursor and complete subscription-delta exercise against this candidate. [Local qualification receipts](qualification/0.8.2-linux/README.md) record exact source and hashes.
+
+Native Linux package source: `a185068703de2b65c24ed696e87b1d35c146d124`; archive SHA-256: `63e1754e3662a3ab6c33c583b8c5c5d4a36fe6f241f1730ba86f8c0f8298157e`. Build uses Rust 1.99.0; runtime host is Linux 6.18.44/glibc 2.41. ELF symbols require no later than GLIBC 2.34; this does not claim a separate native Ubuntu 22.04 runtime run.
+
+This local Linux qualification does not establish a public 0.8.2 download. The matching native Mac package, final anonymous asset verification and canonical website deployment remain pending.
