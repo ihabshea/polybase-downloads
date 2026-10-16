@@ -141,7 +141,8 @@ index file, new WAL format, repair fallback, or relaxed corruption handling.
 The qualification runner uses 1,000, 10,000 and 100,000 records at approximately
 1%, 10% and 90% selectivity. It checks complete ordered indexed/forced-scan parity
 for every measured sample, alternating execution order after warmups. It reports
-raw samples, median and nearest-rank p95 latency, actual row/candidate counts,
+raw samples, median and nearest-rank p95 native-engine latency (excluding HTTP
+encoding/network time), actual row/candidate counts,
 cold build time, cumulative process peak RSS where available, actual source SHA,
 source digest, executable hash and every overridden limit. Allocations are
 explicitly unavailable; cumulative RSS is not per-query allocation.

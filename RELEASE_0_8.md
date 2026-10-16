@@ -45,6 +45,8 @@ are in [the raw results](benchmarks/0.8.0-preview.1/results.json). These are mea
 | 10,000 | 67.835 | 10,003 | 31,220 |
 | 100,000 | 787.794 | 100,003 | 289,352 |
 
+Latencies measure native engine calls, excluding HTTP encoding/network time.
+
 All nine cases returned identical complete ordered results on both paths for
 all 21 samples, after three warmups. Order alternated between paths. Lookup
 significantly reduced work at 1% and 10%; at 90% it can be slower than scanning.
