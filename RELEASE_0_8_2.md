@@ -1,52 +1,73 @@
-# Polybase 0.8.2 — Adaptive Query Execution candidate
+# Polybase 0.8.2 — Smarter queries, one history
 
-Current-head JSON queries compare dimensionless Scan and indexed costs using disposable captured-head statistics. Eligible plans include a single equality lookup, an ordered two-index AND intersection and a covered, deduplicated OR union. Every candidate evaluates the complete predicate against canonical data. An inaccurate estimate may cause one bounded Scan restart while the original history gate stays held.
+This release brings the 0.8 query planner and 0.8.2 adaptive execution together
+in one free local evaluation for Apple Silicon macOS and x86-64 Linux.
 
-Existing Rust result structs, enum variants and method signatures remain unchanged. New diagnostic APIs and additive HTTP EXPLAIN fields expose alternatives, estimates, actual work, statistics epochs, replan reasons and measured phase timings. Optional process-local calibration is disabled after reopen. WAL, durable index definitions, historical cursors and subscription semantics retain their prior formats and paths.
+## The 0.8 foundation
 
-[Execution contract and limitations](PREVIEW_0_8_2.md) · [Full benchmark evidence](benchmarks/0.8.2/README.md) · [Raw samples](benchmarks/0.8.2/results.json)
+Declare JSON scalar equality indexes and query a bounded range of canonical
+records. A usable index supplies ordered candidates; the complete typed predicate
+still decides which records match. A missing, dropped, incomplete or memory-capped
+index falls back to a canonical scan. The captured head stays protected throughout
+planning, index construction, candidate reads and result capture.
 
-## Measured performance
+EXPLAIN exposes the chosen path, candidates, canonical rows, index-build work and
+actual elapsed time. Typed numeric equality, null versus missing fields, byte-key
+ordering and historical continuation retain their existing semantics.
 
-All 60 cases passed complete ordered forced-Scan parity, with zero duplicates, across five cold and 21 warm samples per path. Sizes: 1,000, 10,000 and 100,000; exact result selectivities: 0.1%, 1%, 10%, 50% and 90%; families: equality, correlated AND, independent AND and independent OR. Cold means disposable cache rebuild after reopen, with reopen excluded and OS caches uncontrolled.
+## New in 0.8.2
 
-| 100K equality selectivity | Auto p50 / p95 (ms) | Scan p50 / p95 (ms) | Initial strategy | Scan / Auto p50 |
-| ---: | ---: | ---: | --- | ---: |
-| 0.1% | 0.220 / 0.326 | 52.529 / 55.528 | index_lookup | 239.20× |
-| 1% | 1.156 / 1.973 | 53.402 / 59.562 | index_lookup | 46.21× |
-| 10% | 10.007 / 12.357 | 48.224 / 50.519 | index_lookup | 4.82× |
-| 50% | 55.087 / 71.323 | 53.789 / 58.874 | scan | 0.98× |
-| 90% | 55.402 / 59.549 | 55.606 / 64.826 | scan | 1.00× |
+- Compare Scan and eligible indexed strategies using bounded, dimensionless work
+  estimates. A broad match can choose Scan before attempting indexed execution.
+- Stream a two-index AND intersection or an ordered, deduplicated OR union when
+  every branch has a covering indexed necessary condition. Recheck every candidate
+  against the complete predicate; an uncovered OR branch requires Scan.
+- Restart an unexpectedly expensive indexed attempt once as Scan. Discard partial
+  results, keep the original captured head and restart from the original range
+  boundary, preserving deterministic pages and zero duplicates.
+- Inspect additive optimizer diagnostics: considered alternatives, estimated work,
+  statistics epoch, actual posting/canonical work, measured phase timings and the
+  reason for a restart. Existing public Rust result structs, enum variants and
+  HTTP fields remain compatible; richer Rust diagnostics are opt-in.
+- Optionally calibrate costs from actual warm local measurements. Calibration is
+  bounded, process-local, disabled by default and reset after reopening.
 
-The 1% equality workload measured 46.21× warm speedup against Scan, exceeding the 35.36× goal (80% of the historical 44.2×). The 90% equality workload initially selected Scan. Absolute times and raw samples remain available; shared-host runs are not production capacity claims.
+## Measured evidence, including the awkward cases
 
-## Measured counterexamples
+The recorded Linux qualification covers 60 cases: 1K, 10K and 100K records, five
+selectivities, four predicate families, five cold and 21 warm samples per path.
+Every measured Auto result matched forced Scan in complete byte-key order with
+zero duplicates. These are native-engine measurements, excluding HTTP and
+concurrent writers; they are not predictions for other machines or workloads.
 
-At 100K, correlated 50% AND chose an intersection and restarted: Auto median 71.726 ms versus 45.458 ms Scan, or 1.578× slower. The attempt examined 36,459 canonical candidates and consumed 72,918 posting keys before a complete 100,000-row Scan. Results remained identical. The model assumes independence and cannot promise optimal plans.
+At 100K records and 1% equality, warm Auto measured 1.156 ms median versus
+53.402 ms forced Scan, a 46.21× ratio. At 90%, Auto chose Scan initially. Perfectly
+correlated 50% AND was a counterexample: an intersection restarted and took
+71.726 ms versus 45.458 ms Scan, or 1.58× longer. Cold index construction can
+dominate latency even when Scan is ultimately selected. Full samples, source and
+executable hashes, work counters, p50/p95 and limits accompany the evidence.
 
-Cold 100K/90% equality spent 814.54 ms building disposable postings before selecting Scan: 884.77 ms Auto median versus 79.46 ms forced Scan. Estimated execution work excludes that separately measured cold build. This overhead is published rather than hidden by changing the workload.
+[Adaptive execution reference](https://base.polymathlabs.xyz/preview-0-8-2.html)
+· [Original planner reference](https://base.polymathlabs.xyz/preview-0-8.html)
+· [Raw qualification](https://base.polymathlabs.xyz/preview-0-8-2-validation.json)
 
-Peak cumulative process RSS reached 295,212 KiB across the qualification cases. RSS includes seeding, recovery, caches and caller results; allocations are unavailable, not modeled. The explicit benchmark bounds are 256 MiB logical index charge, 100,000 returned rows and 64 MiB returned bytes; product defaults remain 16 MiB, 4,096 rows and 2 MiB.
+## Compatibility and limits
 
-## Provenance and validation
+WAL, checkpoints, cursor formats, subscription transaction deltas, retained history
+and corruption handling keep their existing contracts. Disposable postings and
+statistics rebuild from canonical state. Back up a closed database directory as
+a unit before upgrading; in-flight writes with an unknown outcome still require
+reconciliation.
 
-Measured clean source: `dde442fe846891a2bb8f034a09cac467ec1ad88f`.
-Source tree SHA-256: `138a3238c1d29e84978f5ed08867a32ec59544a8e4928b30635b592b5e1f4980`.
-Benchmark executable SHA-256: `95974378f80590f8bb10dc926d324b9ece8a2ce2029f9eaeed695a8709557ef6`.
-UTC: `2026-10-16T22:54:13.601398+00:00`; `rustc 1.99.1 (58cf8f9c3 2026-10-13)`; `Linux-6.18.44-x86_64-with-glibc2.41`; 5 available CPUs and 35,743,784,960 reported RAM bytes.
+This remains a bounded local database evaluation, not SQL or a production service.
+There are no joins, compound/range indexes, persistent optimizer statistics or
+background index builders. Queries can delay writer publication; no hard latency
+or process-RSS bound is promised. Use disposable data and loopback interfaces.
+Hosted SaaS is coming soon, with no announced launch date.
 
-Local formatting, all-target/all-feature Clippy, 198 all-feature workspace tests and 168 default engine tests, Rust 1.89 compatibility, warning-free API docs and Rust/TypeScript HTTP compatibility suites pass. Tests include generated nested predicates, missing/null/numeric semantics, arbitrary byte ranges, invalid definitions, index budget failure, rebuild/reopen/checkpoint/compaction, subscription resume and a controlled adaptive restart while a fully installed writer waits to publish. Original public Rust structs are constructed/destructured externally to check source compatibility.
-
-## Publication status
-
-This is candidate documentation and measured evidence. No 0.8.2 binary download is claimed here. Matching clean-source native macOS/Linux package receipts and canonical website deployment remain release gates. Hosted CI currently fails before runner steps and a native macOS runner is unavailable in this Linux environment; no Sites deployment tool is available in this session. Existing qualified 0.8.0-preview.1 downloads remain available.
-
-For source maintainers, reproduce with `python3 scripts/run-adaptive-bench.py target/new-adaptive-evidence` from an empty destination on a clean checkout. The runner checks source/HEAD stability and retains raw measurements. The database implementation remains private; this repository publishes documentation and evaluation assets only.
-
-## Qualified local Linux candidate
-
-The clean-source Linux archive passes all 19 extracted-runtime checks, ten altered/unsafe archive cases, staging protection and five runnable documentation cases. The published 0.8 archive also passed a cross-version WAL/checkpoint, historical cursor and complete subscription-delta exercise against this candidate. [Local qualification receipts](qualification/0.8.2-linux/README.md) record exact source and hashes.
-
-Native Linux package source: `a185068703de2b65c24ed696e87b1d35c146d124`; archive SHA-256: `63e1754e3662a3ab6c33c583b8c5c5d4a36fe6f241f1730ba86f8c0f8298157e`. Build uses Rust 1.99.0; runtime host is Linux 6.18.44/glibc 2.41. ELF symbols require no later than GLIBC 2.34; this does not claim a separate native Ubuntu 22.04 runtime run.
-
-This local Linux qualification does not establish a public 0.8.2 download. The matching native Mac package, final anonymous asset verification and canonical website deployment remain pending.
+Mac: Apple Silicon, macOS 15+, ad-hoc signed and not notarized.
+Linux: x86-64, glibc 2.35+ (Ubuntu 22.04+), unsigned.
+Source remains private; binaries are free for the uses in the included evaluation
+license. Checksums and per-platform qualification receipts accompany the downloads.
+Hosted GitHub CI is unavailable because its runners are blocked by account billing;
+local checks and extracted-runtime results are reported separately.

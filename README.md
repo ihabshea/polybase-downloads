@@ -4,7 +4,7 @@ Official free evaluation downloads for Polybase, an independent database researc
 
 Get the preview and documentation at **https://base.polymathlabs.xyz/download.html**.
 
-The 0.8.0-preview.1 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains four executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
+The 0.8.2 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains four executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
 
 Mac executables are ad-hoc signed and not notarized. Linux executables are unsigned. Use disposable data for this experimental preview. The [evaluation license](LICENSE) permits personal or internal evaluation, experimentation and development; production use and commercial redistribution are outside those terms.
 
@@ -29,11 +29,14 @@ Both pass 18 extracted-runtime checks, archive rejection, staging protection and
 runnable documentation examples. The Linux build and runtime qualification use
 an x86-64 Ubuntu 22.04 container under Docker emulation on Apple Silicon.
 
-## 0.8.2 adaptive execution candidate
+## 0.8.2 — the complete 0.8 release
 
-Read [candidate release notes](RELEASE_0_8_2.md),
-[the adaptive execution contract](PREVIEW_0_8_2.md) and
-[raw 60-case qualification](benchmarks/0.8.2/results.json).
-This candidate adds selectivity costs, bounded AND/OR plans, snapshot-safe restart
-and additive diagnostics. Matching native packages and website deployment are
-pending; the qualified 0.8 downloads above remain available.
+The [combined release notes](RELEASE_0_8_2.md) introduce the original 0.8 query
+planner together with 0.8.2 adaptive execution: selectivity-aware costs, bounded
+AND/OR plans, one snapshot-safe restart and additive diagnostics.
+Read [the adaptive execution contract](PREVIEW_0_8_2.md),
+[raw 60-case measurements](benchmarks/0.8.2/results.json) and
+[platform qualification and upgrade evidence](qualification/0.8.2/README.md).
+Matching clean-source Mac and Linux packages, checksums and runtime receipts are
+in [the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v0.8.2).
+The earlier 0.8 preview remains available in release history.

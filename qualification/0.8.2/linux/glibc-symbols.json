@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "target": "x86_64-unknown-linux-gnu",
+  "source_commit": "2a8fd5c95ade14b05be9cfd66c419c0d68b6500f",
+  "package_sha256": "dbec2441bde1cb880c931459ff8b23c14aa68accb5fcb154d587ede00a88eb10",
+  "declared_glibc_minimum": "2.35",
+  "binaries": {
+    "bin/polybase": {
+      "sha256": "b32d2e033fe3c4dd592625403cc6aeb336db4534ecdf085ce210409c9282a42f",
+      "maximum_glibc": "2.34"
+    },
+    "bin/polybase-cluster-console": {
+      "sha256": "efcf957a886e1c0f15ddf69815d5bd11e06f5249d896a82c2f9a73cdfb0fd181",
+      "maximum_glibc": "2.34"
+    },
+    "bin/polybase-console": {
+      "sha256": "b461b5259756aed72a5fc46fd9769e00af53e72cd792c2fd9c6401eb06c94128",
+      "maximum_glibc": "2.34"
+    },
+    "bin/polybase-node": {
+      "sha256": "26cd25b721db1296d589ce2e3143c1049813b6f84b09875951fc3104eece59c7",
+      "maximum_glibc": "2.34"
+    }
+  }
+}

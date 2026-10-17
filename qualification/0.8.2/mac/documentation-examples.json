@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "target": "aarch64-apple-darwin",
+  "source_commit": "2a8fd5c95ade14b05be9cfd66c419c0d68b6500f",
+  "package_sha256": "688d0d9296a052c1fd6862547a11fde233220b4274bec3c59f30daeb5ecc0d9c",
+  "cases": [
+    "tutorial CLI commands, exact output, cross-collection batch and event boundary",
+    "runnable Python client, exact-request replay, one-file result/cursor resume and existing-state refusal",
+    "CLI reference, JSON replacement, deletion and application-maintained view",
+    "copyable curl health/read/query/checkpoint examples with exact Origin",
+    "closed-directory backup and reopened record/history verification"
+  ]
+}

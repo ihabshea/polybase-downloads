@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "archive": "polybase-0.8.2-aarch64-apple-darwin.tar.gz",
+  "sha256": "688d0d9296a052c1fd6862547a11fde233220b4274bec3c59f30daeb5ecc0d9c",
+  "source_commit": "2a8fd5c95ade14b05be9cfd66c419c0d68b6500f",
+  "source_dirty": false,
+  "target": "aarch64-apple-darwin",
+  "files": 20,
+  "dependencies": 13,
+  "runtime_checks": [
+    "all four binary identities/help",
+    "atomic batch across independent reopens",
+    "event/state prefix agreement",
+    "malformed write has no partial effect",
+    "protected WAL checksum corruption fails closed and is preserved",
+    "packaged loopback console and query deltas",
+    "discarded receipt reconciles original request",
+    "same-token retry has one event",
+    "stale edit and foreign origin reject",
+    "checkpoint/restart preserves state and receipt",
+    "user-defined collections: JSON/text/hex, prefix isolation, cross-collection writes and restart",
+    "extracted JSON-field and Unicode text search update and rebuild",
+    "three extracted node processes commit across collections with separate queries",
+    "leader SIGKILL preserves acknowledged receipt",
+    "same request reconciles and replays across failover",
+    "restarted original voter catches up",
+    "0.7 typed live JSON, pagination, revisions, history, explain, indexes, backup and advisor across restart",
+    "0.8 typed index planning, forced-scan parity, explain and dropped-index fallback across restart",
+    "0.8.2 selectivity-aware scan and lookup, AND intersection, OR union, explain, forced-scan parity and historical continuation across restart"
+  ]
+}
