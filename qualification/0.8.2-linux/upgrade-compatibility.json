@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "old_source": "97765a338bd3db31d90859710e1daa17d4bb9f83",
+  "new_source": "a185068703de2b65c24ed696e87b1d35c146d124",
+  "old_archive_sha256": "f8c3f5a8ed3eef97782ac1dc232c7f64cc40edb4acdefaa9cfac7297ee0c7fa5",
+  "new_archive_sha256": "63e1754e3662a3ab6c33c583b8c5c5d4a36fe6f241f1730ba86f8c0f8298157e",
+  "checks": [
+    "new archive reads published 0.8 WAL and definitions with typed numeric and forced-Scan parity",
+    "0.8 historical cursor preserves original complete rows after two-key 0.8.2 mutation",
+    "0.8 subscription token resumes complete atomic two-key delta under 0.8.2",
+    "0.8 reopens 0.8.2 checkpoint/WAL and reads current values and retained historical cursor"
+  ]
+}

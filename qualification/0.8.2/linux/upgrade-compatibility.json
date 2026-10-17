@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "syntheticOnly": true,
+  "target": "x86_64-unknown-linux-gnu",
+  "oldVersion": "0.8.0-preview.1",
+  "newVersion": "0.8.2",
+  "oldSource": "97765a338bd3db31d90859710e1daa17d4bb9f83",
+  "newSource": "2a8fd5c95ade14b05be9cfd66c419c0d68b6500f",
+  "oldPackageSha256": "f8c3f5a8ed3eef97782ac1dc232c7f64cc40edb4acdefaa9cfac7297ee0c7fa5",
+  "newPackageSha256": "dbec2441bde1cb880c931459ff8b23c14aa68accb5fcb154d587ede00a88eb10",
+  "checks": [
+    "0.8 WAL/checkpoint opens under 0.8.2",
+    "0.8.2 WAL/checkpoint reopens under 0.8",
+    "page cursors preserve captured position in both directions",
+    "subscription tokens resume transaction changes in both directions",
+    "record revision tokens remain valid in both directions",
+    "post-upgrade and downgrade canonical state is preserved"
+  ]
+}

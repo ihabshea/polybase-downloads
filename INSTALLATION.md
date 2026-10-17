@@ -1,6 +1,16 @@
 # Use the Polybase evaluation download
 
-Polybase 0.1.0-preview.2 is a free database evaluation preview. The package runs
+The 0.8.2 optimizer compares bounded scan and indexed execution, combines eligible
+AND/OR predicates, and can restart a query under its original captured head. See
+[adaptive query execution](PREVIEW_0_8_2.md). The earlier
+[0.8 planning reference](PREVIEW_0_8.md) records the original planner contract.
+
+The 0.7 API additions are documented in [the feature reference](PREVIEW_0_7.md):
+typed live JSON queries, stable pagination, revisions, online backup and verification,
+query metrics, Rust/TypeScript clients, retained historical reads, compaction advice,
+named equality indexes, demand-driven streams and the expanded replication lab.
+
+Polybase 0.8.2 is a free database evaluation preview. The package runs
 locally without Rust, Cargo, Node, Docker or a cloud account. Its source is private.
 The hosted SaaS is coming soon and is not available in this download.
 
@@ -51,9 +61,11 @@ the console before using the CLI on that same database. Use Ctrl-C in its termin
 to stop it; reopen the same directory to recover committed records.
 
 The CLI uses UTF-8 arguments. The console also supports hex bytes. Keys such as
-`projects/one` are ordinary byte keys; there is no SQL or document-field query
-planner. Raw CLI writes have no named request identity. A failed response can
-leave a write outcome uncertain; inspect recovered state/events before retrying.
+`projects/one` are ordinary byte keys. The local Search panel filters JSON
+scalar fields or whole words at one committed position; it does not create a
+live cursor, SQL query or schema. Raw CLI writes have no named request identity.
+A failed response can leave a write outcome uncertain; inspect recovered
+state/events before retrying.
 
 ## Your records, your collections
 
@@ -81,8 +93,10 @@ Include the trailing slash: `tasks/` excludes a separate prefix such as
 Stage keys from several collections to update them in one atomic transaction.
 Records support insert, replacement and deletion, live query changes and recovery
 after reopening. Values are bytes: JSON is stored as you supply it, without field
-validation or document-field queries. Use **Hexadecimal** in the console for
-binary keys or values. These conventions also work in the optional three-node lab
+validation. Use the separate Search panel to match a nested field or whole words
+within one collection prefix; run it again for subsequent commits. See the
+[local search contract](SEARCH.md) for exact matching and limits. Use
+**Hexadecimal** in the console for binary keys or values. These conventions also work in the optional three-node lab
 within its single partition and documented bounds.
 
 ## Uncertain console writes and retention

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "syntheticOnly": true,
+  "target": "aarch64-apple-darwin",
+  "oldVersion": "0.8.0-preview.1",
+  "newVersion": "0.8.2",
+  "oldSource": "97765a338bd3db31d90859710e1daa17d4bb9f83",
+  "newSource": "2a8fd5c95ade14b05be9cfd66c419c0d68b6500f",
+  "oldPackageSha256": "67bd60c43f06e790e55d50615a9c5cd09fba7449b6fd3f980fee9f46c5a6ee4f",
+  "newPackageSha256": "688d0d9296a052c1fd6862547a11fde233220b4274bec3c59f30daeb5ecc0d9c",
+  "checks": [
+    "0.8 WAL/checkpoint opens under 0.8.2",
+    "0.8.2 WAL/checkpoint reopens under 0.8",
+    "page cursors preserve captured position in both directions",
+    "subscription tokens resume transaction changes in both directions",
+    "record revision tokens remain valid in both directions",
+    "post-upgrade and downgrade canonical state is preserved"
+  ]
+}
