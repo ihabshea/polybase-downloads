@@ -12,7 +12,16 @@ Use any collection names: tasks, notes, projects, readings or your own records. 
 
 [Installation](INSTALLATION.md) · [Three-node lab](REPLICATION.md) · [Release notes](https://base.polymathlabs.xyz/release-notes.html)
 
-This repository contains distribution documentation and versioned executable assets. It contains no database source, database directories or user data.
+This repository contains distribution documentation, versioned executable assets
+and the standalone [MIT client SDK source](clients/README.md). It contains no
+database engine/server source, database directories or user data.
+
+## Client SDKs
+
+Install `@polymathbase/polybase-client@0.8.3` from npm or
+`polybase-client@0.8.3` from crates.io. See the
+[client installation and source guide](clients/README.md). These client SDKs have
+their own MIT licenses; the binary evaluation terms remain unchanged.
 
 ## 0.7.0-preview.1
 

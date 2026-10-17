@@ -1,0 +1,34 @@
+{
+  "name": "@polymathbase/polybase-client",
+  "version": "0.8.3",
+  "description": "Typed loopback HTTP client for the local Polybase database",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/client.js",
+  "types": "./dist/client.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js"
+    }
+  },
+  "files": ["dist/client.js", "dist/client.d.ts", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "author": "ihabshea",
+  "homepage": "https://base.polymathlabs.xyz/docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihabshea/polybase-downloads.git",
+    "directory": "clients/typescript"
+  },
+  "keywords": ["polybase", "database", "client", "local"],
+  "publishConfig": {"access": "public", "registry": "https://registry.npmjs.org/"},
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "test": "node --test client.test.mjs",
+    "check": "tsc --noEmit --strict --target ES2022 --module nodenext --lib ES2022,DOM client.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {"typescript": "5.9.3"}
+}
