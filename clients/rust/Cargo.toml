@@ -1,0 +1,22 @@
+[package]
+name = "polybase-client"
+version = "0.8.3"
+edition.workspace = true
+rust-version.workspace = true
+publish = ["crates-io"]
+description = "Bounded synchronous loopback HTTP client for the local Polybase database"
+license = "MIT"
+authors = ["ihabshea"]
+homepage = "https://base.polymathlabs.xyz/docs"
+repository = "https://github.com/ihabshea/polybase-downloads"
+readme = "README.md"
+include = ["src/**", "examples/**", "README.md", "LICENSE"]
+keywords = ["polybase", "database", "client", "local"]
+categories = ["database"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[lints]
+workspace = true
