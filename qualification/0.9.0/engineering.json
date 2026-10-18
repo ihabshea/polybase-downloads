@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "release": "0.9.0",
+  "source_sha": "6a123302edad0ed49cac541615b9719bb007d188",
+  "engine_git_tree": "768dd1236194e4c6de833f09c1cdb86372fd24cc",
+  "rust": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "checks": [
+    {
+      "command": "cargo test --workspace --all-features --locked",
+      "passed": 227,
+      "failed": 0,
+      "ignored": 0,
+      "result": "passed"
+    },
+    {
+      "command": "cargo test -p polybase-engine --locked",
+      "passed": 181,
+      "failed": 0,
+      "ignored": 0,
+      "result": "passed"
+    },
+    {
+      "command": "cargo clippy --workspace --all-targets --all-features --locked -- -D warnings",
+      "result": "passed"
+    },
+    {
+      "command": "cargo +1.89.0 check --workspace --all-targets --all-features --locked",
+      "result": "passed"
+    },
+    {
+      "command": "RUSTDOCFLAGS='-D warnings' cargo doc --workspace --all-features --no-deps --locked",
+      "result": "passed"
+    },
+    {
+      "command": "cargo fmt --all -- --check",
+      "result": "passed"
+    },
+    {
+      "command": "node --test scripts/test-console.mjs scripts/test-cluster-console.mjs website/test-release-inputs.mjs",
+      "result": "passed",
+      "passed": 50,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "limitations": "Local checks; hosted CI failed before runner steps. Package runtimes and website publication are separately gated."
+}

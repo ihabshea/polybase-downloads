@@ -1,6 +1,6 @@
 {
   "name": "@polymathbase/polybase-client",
-  "version": "0.8.3",
+  "version": "0.9.0",
   "description": "Typed loopback HTTP client for the local Polybase database",
   "license": "MIT",
   "type": "module",

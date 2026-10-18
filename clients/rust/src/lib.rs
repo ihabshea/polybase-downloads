@@ -70,6 +70,71 @@ pub struct Page {
     pub next: Option<String>,
     pub explain: Value,
 }
+/// A Janus execution report. Estimated rows are work estimates, never elapsed time.
+#[derive(Clone, Debug, Deserialize)]
+pub struct JanusExplain {
+    pub chosen_plan: String,
+    pub estimated_rows: usize,
+    pub actual_rows: ActualRows,
+    pub plan_reason: String,
+    pub fallback_reason: Option<String>,
+    pub history_position: String,
+    pub execution_stats: ExecutionStats,
+}
+#[derive(Clone, Debug, Deserialize)]
+pub struct ActualRows {
+    pub examined: usize,
+    pub returned: usize,
+}
+#[derive(Clone, Debug, Deserialize)]
+pub struct ExecutionStats {
+    pub elapsed_micros: u128,
+    pub planning_micros: u128,
+    pub planning_rows: usize,
+    pub execution_micros: u128,
+    pub replay_micros: u128,
+    pub index_build_micros: u128,
+    pub candidates: usize,
+    /// Logical canonical/index-build bytes plus verified WAL bytes, not disk I/O.
+    pub bytes_examined: u64,
+    pub returned_bytes: u64,
+    pub base_rows: usize,
+    pub replayed_commits: usize,
+    pub replayed_mutations: usize,
+    pub index_build_rows: usize,
+    pub query_rows_examined: usize,
+    pub cache_hit: bool,
+    pub index_used: bool,
+    pub cache_bytes: u64,
+    pub index_bytes: u64,
+    pub history_floor: String,
+    pub cache_head: String,
+}
+/// Lowercase hexadecimal key bounds. `None` means unbounded.
+#[derive(Clone, Debug, Serialize)]
+#[serde(rename_all = "lowercase")]
+pub enum KeyBound {
+    Included(String),
+    Excluded(String),
+}
+#[derive(Clone, Debug, Serialize)]
+pub struct KeyRange {
+    pub start: Option<KeyBound>,
+    pub end: Option<KeyBound>,
+}
+#[derive(Clone, Debug, Deserialize)]
+pub struct HistoricalPoint {
+    pub position: String,
+    pub value: Option<String>,
+    pub explain: JanusExplain,
+}
+#[derive(Clone, Debug, Deserialize)]
+pub struct HistoricalPage {
+    pub position: String,
+    pub rows: Vec<Row>,
+    pub next: Option<String>,
+    pub explain: JanusExplain,
+}
 #[derive(Clone, Debug, Deserialize)]
 pub struct RevisionRead {
     pub value: Option<String>,
@@ -138,6 +203,14 @@ pub struct SearchResult {
     pub position: String,
     pub indexed: bool,
     pub rows: Vec<Row>,
+}
+/// Additive diagnostics for current-head JSON/text search (requires a Janus server).
+#[derive(Clone, Debug, Deserialize)]
+pub struct ExplainedSearchResult {
+    pub position: String,
+    pub indexed: bool,
+    pub rows: Vec<Row>,
+    pub explain: JanusExplain,
 }
 #[derive(Clone, Debug, Deserialize)]
 pub struct Change {
@@ -247,6 +320,56 @@ impl Client {
         }
         self.call("query-page", &body)
     }
+    /// Read an exact key at a retained commit, without falling forward on expiry.
+    pub fn get_as_of(&self, position: u64, key: &[u8]) -> Result<HistoricalPoint> {
+        self.call(
+            "as-of-get",
+            &json!({"position":position.to_string(),"key":hex(key)}),
+        )
+    }
+    pub fn query_as_of(
+        &self,
+        position: u64,
+        query: &Query,
+        cursor: Option<&str>,
+        limit: usize,
+    ) -> Result<HistoricalPage> {
+        self.query_range_as_of(position, query, None, cursor, limit)
+    }
+    /// Override the query prefix with explicit byte-key bounds for this historical read.
+    pub fn query_range_as_of(
+        &self,
+        position: u64,
+        query: &Query,
+        range: Option<&KeyRange>,
+        cursor: Option<&str>,
+        limit: usize,
+    ) -> Result<HistoricalPage> {
+        self.call("as-of-query", &json!({"position":position.to_string(),"query":query,"range":range,"cursor":cursor,"limit":limit}))
+    }
+    pub fn explain_as_of(
+        &self,
+        position: u64,
+        query: &Query,
+        cursor: Option<&str>,
+        limit: usize,
+    ) -> Result<HistoricalPage> {
+        self.call(
+            "as-of-explain",
+            &json!({"position":position.to_string(),"query":query,"cursor":cursor,"limit":limit}),
+        )
+    }
+    pub fn search_as_of(
+        &self,
+        position: u64,
+        query: &SearchQuery,
+        limit: usize,
+    ) -> Result<HistoricalPage> {
+        self.call(
+            "as-of-search",
+            &json!({"position":position.to_string(),"query":query,"limit":limit}),
+        )
+    }
     pub fn read_revision(&self, key: &[u8]) -> Result<RevisionRead> {
         self.call("read-revision", &json!({"key":hex(key)}))
     }
@@ -307,6 +430,9 @@ impl Client {
         )
     }
     pub fn search(&self, query: &SearchQuery) -> Result<SearchResult> {
+        self.call("search", query)
+    }
+    pub fn search_diagnostics(&self, query: &SearchQuery) -> Result<ExplainedSearchResult> {
         self.call("search", query)
     }
 }

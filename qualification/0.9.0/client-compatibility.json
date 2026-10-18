@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "sdk_version": "0.8.3",
+  "server_version": "0.9.0",
+  "archives": [
+    {
+      "name": "polymathbase-polybase-client-0.8.3.tgz",
+      "url": "https://registry.npmjs.org/@polymathbase/polybase-client/-/polybase-client-0.8.3.tgz",
+      "bytes": 6524,
+      "sha256": "2c1a4f5aebb32636e71db3dc46d575d34fd2d90bb012af7b378ac828eb03ac9c",
+      "sha256_matches_published_evidence": true,
+      "vcs_info": null
+    },
+    {
+      "name": "polybase-client-0.8.3.crate",
+      "url": "https://static.crates.io/crates/polybase-client/polybase-client-0.8.3.crate",
+      "bytes": 8525,
+      "sha256": "c80088e7e0e076986ed8d107737e8ba37a42a73cc8e3c4aff4261eece6674d25",
+      "sha256_matches_published_evidence": true,
+      "vcs_info": {
+        "git": {
+          "sha1": "9923be68c21643589012395793a484e622fac11d"
+        },
+        "path_in_vcs": "clients/rust"
+      }
+    }
+  ],
+  "qualification": "Only existing SDK APIs are exercised; no new Janus methods are called.",
+  "old_test_source_sha": "ce4daf3db59b570895022b136ebdfbae1665ffec",
+  "old_test_source_files": {
+    "typescript": {
+      "path": "clients/typescript/client.test.mjs",
+      "sha256": "e05c9b1ab1e0eb8e593c44c14de430d77028ed90156177a9f0ed2d3897a1f161"
+    },
+    "rust": {
+      "path": "crates/cli/tests/client_preview7.rs",
+      "adapter": "ConsoleServer startup replaced with external debug-console child process; test bodies unchanged."
+    }
+  },
+  "engine_source_sha": "6a123302edad0ed49cac541615b9719bb007d188",
+  "server_executable_sha256": "8b3546dce9c2d806a95ee013a80877b1559f7dd96fa466bceba6b73cc48b480f",
+  "server_executable_version": "polybase-console 0.9.0",
+  "toolchain": {
+    "rust": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+    "node": "v24.19.0"
+  },
+  "recorded_at_utc": "2026-10-18",
+  "engine_git_tree": "768dd1236194e4c6de833f09c1cdb86372fd24cc",
+  "cli_git_tree": "a953ab197c94f8bd8dd5eacf3165e5644b744126",
+  "current_implementation_inputs_dirty": false,
+  "host": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "kernel": "6.18.55"
+  },
+  "tests": {
+    "typescript": {
+      "passed": 3,
+      "failed": 0,
+      "package": "canonical npm compiled dist/client.js",
+      "test_source": "unmodified pre-Janus clients/typescript/client.test.mjs from recorded source SHA",
+      "cases": [
+        "loopback/hex/unsafe JSON validation",
+        "HTTP status and non-JSON/empty/invalid-UTF8 error preservation; strict success JSON; no retries",
+        "real-server revisions, conflicts, streaming/resume, query/historical continuation, indexes, JSON/text search, backup verification, advice and restart"
+      ]
+    },
+    "rust": {
+      "passed": 2,
+      "failed": 0,
+      "package": "canonical crates.io extracted polybase-client-0.8.3",
+      "test_source": "pre-Janus crates/cli/tests/client_preview7.rs test bodies unchanged; startup adapter invokes external debug console",
+      "cases": [
+        "revisions/conflicts, subscriptions/resume, pages, index CRUD, JSON/text search, backup verification, historical snapshot and advice",
+        "typed numeric planner equality, indexed versus forced Scan and shared HTTP EXPLAIN semantics"
+      ]
+    },
+    "new_janus_methods_called": false,
+    "all_passed": true
+  },
+  "rust_adapter_sha256": "3677ec0bde1a806c50cb1642bf8f444eeebf0e148095f666797ff081ec1902e9",
+  "consumer_lock_sha256": "fccaf761e36e1f0bca565f4d537f138eedec01402cfdf194bc273eb0106ff0f8",
+  "rust_package_public_source_sha_verified": true,
+  "scope": "Compatibility correctness smoke checks against a new disposable loopback database; not performance measurements or native release qualification.",
+  "commands": [
+    "POLYBASE_CLIENT_MODULE=<extracted canonical npm>/dist/client.js POLYBASE_CONSOLE_BIN=<hashed 0.9.0 debug console> node --test <unmodified old TypeScript test>",
+    "POLYBASE_CONSOLE_BIN=<hashed 0.9.0 debug console> cargo test --manifest-path <independent consumer with extracted canonical Rust crate>/Cargo.toml"
+  ]
+}

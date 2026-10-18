@@ -23,6 +23,21 @@ Install `@polymathbase/polybase-client@0.8.3` from npm or
 [client installation and source guide](clients/README.md). These client SDKs have
 their own MIT licenses; the binary evaluation terms remain unchanged.
 
+## Project Janus — 0.9 candidate
+
+Janus adds read-only point, range, typed JSON and whole-word queries at an exact
+retained commit position, with measured explain diagnostics and deterministic
+reference-model/crash verification. Read the [candidate release notes](RELEASE_0_9.md),
+[historical query contract](JANUS_0_9.md), [measured benchmark evidence](benchmarks/0.9.0/README.md)
+and [seeded/crash verification](qualification/0.9.0/verification/README.md).
+
+All 36 historical benchmark cases passed correctness and the warm historical
+targets. Seven of 12 current-head cases missed the 10% performance goal; every
+miss and raw sample is retained. The 0.9 downloadable release and website remain
+gated on matching native packages and publication. The published database is
+still 0.8.2 and the published SDKs are still 0.8.3; candidate SDK sources here are
+0.9.0.
+
 ## 0.7.0-preview.1
 
 The 0.7.0-preview.1 prerelease is available in the versioned releases.

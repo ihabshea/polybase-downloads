@@ -13,7 +13,8 @@ export interface Row {key: string; value: string}
 /** A bounded current-head search, separate from named indexes and query pages. */
 export type SearchQuery = {kind: "json"; key_prefix: string; path: string[]; value: Scalar}
   | {kind: "text"; key_prefix: string; text: string};
-export interface SearchResult {position: string; indexed: boolean; rows: Row[]}
+export interface SearchResult {position: string; indexed: boolean; rows: Row[]; explain?: JanusExplain}
+export interface ExplainedSearchResult extends SearchResult {explain: JanusExplain}
 export interface OptimizerAlternative {
   strategy: "scan" | "index_lookup" | "index_intersection" | "index_union";
   index_names: string[]; estimated_candidates: number; estimated_work: number;
@@ -37,7 +38,34 @@ export interface QueryExplain {
   planning_rows: number; index_build_rows: number; index_build_micros: number; total_rows_examined: number;
   /** Added in 0.8.2; absent in responses from older servers. Estimated work is not elapsed time. */
   optimizer?: OptimizerExplain;
+  /** Added by Janus servers; older server responses omit these fields. */
+  chosen_plan?: JanusExplain["chosen_plan"]; estimated_rows?: number;
+  actual_rows?: JanusExplain["actual_rows"]; plan_reason?: string;
+  history_position?: string; execution_stats?: JanusExplain["execution_stats"];
 }
+/** Janus diagnostics use measured counters separately from estimated row work. */
+export interface JanusExplain {
+  chosen_plan: "index" | "range_scan" | "full_scan" | "historical_replay";
+  estimated_rows: number;
+  actual_rows: {examined: number; returned: number};
+  plan_reason: string;
+  fallback_reason: string | null;
+  history_position: string;
+  execution_stats: {
+    elapsed_micros: number; planning_micros: number; planning_rows: number; execution_micros: number;
+    replay_micros: number; index_build_micros: number; candidates: number;
+    /** Logical canonical/index-build bytes plus verified WAL bytes, not disk I/O. */
+    bytes_examined: number; returned_bytes: number; base_rows: number;
+    replayed_commits: number; replayed_mutations: number; index_build_rows: number;
+    query_rows_examined: number; cache_hit: boolean; index_used: boolean;
+    cache_bytes: number; index_bytes: number; history_floor: string; cache_head: string;
+  };
+}
+/** Byte-key bounds are lowercase hex. Null means unbounded. */
+export type KeyBound = {included: string} | {excluded: string} | null;
+export interface KeyRange {start: KeyBound; end: KeyBound}
+export interface HistoricalPoint {position: string; value: string | null; explain: JanusExplain}
+export interface HistoricalPage {position: string; rows: Row[]; next: string | null; explain: JanusExplain}
 export interface Page {position: string; rows: Row[]; next: string | null; explain: QueryExplain}
 export interface Session {id: string; instance: string; token: string; position: string; rows: Row[]}
 export interface Change {key: string; before: string | null; after: string | null}
@@ -90,6 +118,11 @@ export class Client {
     return result as T;
   }
   page(query: Query,cursor: string | null = null,limit = 128,forceScan = false): Promise<Page> {return this.call("query-page",{query,cursor,limit,...(forceScan ? {force_scan:true} : {})});}
+  /** Read retained commit position exactly; no implicit resnapshot on expiry. */
+  getAsOf(position: bigint,key: Uint8Array | string): Promise<HistoricalPoint> {return this.call("as-of-get",{position:position.toString(),key:hex(key)});}
+  queryAsOf(position: bigint,query: Query,cursor: string | null = null,limit = 128,range?: KeyRange): Promise<HistoricalPage> {return this.call("as-of-query",{position:position.toString(),query,cursor,limit,...(range ? {range} : {})});}
+  explainAsOf(position: bigint,query: Query,cursor: string | null = null,limit = 128,range?: KeyRange): Promise<HistoricalPage> {return this.call("as-of-explain",{position:position.toString(),query,cursor,limit,...(range ? {range} : {})});}
+  searchAsOf(position: bigint,query: SearchQuery,limit = 128): Promise<HistoricalPage> {return this.call("as-of-search",{position:position.toString(),query,limit});}
   readRevision(key: Uint8Array | string): Promise<RevisionRead> {return this.call("read-revision",{key:hex(key)});}
   writeRevision(revision: string,value: Uint8Array | string | null): Promise<Receipt> {return this.call("write-revision",{revision,value:value===null ? null : hex(value)});}
   subscribe(query: Query): Promise<Session> {return this.call("query",query);}
@@ -105,6 +138,7 @@ export class Client {
   searchIndex(name: string,value: Scalar): Promise<{position:string;indexed:boolean;rows:Row[]}> {return this.call("index-search",{name,value});}
   dropIndex(name: string): Promise<unknown> {return this.call("index-drop",{name});}
   search(query: SearchQuery): Promise<SearchResult> {return this.call("search",query);}
+  searchDiagnostics(query: SearchQuery): Promise<ExplainedSearchResult> {return this.call("search",query);}
   compactionAdvice(retainCommits: bigint): Promise<unknown> {return this.call("compaction-advice",{retain_commits:retainCommits.toString()});}
   /** Yield one complete page at a time. Persist rows and token before requesting another.
    * A cancellation after a write is not an abort. No transport retry or implicit resnapshot. */

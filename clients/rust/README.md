@@ -3,8 +3,14 @@
 Bounded synchronous HTTP client for a local Polybase console. This crate contains
 the standalone client and depends on `serde` and `serde_json`. It does not contain
 the private database engine or a hosted service. Requires Rust 1.89 or newer and
-a separately installed Polybase console; version 0.8.2 is the release
+a separately installed Polybase console; version 0.9.0 is the release
 qualification target.
+
+The published registry SDK is **0.8.3**, qualified against console 0.8.2.
+This checkout prepares the **0.9.0 Janus candidate**, which has not been
+published to the registries. The install command below uses the published
+SDK; Janus methods require building this candidate source or a verified
+future 0.9.0 publication.
 
 ```sh
 cargo add polybase-client@0.8.3
@@ -72,3 +78,25 @@ See the [Polybase documentation](https://base.polymathlabs.xyz/docs) for server
 installation, limits and protocol guarantees. Client terms are in `LICENSE`.
 The public [client source](https://github.com/ihabshea/polybase-downloads/tree/main/clients/rust)
 and release tags allow comparison with the registry archive; the engine is private.
+
+Janus adds `get_as_of(position, key)`, `query_as_of(position, query, cursor, limit)`
+and `search_as_of(position, search_query, limit)` for read-only retained-history
+queries. `query_range_as_of` accepts explicit included/excluded hexadecimal key
+bounds. Responses retain the exact decimal `position` and provide `JanusExplain`:
+chosen plan, estimated rows, measured examined/returned rows, selection/fallback
+reasons, and execution counters. `execution_stats.planning_rows` counts examined
+index-definition metadata rows (plus current-head definition-coverage work); byte counters describe logical data examined,
+not disk I/O. `explain_as_of` executes the same historical
+query path. Historical scalar search preserves the existing `SearchQuery` scalar
+semantics; paginated `Query::json` uses typed numeric equality (`1` equals `1.0`).
+Historical search returns the complete result within `limit`, reports a capacity
+error if it cannot fit, and always has `next: None`; query pages support cursors.
+
+Keep the requested position and query with a returned historical cursor. Pass all
+three on continuation. HTTP 410 `history_expired` requires an application choice;
+the SDK never replaces the request with a current-head read. HTTP 400 reports an
+nonexistent/future position or an incompatible cursor. An absent key is a successful
+response with `value: None`; an empty historical query has an empty `rows` array.
+`search_diagnostics` adds typed current-head search diagnostics while the existing
+`SearchResult` shape stays unchanged. New Janus methods require a 0.9 server. Existing methods remain compatible with
+older servers and registry package exports are unchanged.

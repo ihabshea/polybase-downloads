@@ -1,0 +1,15 @@
+
+running 6 tests
+test reducer_preserves_failure_category_and_removes_all_irrelevant_operations ... ok
+test replay_saved_fault_workload ... ok
+test seeded_generation_selection_preserves_meaning_or_expires_explicitly ... ok
+test seeded_recovery_selection_and_cleanup_keep_exact_retained_history ... ok
+test seeded_sigkill_commit_boundaries_preserve_historical_prefixes ... ok
+test seeded_sigkill_named_retry_has_one_event_and_exact_history ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+   Compiling polybase-engine v0.9.0 (/workspace/polybase/crates/engine)
+   Compiling polybase-cli v0.9.0 (/workspace/polybase/crates/cli)
+    Finished `release` profile [optimized] target(s) in 23.35s
+     Running tests/janus_faults.rs (target/release/deps/janus_faults-9419dc39920fc53c)
