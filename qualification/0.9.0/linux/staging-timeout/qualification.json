@@ -1,0 +1,72 @@
+{
+  "source_commit": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "platform": "Linux-6.6.32-linuxkit-x86_64-with-glibc2.35",
+  "execution_mode": "Linux amd64 Ubuntu 22.04 under Docker emulation on Apple Silicon; network disabled",
+  "old_archive_sha256": "dbec2441bde1cb880c931459ff8b23c14aa68accb5fcb154d587ede00a88eb10",
+  "checks": [
+    {
+      "name": "package",
+      "command": [
+        "python3",
+        "/source/scripts/package-release.py",
+        "--target",
+        "x86_64-unknown-linux-gnu",
+        "--output",
+        "/source/target/evaluation-release-0.9/linux"
+      ],
+      "exit_code": 0,
+      "seconds": 405.08,
+      "log": "package.log"
+    },
+    {
+      "name": "runtime",
+      "command": [
+        "python3",
+        "/source/scripts/verify-release.py",
+        "/source/target/evaluation-release-0.9/linux/polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz",
+        "--runtime",
+        "--report",
+        "/source/target/evaluation-release-0.9/linux/acceptance.json"
+      ],
+      "exit_code": 0,
+      "seconds": 9.24,
+      "log": "runtime.log"
+    },
+    {
+      "name": "archive-safety",
+      "command": [
+        "python3",
+        "/source/scripts/test-release-package.py",
+        "/source/target/evaluation-release-0.9/linux/polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz"
+      ],
+      "exit_code": 0,
+      "seconds": 14.16,
+      "log": "archive-safety.log"
+    },
+    {
+      "name": "documentation",
+      "command": [
+        "python3",
+        "/source/website/verify-examples.py",
+        "/source/target/evaluation-release-0.9/linux/polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz",
+        "--report",
+        "/source/target/evaluation-release-0.9/linux/documentation-examples.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.59,
+      "log": "documentation.log"
+    },
+    {
+      "name": "staging-protection",
+      "command": [
+        "python3",
+        "/source/scripts/test-release-staging.py",
+        "--target",
+        "x86_64-unknown-linux-gnu"
+      ],
+      "exit_code": 1,
+      "seconds": 121.19,
+      "log": "staging-protection.log"
+    }
+  ]
+}

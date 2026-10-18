@@ -4,7 +4,7 @@ Official free evaluation downloads for Polybase, an independent database researc
 
 Get the preview and documentation at **https://base.polymathlabs.xyz/download.html**.
 
-The 0.8.2 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains four executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
+The 0.9.0 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains five executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
 
 Mac executables are ad-hoc signed and not notarized. Linux executables are unsigned. Use disposable data for this experimental preview. The [evaluation license](LICENSE) permits personal or internal evaluation, experimentation and development; production use and commercial redistribution are outside those terms.
 
@@ -49,3 +49,11 @@ Read [the adaptive execution contract](PREVIEW_0_8_2.md),
 Matching clean-source Mac and Linux packages, checksums and runtime receipts are
 in [the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v0.8.2).
 The earlier 0.8 preview remains available in release history.
+
+## 0.9.0 — Project Janus
+
+Read [the release notes](RELEASE_0_9.md), [historical-query contract](JANUS_0_9.md),
+[raw measurements including all target misses](benchmarks/0.9.0/results.json) and
+[platform qualification](qualification/0.9.0/README.md). Matching clean-source Mac
+and Linux archives are in [the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v0.9.0).
+Published SDK install versions remain 0.8.3; SDK 0.9.0 helpers remain unpublished.

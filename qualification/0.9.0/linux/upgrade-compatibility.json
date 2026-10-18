@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "fixture": "deterministic 100-record bidirectional upgrade",
+  "platform": "Linux-6.6.32-linuxkit-x86_64-with-glibc2.35",
+  "old_source": "2a8fd5c95ade14b05be9cfd66c419c0d68b6500f",
+  "new_source": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "old_archive_sha256": "dbec2441bde1cb880c931459ff8b23c14aa68accb5fcb154d587ede00a88eb10",
+  "new_archive_sha256": "39b1970d6d2fc51839f125380d67d5b9ab70436c2bb55add9525b7a05b87e416",
+  "checks": [
+    "0.9 reads published 0.8.2 WAL/index definitions, typed numeric results and historical cursor without drift",
+    "discarded 0.8.2 named acknowledgment reconciles and retries under 0.9 without a second commit",
+    "0.8.2 subscription resumes the complete ordered two-key transaction under 0.9",
+    "old revision tokens preserve stale-write rejection and 0.9 checkpoint retains the original historical answer",
+    "0.8.2 reopens 0.9 checkpoint/WAL, retries the original request, resumes a 0.9 cursor and writes normally",
+    "old and new CLI expose exactly identical ordered commit events after bidirectional writes",
+    "compaction preserves the retained floor answer and both versions explicitly reject expired old cursors"
+  ]
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/source/scripts/test-release-staging.py", line 19, in <module>
+    reply = subprocess.run(["python3", str(ROOT / "scripts/package-release.py"),
+  File "/usr/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1154, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 2022, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.10/subprocess.py", line 1198, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['python3', '/source/scripts/package-release.py', '--target', 'x86_64-unknown-linux-gnu', '--output', '/tmp/polybase-staging-boundary-zrkg3y2h/staging', '--allow-dirty']' timed out after 120 seconds

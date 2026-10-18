@@ -1,0 +1,153 @@
+{
+  "source_commit": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "platform": "Linux-6.6.32-linuxkit-x86_64-with-glibc2.35",
+  "execution_mode": "Linux amd64 Ubuntu 22.04 under Docker emulation on Apple Silicon; network disabled",
+  "old_archive_sha256": "dbec2441bde1cb880c931459ff8b23c14aa68accb5fcb154d587ede00a88eb10",
+  "checks": [
+    {
+      "name": "package",
+      "command": [
+        "python3",
+        "$SOURCE/scripts/package-release.py",
+        "--target",
+        "x86_64-unknown-linux-gnu",
+        "--output",
+        "$SOURCE/target/evaluation-release-0.9/linux"
+      ],
+      "exit_code": 0,
+      "seconds": 405.08,
+      "log": "package.log"
+    },
+    {
+      "name": "runtime",
+      "command": [
+        "python3",
+        "$SOURCE/scripts/verify-release.py",
+        "$SOURCE/target/evaluation-release-0.9/linux/polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz",
+        "--runtime",
+        "--report",
+        "$SOURCE/target/evaluation-release-0.9/linux/acceptance.json"
+      ],
+      "exit_code": 0,
+      "seconds": 9.24,
+      "log": "runtime.log"
+    },
+    {
+      "name": "archive-safety",
+      "command": [
+        "python3",
+        "$SOURCE/scripts/test-release-package.py",
+        "$SOURCE/target/evaluation-release-0.9/linux/polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz"
+      ],
+      "exit_code": 0,
+      "seconds": 14.16,
+      "log": "archive-safety.log"
+    },
+    {
+      "name": "documentation",
+      "command": [
+        "python3",
+        "$SOURCE/website/verify-examples.py",
+        "$SOURCE/target/evaluation-release-0.9/linux/polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz",
+        "--report",
+        "$SOURCE/target/evaluation-release-0.9/linux/documentation-examples.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.59,
+      "log": "documentation.log"
+    },
+    {
+      "name": "rebuild-diagnostic",
+      "command": [
+        "cargo",
+        "build",
+        "-vv",
+        "--release",
+        "--locked",
+        "-p",
+        "polybase-cli",
+        "--no-default-features",
+        "--target",
+        "x86_64-unknown-linux-gnu",
+        "--bin",
+        "polybase",
+        "--bin",
+        "polybase-console",
+        "--bin",
+        "polybase-node",
+        "--bin",
+        "polybase-cluster-console",
+        "--bin",
+        "polybase-stdio"
+      ],
+      "exit_code": 0,
+      "seconds": 9.61,
+      "log": "rebuild-diagnostic.log"
+    },
+    {
+      "name": "staging-protection",
+      "command": [
+        "python3",
+        "$SOURCE/scripts/test-release-staging.py",
+        "--target",
+        "x86_64-unknown-linux-gnu"
+      ],
+      "exit_code": 0,
+      "seconds": 3.13,
+      "log": "staging-protection.log"
+    },
+    {
+      "name": "upgrade",
+      "command": [
+        "python3",
+        "$TOOLS/upgrade-check.py",
+        "--old-package",
+        "/old/polybase-0.8.2-x86_64-unknown-linux-gnu.tar.gz",
+        "--new-package",
+        "$SOURCE/target/evaluation-release-0.9/linux/polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz",
+        "--old-verifier",
+        "$TOOLS/verify-release-0.8.2.py",
+        "--new-verifier",
+        "$SOURCE/scripts/verify-release.py",
+        "--report",
+        "$SOURCE/target/evaluation-release-0.9/linux/upgrade-compatibility.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.93,
+      "log": "upgrade.log"
+    },
+    {
+      "name": "glibc-symbols",
+      "command": [
+        "python3",
+        "$TOOLS/glibc-symbols.py",
+        "$SOURCE/target/evaluation-release-0.9/linux/polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz",
+        "--verifier",
+        "$SOURCE/scripts/verify-release.py",
+        "--report",
+        "$SOURCE/target/evaluation-release-0.9/linux/glibc-symbols.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.67,
+      "log": "glibc-symbols.log"
+    }
+  ],
+  "initial_failed_checks": [
+    {
+      "name": "staging-protection",
+      "command": [
+        "python3",
+        "/source/scripts/test-release-staging.py",
+        "--target",
+        "x86_64-unknown-linux-gnu"
+      ],
+      "exit_code": 1,
+      "seconds": 121.19,
+      "log": "staging-timeout/staging-protection.log"
+    }
+  ],
+  "passed": true,
+  "archive_sha256": "39b1970d6d2fc51839f125380d67d5b9ab70436c2bb55add9525b7a05b87e416",
+  "staging_retry_note": "Two unchanged 120-second checks timed out during release compilation under emulation. A verbose build completed the missing binary, then the original unchanged 120-second staging test passed. The frozen source, test assertions, test deadline and candidate archive were preserved.",
+  "command_path_note": "Absolute local paths are displayed with portable SOURCE and TOOLS aliases; original logs are retained privately."
+}

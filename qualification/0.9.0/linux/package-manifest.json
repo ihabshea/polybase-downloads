@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "product": "Polybase",
+  "version": "0.9.0",
+  "target": "x86_64-unknown-linux-gnu",
+  "requirements": "x86-64 Linux, glibc 2.35+ (Ubuntu 22.04+)",
+  "source_commit": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "source_dirty": false,
+  "build_features": [],
+  "build_command": [
+    "cargo",
+    "build",
+    "--release",
+    "--locked",
+    "-p",
+    "polybase-cli",
+    "--no-default-features",
+    "--target",
+    "x86_64-unknown-linux-gnu",
+    "--bin",
+    "polybase",
+    "--bin",
+    "polybase-console",
+    "--bin",
+    "polybase-node",
+    "--bin",
+    "polybase-cluster-console",
+    "--bin",
+    "polybase-stdio"
+  ],
+  "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)\nbinary: rustc\ncommit-hash: b940084d7eb6a299eb4bfeb8e34901bc051e7ac4\ncommit-date: 2026-09-28\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.0\nLLVM version: 23.1.1",
+  "cargo": "cargo 1.99.0 (5f94df478 2026-08-27)",
+  "build_platform": "Linux-6.6.32-linuxkit-x86_64-with-glibc2.35",
+  "signing": "unsigned",
+  "dependencies": [
+    {
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/rust-lang/cfg-if",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+        }
+      ]
+    },
+    {
+      "name": "crc32fast",
+      "version": "1.5.2",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/srijs/rust-crc32fast",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "61d383b05b87d78f94d2937e2580cce47226d17823c0430fbcad09596537efcf"
+        }
+      ]
+    },
+    {
+      "name": "itoa",
+      "version": "1.0.18",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/dtolnay/itoa",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.3",
+      "license": "Unlicense OR MIT",
+      "repository": "https://github.com/BurntSushi/memchr",
+      "notice_files": [
+        {
+          "name": "COPYING",
+          "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+        }
+      ]
+    },
+    {
+      "name": "proc-macro2",
+      "version": "1.0.107",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/dtolnay/proc-macro2",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    },
+    {
+      "name": "quote",
+      "version": "1.0.47",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/dtolnay/quote",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    },
+    {
+      "name": "serde",
+      "version": "1.0.229",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/serde-rs/serde",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    },
+    {
+      "name": "serde_core",
+      "version": "1.0.229",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/serde-rs/serde",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    },
+    {
+      "name": "serde_derive",
+      "version": "1.0.229",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/serde-rs/serde",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    },
+    {
+      "name": "serde_json",
+      "version": "1.0.154",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/serde-rs/json",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    },
+    {
+      "name": "syn",
+      "version": "3.0.8",
+      "license": "MIT OR Apache-2.0",
+      "repository": "https://github.com/dtolnay/syn",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    },
+    {
+      "name": "unicode-ident",
+      "version": "1.0.26",
+      "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "repository": "https://github.com/dtolnay/unicode-ident",
+      "notice_files": [
+        {
+          "name": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "name": "LICENSE-UNICODE",
+          "sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1"
+        }
+      ]
+    },
+    {
+      "name": "zmij",
+      "version": "1.0.23",
+      "license": "MIT",
+      "repository": "https://github.com/dtolnay/zmij",
+      "notice_files": [
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "GUARANTEES.md",
+      "bytes": 39603,
+      "sha256": "db9a846fac3d764778e6d776289feaacd11677d289c5814a79eb17f938af315d",
+      "mode": "0o644"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1271,
+      "sha256": "53f54a1307ec6e7caf5d2081218cb563893605722602d5a52a77c204cab2c7a8",
+      "mode": "0o644"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9163,
+      "sha256": "4325a6d65df74b450a17a317abf7a34fdcf08b30455e777326e185f24ec91697",
+      "mode": "0o644"
+    },
+    {
+      "path": "REPLICATION.md",
+      "bytes": 4588,
+      "sha256": "5248fddc262099d2be365b1939a2a2e732d45267cfe5abf323c75795816a4018",
+      "mode": "0o644"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 128201,
+      "sha256": "293e14d03a2732bae0523c71826a9f61a36115b0cd491d2b2adba8d4996b7378",
+      "mode": "0o644"
+    },
+    {
+      "path": "bin/polybase",
+      "bytes": 860264,
+      "sha256": "201b611f45b2fa9663dd28577820cb1c3ba096c31d978e11828f76e0bde213ff",
+      "mode": "0o755"
+    },
+    {
+      "path": "bin/polybase-cluster-console",
+      "bytes": 1595896,
+      "sha256": "337e4adf883bfe1b7bdeb6fedc9d55623588ae30f225ef6f04c7e843386a184b",
+      "mode": "0o755"
+    },
+    {
+      "path": "bin/polybase-console",
+      "bytes": 3193264,
+      "sha256": "7745a5f549d2a3a12a06d2d31354d726e829dc18dfa8ba44c5f1665fc8f2f023",
+      "mode": "0o755"
+    },
+    {
+      "path": "bin/polybase-node",
+      "bytes": 2391080,
+      "sha256": "c5c2bbaa8192b7e0675144d4ed86a736c48df7ad0ea8dde3da627ae4ef2f074c",
+      "mode": "0o755"
+    },
+    {
+      "path": "bin/polybase-stdio",
+      "bytes": 1113992,
+      "sha256": "4770823c38163916a27b30ca00d7551444652ed4c3ff18ef2e0b01b1e32f879b",
+      "mode": "0o755"
+    },
+    {
+      "path": "clients/README.md",
+      "bytes": 4055,
+      "sha256": "b7a36631ba4b53706005e6bccb20b1bc2241b73274eccb5d448142f19cf7387c",
+      "mode": "0o644"
+    },
+    {
+      "path": "clients/rust/src/lib.rs",
+      "bytes": 16932,
+      "sha256": "88cf8d7ab466044850e60e8a20a833279c636d2836064b71000d4cfbc6b34572",
+      "mode": "0o644"
+    },
+    {
+      "path": "clients/typescript/client.ts",
+      "bytes": 12299,
+      "sha256": "dea178c87d6f18d418427a87ef244001a26ec5fd0c2b6958495793affca431e1",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/JANUS_0_9.md",
+      "bytes": 15503,
+      "sha256": "02a410212dc09c54e93bb817dc38f0cec5c8921052bdc57b14f1b992f14e47db",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/PREVIEW_0_7.md",
+      "bytes": 13800,
+      "sha256": "7245f67ea6bf0fee88b2cb9e33b9120800b7942678ca9d33326cdc30eeaeea92",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/PREVIEW_0_8.md",
+      "bytes": 10158,
+      "sha256": "a05c3e6085663d4675fffe7044f7e7700526b6ecf57bd25c4418ee80e424d73a",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/PREVIEW_0_8_2.md",
+      "bytes": 14641,
+      "sha256": "6e3b2eb2ca8e4515d1f4e1cc85a0db7accc5a22eb850abb418c2d2cc8b472d34",
+      "mode": "0o644"
+    },
+    {
+      "path": "docs/SEARCH.md",
+      "bytes": 4095,
+      "sha256": "642cb6e423b7533a52d0888c22eef0b83dfa5f8f94d9e43e7ace15c5b264d1b6",
+      "mode": "0o644"
+    },
+    {
+      "path": "scripts/cluster_driver.py",
+      "bytes": 5113,
+      "sha256": "6242d22be6ee1d69d4f932de2910fbda06aa2a901a09ee2527aafa7d76d17119",
+      "mode": "0o644"
+    },
+    {
+      "path": "scripts/fault-lab-v2.py",
+      "bytes": 5369,
+      "sha256": "3d5f5466c0d6751f11f821a7c68c505cfa837547aa3804c1e6838f5798e202b4",
+      "mode": "0o644"
+    },
+    {
+      "path": "scripts/start-local-cluster.py",
+      "bytes": 6208,
+      "sha256": "eb7d5881074c4894f7c41753049636683a49361efd9f78308fa9f4ab5eb23cd6",
+      "mode": "0o644"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "source_commit": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "platform": "macOS-15.1-arm64-arm-64bit",
+  "execution_mode": "native Apple Silicon macOS 15.1",
+  "old_archive_sha256": "688d0d9296a052c1fd6862547a11fde233220b4274bec3c59f30daeb5ecc0d9c",
+  "checks": [
+    {
+      "name": "runtime",
+      "command": [
+        "python3",
+        "$SOURCE/scripts/verify-release.py",
+        "$SOURCE/target/evaluation-release-0.9/mac/polybase-0.9.0-aarch64-apple-darwin.tar.gz",
+        "--runtime",
+        "--report",
+        "$SOURCE/target/evaluation-release-0.9/mac/acceptance.json"
+      ],
+      "exit_code": 0,
+      "seconds": 24.19,
+      "log": "runtime.log"
+    },
+    {
+      "name": "archive-safety",
+      "command": [
+        "python3",
+        "$SOURCE/scripts/test-release-package.py",
+        "$SOURCE/target/evaluation-release-0.9/mac/polybase-0.9.0-aarch64-apple-darwin.tar.gz"
+      ],
+      "exit_code": 0,
+      "seconds": 29.74,
+      "log": "archive-safety.log"
+    },
+    {
+      "name": "documentation",
+      "command": [
+        "python3",
+        "$SOURCE/website/verify-examples.py",
+        "$SOURCE/target/evaluation-release-0.9/mac/polybase-0.9.0-aarch64-apple-darwin.tar.gz",
+        "--report",
+        "$SOURCE/target/evaluation-release-0.9/mac/documentation-examples.json"
+      ],
+      "exit_code": 0,
+      "seconds": 12.98,
+      "log": "documentation.log"
+    },
+    {
+      "name": "staging-protection",
+      "command": [
+        "python3",
+        "$SOURCE/scripts/test-release-staging.py",
+        "--target",
+        "aarch64-apple-darwin"
+      ],
+      "exit_code": 0,
+      "seconds": 7.5,
+      "log": "staging-protection.log"
+    },
+    {
+      "name": "upgrade",
+      "command": [
+        "python3",
+        "-c",
+        "import importlib.util,sys; spec=importlib.util.spec_from_file_location('janus_upgrade',sys.argv[1]); m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m); m.OLD_SHA=sys.argv[2]; sys.argv=sys.argv[3:]; m.main()",
+        "$TOOLS/upgrade-check.py",
+        "688d0d9296a052c1fd6862547a11fde233220b4274bec3c59f30daeb5ecc0d9c",
+        "$TOOLS/upgrade-check.py",
+        "--old-package",
+        "$SOURCE/target/evaluation-release-0.9/old/polybase-0.8.2-aarch64-apple-darwin.tar.gz",
+        "--new-package",
+        "$SOURCE/target/evaluation-release-0.9/mac/polybase-0.9.0-aarch64-apple-darwin.tar.gz",
+        "--old-verifier",
+        "$TOOLS/verify-release-0.8.2.py",
+        "--new-verifier",
+        "$SOURCE/scripts/verify-release.py",
+        "--report",
+        "$SOURCE/target/evaluation-release-0.9/mac/upgrade-compatibility.json"
+      ],
+      "exit_code": 0,
+      "seconds": 25.5,
+      "log": "upgrade.log"
+    }
+  ],
+  "passed": true,
+  "archive_sha256": "f8f984f51e918833873b8782ea839dccabcfd21f9f44bc8da3bdd887e1ebd353",
+  "command_path_note": "Absolute local paths are displayed with portable SOURCE and TOOLS aliases; original logs are retained privately."
+}

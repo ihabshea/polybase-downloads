@@ -1,0 +1,1 @@
+The unchanged 120-second staging check timed out twice while Cargo compiled polybase-engine and polybase-cli. Process inspection observed rustc actively compiling both crates. The candidate archive remains unchanged. Verbose rebuilding and an unchanged-test replay follow.

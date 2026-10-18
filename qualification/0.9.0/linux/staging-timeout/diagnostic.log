@@ -1,0 +1,26 @@
+Captured timed-out child stdout:
+None
+Captured timed-out child stderr:
+   Compiling polybase-engine v0.9.0 (/source/crates/engine)
+   Compiling polybase-cli v0.9.0 (/source/crates/cli)
+
+Traceback (most recent call last):
+  File "/diagnostic.py", line 8, in <module>
+    runpy.run_path(script, run_name='__main__')
+  File "/usr/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/usr/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/source/scripts/test-release-staging.py", line 19, in <module>
+    reply = subprocess.run(["python3", str(ROOT / "scripts/package-release.py"),
+  File "/usr/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1154, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 2022, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.10/subprocess.py", line 1198, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['python3', '/source/scripts/package-release.py', '--target', 'x86_64-unknown-linux-gnu', '--output', '/tmp/polybase-staging-boundary-rf6funn5/staging', '--allow-dirty']' timed out after 120 seconds

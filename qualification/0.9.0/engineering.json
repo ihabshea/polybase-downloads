@@ -1,0 +1,32 @@
+{
+  "source_commit": "5d984edfba44ba313676ca66656f86b213289b2a",
+  "required_checks_passed": true,
+  "all_feature_tests_passed": 227,
+  "minimum_rust": {
+    "version": "1.89.0",
+    "command": "cargo +1.89.0 check --workspace --all-targets --all-features --locked",
+    "exit_code": 0
+  },
+  "hosted_ci": {
+    "passed": false,
+    "runner_steps_executed": false,
+    "reason": "account billing/spending limit",
+    "run_id": 39129401551
+  },
+  "default_feature_engine_tests_passed": 181,
+  "strict_rustdoc_passed": true,
+  "cli_build_passed": true,
+  "typescript_strict_check_passed": true,
+  "typescript_real_server_tests_passed": 3,
+  "node_checks": {
+    "console_handlers": {
+      "passed": true,
+      "tests": 45
+    },
+    "release_guards": {
+      "passed": true,
+      "tests": 5
+    }
+  },
+  "merge_commit": "c5c926ba14ac04e3d4fe2743f34d100272b50195"
+}

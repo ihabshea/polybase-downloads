@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "fixture": "deterministic 100-record bidirectional upgrade",
+  "platform": "macOS-15.1-arm64-arm-64bit",
+  "old_source": "2a8fd5c95ade14b05be9cfd66c419c0d68b6500f",
+  "new_source": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "old_archive_sha256": "688d0d9296a052c1fd6862547a11fde233220b4274bec3c59f30daeb5ecc0d9c",
+  "new_archive_sha256": "f8f984f51e918833873b8782ea839dccabcfd21f9f44bc8da3bdd887e1ebd353",
+  "checks": [
+    "0.9 reads published 0.8.2 WAL/index definitions, typed numeric results and historical cursor without drift",
+    "discarded 0.8.2 named acknowledgment reconciles and retries under 0.9 without a second commit",
+    "0.8.2 subscription resumes the complete ordered two-key transaction under 0.9",
+    "old revision tokens preserve stale-write rejection and 0.9 checkpoint retains the original historical answer",
+    "0.8.2 reopens 0.9 checkpoint/WAL, retries the original request, resumes a 0.9 cursor and writes normally",
+    "old and new CLI expose exactly identical ordered commit events after bidirectional writes",
+    "compaction preserves the retained floor answer and both versions explicitly reject expired old cursors"
+  ]
+}

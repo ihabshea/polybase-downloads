@@ -1,5 +1,9 @@
 # Use the Polybase evaluation download
 
+Project Janus adds read-only historical point, range, JSON and whole-word queries
+at one exact retained commit. See [historical execution](JANUS_0_9.md) for the
+verified horizon, bounded reconstruction, explain output and limitations.
+
 The 0.8.2 optimizer compares bounded scan and indexed execution, combines eligible
 AND/OR predicates, and can restart a query under its original captured head. See
 [adaptive query execution](PREVIEW_0_8_2.md). The earlier
@@ -10,7 +14,7 @@ typed live JSON queries, stable pagination, revisions, online backup and verific
 query metrics, Rust/TypeScript clients, retained historical reads, compaction advice,
 named equality indexes, demand-driven streams and the expanded replication lab.
 
-Polybase 0.8.2 is a free database evaluation preview. The package runs
+Polybase 0.9.0 is a free database evaluation preview. The package runs
 locally without Rust, Cargo, Node, Docker or a cloud account. Its source is private.
 The hosted SaaS is coming soon and is not available in this download.
 
@@ -112,6 +116,16 @@ result together with its cursor; resuming may repeat delivery. Checkpoint keeps
 retained history. Compaction can expire older cursors and named requests. The
 default protection refuses to pass a live subscriber; forced expiry is explicit.
 Storage caps reject writes rather than silently evicting history.
+
+## Optional private-pipe embedding
+
+The fifth executable, `polybase-stdio`, is an optional private parent/child pipe
+for embedding current state. It accepts newline-delimited JSON `info`, `scan`,
+`commit`, `compact` and `close` requests on standard input and emits one reply per
+line. It opens no network listener and never retries a write automatically.
+It does not expose the Janus historical or subscription API; it may compact
+retained WAL before writes once that WAL exceeds 64 MiB. Use the local console
+and documented historical HTTP or Rust API when you need retained time travel.
 
 ## Optional three-node research lab
 
