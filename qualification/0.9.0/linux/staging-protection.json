@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "source_commit": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "archive_sha256": "81b2fefea6e36dfcb726edbad5e4e502018fbd5a67611a23c0bac06f8e0ce83c",
+  "toolchain": "1.99.0",
+  "command": "RUSTUP_TOOLCHAIN=1.99.0 python3 scripts/test-release-staging.py --target x86_64-unknown-linux-gnu",
+  "stdout": "PASS: dangling checksum symlink refused; no write outside staging\n",
+  "scope": "Output staging refusal uses a rehearsal child; the qualified archive was built clean without --allow-dirty."
+}

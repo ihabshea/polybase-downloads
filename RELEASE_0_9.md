@@ -46,6 +46,12 @@ not hardware power-loss evidence.
 
 ## Publication status
 
+The [Linux and SDK candidate receipts](qualification/0.9.0/README.md) now include
+native Ubuntu 22.04/glibc 2.35 acceptance, archive/documentation checks and
+bidirectional upgrade tests with the genuinely published 0.8.2 release. Candidate
+SDK packages pass against that extracted native console. Neither candidate has
+been published as a new download or registry version.
+
 This is candidate source and measured evidence, not a claim that Janus is
 downloadable or deployed. Matching native Apple Silicon Mac and Linux archives,
 runtime receipts, public byte verification and website deployment must complete

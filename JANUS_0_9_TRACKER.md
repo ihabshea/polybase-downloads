@@ -27,4 +27,6 @@ The database package version is `0.9.0`. Earlier 0.8.2 artifacts and receipts ca
 
 The production website guard remains enabled and now also requires the complete valid measured matrix with all target misses published. A local website preview and an unpublished package are review artifacts, not a deployed website or downloadable release. The existing live 0.8.2 release and published SDK 0.8.3 remain available.
 
-Native Mac qualification is pending. Hosted CI previously failed before runner steps because of account billing/spending limits; no hosted pass is claimed. This environment has no Sites deployment capability and no registry publication credentials. Linux candidate qualification and public benchmark/source publication can proceed independently.
+Native Mac qualification is pending. Hosted CI previously failed before runner steps because of account billing/spending limits; no hosted pass is claimed. This environment has no Sites deployment capability and no registry publication credentials. Native Linux qualification passes on the host and Ubuntu 22.04/glibc 2.35; public source and benchmark evidence are pushed for review. Matching Mac artifacts and final publication remain pending.
+
+Detailed native Linux/SDK receipts and the remaining publication actions are recorded in [the qualification status](qualification/0.9.0/README.md).

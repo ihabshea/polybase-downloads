@@ -1,0 +1,10 @@
+{
+  "base": "ubuntu:22.04@sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956",
+  "image_id": "sha256:bc046274091614dbaba895987fb38ac7c9d070397a63bad7df29ac735d2b3a36",
+  "architecture": "amd64",
+  "os": "linux",
+  "dockerfile_sha256": "b5bdd2a864f419a9d03cc394ada809d5bcf93761502f98335f7d44747d9284b8",
+  "package_inventory_sha256": "83e863cad0a0aaef2218e426a598e77ebacb9f60ca7d98f6c26f85e2a7fd5dad",
+  "runtime_network": "none",
+  "build_trust": "Managed proxy configuration preserved; system and proxy CAs supplied as BuildKit secret mounts with HTTPS verification enabled."
+}
