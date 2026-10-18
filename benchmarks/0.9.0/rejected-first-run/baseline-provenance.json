@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "version": "0.8.2",
+  "source_sha": "ce4daf3db59b570895022b136ebdfbae1665ffec",
+  "engine_git_tree": "70747bd5f8cd596e794c619c79c470a09a95976a",
+  "engine_source_origin": "read-only git archive; only the two recorded benchmark source files added",
+  "benchmark_source_sha256": {
+    "crates/engine/examples/historical_current_baseline.rs": "0144f6c81ec8d7dfb7918ce5f6b310a03b87dc1444b240d7a98a6eba23dba0e1",
+    "crates/engine/examples/janus_bench_support/mod.rs": "c64ae4a22a443bf48e252fab40a9da9cabe1edafbaaec6dfd701f9d47ddc4f6b"
+  },
+  "executable_sha256": "5b3d6ab016ac7c4907331dfe28d9ec3272989a13bb155bda9965388c5c3526a1",
+  "rust": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "rustflags": {
+    "RUSTFLAGS": null,
+    "CARGO_ENCODED_RUSTFLAGS": null
+  },
+  "profile": "release",
+  "build_command": "cargo build --release --locked -p polybase-engine --example historical_current_baseline",
+  "configuration": {
+    "sizes": [
+      1000,
+      10000,
+      100000
+    ],
+    "warm_samples": 31,
+    "cold_samples": 5,
+    "warmups": 3,
+    "retained_commits": 128,
+    "updates_per_commit": 16,
+    "historical_depths_from_retained_base": [
+      0,
+      64,
+      127
+    ],
+    "equality": "group == 1 (approximately 1%; exact cardinalities reported)",
+    "narrow_range_keys": 64,
+    "point": "records/{floor(records/3):06}",
+    "text": "amber history; both whole words",
+    "max_index_bytes": 268435456,
+    "max_result_rows": 100000,
+    "max_result_bytes": 67108864,
+    "max_wal_bytes": 268435456,
+    "current_head_regression": "31 alternating old/new pairs per size and query; compare both p50 and p95, identical current query_page/search APIs, same fixed data and retained history"
+  }
+}

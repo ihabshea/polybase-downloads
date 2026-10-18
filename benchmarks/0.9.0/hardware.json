@@ -1,0 +1,22 @@
+{
+  "captured_utc": "2026-10-18T12:30:57.572497+00:00",
+  "machine": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "cpu": {
+    "vendor_id": "GenuineIntel",
+    "cpu family": "6",
+    "model": "207",
+    "model name": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "stepping": "2",
+    "microcode": "0x1",
+    "cache size": "266240 KB"
+  },
+  "affinity_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "affinity_control": "inherited session affinity, no per-process CPU pinning; scheduler and shared-host load uncontrolled",
+  "ram_bytes": 35743760384
+}

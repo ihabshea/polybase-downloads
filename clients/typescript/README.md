@@ -3,7 +3,13 @@
 Typed HTTP client for a local Polybase console. This package contains compiled
 ES modules and TypeScript declarations. It does not contain the database engine
 or a hosted service. Requires Node.js 24 or newer and a separately installed
-Polybase console; version 0.8.2 is the release qualification target.
+Polybase console; version 0.9.0 is the release qualification target.
+
+The published registry SDK is **0.8.3**, qualified against console 0.8.2.
+This checkout prepares the **0.9.0 Janus candidate**, which has not been
+published to the registries. The install command below uses the published
+SDK; Janus methods require building this candidate source or a verified
+future 0.9.0 publication.
 
 ```sh
 npm install @polymathbase/polybase-client@0.8.3
@@ -69,3 +75,26 @@ See the [Polybase documentation](https://base.polymathlabs.xyz/docs) for server
 installation, limits and protocol guarantees. Client terms are in `LICENSE`.
 The public [client source](https://github.com/ihabshea/polybase-downloads/tree/main/clients/typescript)
 and release tags allow comparison with the registry archive; the engine is private.
+
+Janus adds `getAsOf(position, key)`, `queryAsOf(position, query, cursor, limit)`
+and `searchAsOf(position, searchQuery, limit)`. Positions are `bigint` inputs and
+canonical decimal strings on the wire. `queryAsOf` also accepts optional explicit
+byte-key bounds, for example `{start: {included: hex('tasks/a')}, end: {excluded:
+hex('tasks/z')}}`. `explainAsOf` executes the same historical query path.
+
+Historical replies provide `JanusExplain`: chosen strategy, estimated rows,
+measured examined/returned rows, reasons, captured position, timings, candidates,
+and bytes examined. `execution_stats.planning_rows` counts examined index-definition
+metadata rows (plus current-head definition-coverage work); byte counters describe logical data examined, not disk I/O.
+Historical scalar search preserves `SearchQuery` semantics;
+paginated typed JSON equality treats `1` and `1.0` as equal. Historical search
+returns the complete result within `limit`, reports a capacity error if it cannot
+fit, and always has `next: null`; query pages support cursors.
+
+Keep the original position and query with a historical cursor. HTTP 410
+`history_expired` requires an application choice; the SDK never switches to a
+current-head read. An absent key succeeds with `value: null`, while an empty
+query succeeds with `rows: []`. `searchDiagnostics` exposes a required typed explain report for current-head
+search; the old `search` response type adds it as an optional field. New Janus
+methods require a 0.9 server. Existing
+methods and compiled package exports remain backward compatible.

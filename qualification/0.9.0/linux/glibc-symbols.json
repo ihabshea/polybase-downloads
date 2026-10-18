@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "source_commit": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "archive_sha256": "81b2fefea6e36dfcb726edbad5e4e502018fbd5a67611a23c0bac06f8e0ce83c",
+  "declared_glibc_minimum": "2.35",
+  "binaries": [
+    {
+      "binary": "polybase",
+      "max_glibc_symbol": "2.34",
+      "versioned_requirements": [
+        "GLIBC_2.14",
+        "GLIBC_2.16",
+        "GLIBC_2.18",
+        "GLIBC_2.2.5",
+        "GLIBC_2.28",
+        "GLIBC_2.3",
+        "GLIBC_2.3.4",
+        "GLIBC_2.30",
+        "GLIBC_2.32",
+        "GLIBC_2.33",
+        "GLIBC_2.34",
+        "GLIBC_2.4"
+      ]
+    },
+    {
+      "binary": "polybase-console",
+      "max_glibc_symbol": "2.34",
+      "versioned_requirements": [
+        "GLIBC_2.10",
+        "GLIBC_2.14",
+        "GLIBC_2.16",
+        "GLIBC_2.17",
+        "GLIBC_2.18",
+        "GLIBC_2.2.5",
+        "GLIBC_2.27",
+        "GLIBC_2.28",
+        "GLIBC_2.3",
+        "GLIBC_2.3.4",
+        "GLIBC_2.30",
+        "GLIBC_2.32",
+        "GLIBC_2.33",
+        "GLIBC_2.34",
+        "GLIBC_2.4",
+        "GLIBC_2.5"
+      ]
+    },
+    {
+      "binary": "polybase-node",
+      "max_glibc_symbol": "2.34",
+      "versioned_requirements": [
+        "GLIBC_2.10",
+        "GLIBC_2.14",
+        "GLIBC_2.16",
+        "GLIBC_2.17",
+        "GLIBC_2.18",
+        "GLIBC_2.2.5",
+        "GLIBC_2.28",
+        "GLIBC_2.3",
+        "GLIBC_2.3.4",
+        "GLIBC_2.30",
+        "GLIBC_2.32",
+        "GLIBC_2.33",
+        "GLIBC_2.34",
+        "GLIBC_2.4"
+      ]
+    },
+    {
+      "binary": "polybase-cluster-console",
+      "max_glibc_symbol": "2.34",
+      "versioned_requirements": [
+        "GLIBC_2.10",
+        "GLIBC_2.14",
+        "GLIBC_2.16",
+        "GLIBC_2.17",
+        "GLIBC_2.18",
+        "GLIBC_2.2.5",
+        "GLIBC_2.28",
+        "GLIBC_2.3",
+        "GLIBC_2.3.4",
+        "GLIBC_2.30",
+        "GLIBC_2.32",
+        "GLIBC_2.33",
+        "GLIBC_2.34"
+      ]
+    },
+    {
+      "binary": "polybase-stdio",
+      "max_glibc_symbol": "2.34",
+      "versioned_requirements": [
+        "GLIBC_2.14",
+        "GLIBC_2.16",
+        "GLIBC_2.18",
+        "GLIBC_2.2.5",
+        "GLIBC_2.28",
+        "GLIBC_2.3",
+        "GLIBC_2.3.4",
+        "GLIBC_2.30",
+        "GLIBC_2.32",
+        "GLIBC_2.33",
+        "GLIBC_2.34",
+        "GLIBC_2.4"
+      ]
+    }
+  ],
+  "scope": "ELF version-needs inspection; actual glibc 2.35 execution is recorded separately"
+}

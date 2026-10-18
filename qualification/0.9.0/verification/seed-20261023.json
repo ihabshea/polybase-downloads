@@ -1,0 +1,31 @@
+{
+  "correctness_verified": true,
+  "engine_version": "0.9.0",
+  "schema": 1,
+  "seed": 20261023,
+  "verification": {
+    "coverage": {
+      "aba_conflict": 11,
+      "atomic_batch": 7,
+      "capture_cursor": 12,
+      "capture_resume": 11,
+      "compact": 12,
+      "continue_cursor": 9,
+      "expected_conflict": 8,
+      "expected_success": 6,
+      "full_checkpoint": 6,
+      "historical": 39,
+      "incremental_checkpoint": 7,
+      "lost_ack_named_retry": 7,
+      "overlap_conflict": 13,
+      "reopen": 11,
+      "resume": 5,
+      "write": 36
+    },
+    "expired_cursor_checks": 2,
+    "final_head": 92,
+    "historical_checks": 115,
+    "operations": 200,
+    "retention_floor": 91
+  }
+}

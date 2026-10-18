@@ -1,0 +1,69 @@
+{
+  "qualification": false,
+  "reason": "Source fingerprint changed during the complete measured run. Both ignored TypeScript SDK dist files were regenerated during the source freeze; root observed mtime12:22:36.",
+  "source_sha_at_start": "3a0067c68a81978075bf5decc94e35822f9b18e3",
+  "source_sha_at_rejection": "3a0067c68a81978075bf5decc94e35822f9b18e3",
+  "source_tree_sha256_before": null,
+  "source_tree_sha256_after": null,
+  "unavailable_digest_reason": "Original runner held both digest values in memory and asserted before writing results; it did not print the values. Unknown original hashes remain null. Runner now persists source-provenance.json for later runs.",
+  "current_tree_digest_observed_later": "e79b100c121be3ea6a720565fce1fba5b6b13d4d9ca0af693a18ece668e85beb",
+  "current_tree_digest_observed_utc": "2026-10-18T12:26:22.427068+00:00",
+  "later_digest_warning": "This later digest includes post-rejection diagnostic/harness edits and is not the digest at rejection.",
+  "regenerated_files": [
+    {
+      "path": "clients/typescript/dist/client.js",
+      "mtime_utc": "2026-10-18T12:22:36.380769+00:00",
+      "sha256": "a0c6a88acf1281301fc17dca84af2338a755c977aff3617576b89da354649468"
+    },
+    {
+      "path": "clients/typescript/dist/client.d.ts",
+      "mtime_utc": "2026-10-18T12:22:36.404768+00:00",
+      "sha256": "49ee6a80fc9939333f635059572e804b73765900735b77dbdac2df4c63a4b336"
+    }
+  ],
+  "measured_executable_sha256": "f323b72197198e4cebf41d3affff9f39e4ee7ce57a670580373cf45fcc2da4d7",
+  "counterexamples": [
+    {
+      "records": 1000,
+      "workload": "point",
+      "current_over_baseline_p50": 1.3442842775729131,
+      "current_over_baseline_p95": 1.1890881913303437,
+      "target": "both <=1.1"
+    },
+    {
+      "records": 1000,
+      "workload": "json_equality",
+      "current_over_baseline_p50": 1.4596865292290315,
+      "current_over_baseline_p95": 0.744623200677392,
+      "target": "both <=1.1"
+    },
+    {
+      "records": 1000,
+      "workload": "narrow_range",
+      "current_over_baseline_p50": 1.2802547770700639,
+      "current_over_baseline_p95": 1.0941474132765163,
+      "target": "both <=1.1"
+    },
+    {
+      "records": 1000,
+      "workload": "text",
+      "current_over_baseline_p50": 1.447493325422723,
+      "current_over_baseline_p95": 1.293175752954632,
+      "target": "both <=1.1"
+    }
+  ],
+  "historical_target_misses": [],
+  "raw_dataset_files": [
+    "current-1000.json",
+    "historical-1000.json",
+    "current-10000.json",
+    "historical-10000.json",
+    "current-100000.json",
+    "historical-100000.json"
+  ],
+  "complete_measured_cases": {
+    "historical": 36,
+    "current_head": 12
+  },
+  "preservation": "All samples and all misses retained; this report is not release qualification. rejected-run.json contains complete unqualified raw evidence."
+}

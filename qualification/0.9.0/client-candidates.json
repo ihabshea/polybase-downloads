@@ -1,0 +1,83 @@
+{
+  "source_public_sha": "ba784366f9fe2a8a6bb9b233ea8113904c523b1c",
+  "source_public_tree_clean_before_and_after_packages": true,
+  "cargo_vcs_info": {
+    "git": {
+      "sha1": "ba784366f9fe2a8a6bb9b233ea8113904c523b1c"
+    },
+    "path_in_vcs": "clients/rust"
+  },
+  "cargo_source_dirty": false,
+  "packages": [
+    {
+      "file": "polybase-client-0.9.0.crate",
+      "bytes": 9988,
+      "sha256": "7bd77a2e7d64a1b866ea4a4b1d9b735a9ef0cad9c089847369e881af279a0310"
+    },
+    {
+      "file": "polymathbase-polybase-client-0.9.0.tgz",
+      "bytes": 7861,
+      "sha256": "fdf89d4f05a5e6ea20631fed39cf8a7e25dae2358cca1fa984ff26f22e1ee53d"
+    }
+  ],
+  "registry_publication_attempted": false,
+  "schema": 1,
+  "recorded_at_utc": "2026-10-18",
+  "sdk_version": "0.9.0",
+  "status": "verified candidate; not published to a registry",
+  "cargo_vcs_clean_encoding": "Cargo omits git.dirty for a clean tree; the public checkout was also checked clean before and after packaging.",
+  "toolchain": {
+    "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)",
+    "node": "v24.19.0"
+  },
+  "native_server": {
+    "archive": "polybase-0.9.0-x86_64-unknown-linux-gnu.tar.gz",
+    "archive_sha256": "81b2fefea6e36dfcb726edbad5e4e502018fbd5a67611a23c0bac06f8e0ce83c",
+    "source_sha": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+    "source_dirty": false,
+    "build_features": [],
+    "engine_git_tree": "768dd1236194e4c6de833f09c1cdb86372fd24cc",
+    "console_sha256": "e6f8bd6495046f46894594458311cd1df037a702dbbe1ef0062063bb5e220694",
+    "version": "0.9.0",
+    "target": "x86_64-unknown-linux-gnu"
+  },
+  "checks": {
+    "client_only_inventory_and_mit_license": {
+      "npm_files": 5,
+      "rust_files": 8,
+      "passed": true,
+      "engine_or_server_source_included": false
+    },
+    "rust_source_matches_recorded_public_commit": true,
+    "installed_npm_export_and_strict_declarations": true,
+    "npm_real_native_server_tests": {
+      "passed": 3,
+      "failed": 0,
+      "coverage": "legacy transport safety and HTTP operations plus Janus point/range/JSON/text, exact positions, pagination, checkpoint, compaction and expiry"
+    },
+    "extracted_rust_runtime_consumer": {
+      "passed": true,
+      "coverage": "four revision writes plus captured query page and complete subscription commits"
+    },
+    "extracted_rust_janus_native_server_tests": {
+      "passed": 3,
+      "failed": 0,
+      "coverage": "historical point/range/JSON/text, cursor position binding, explicit position errors, checkpoint/compaction retention, atomic batch and additive diagnostics; existing test bodies with external-server startup adapter only"
+    }
+  },
+  "verification_runner": {
+    "path": "scripts/verify-client-packages.py",
+    "source_sha": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+    "sha256": "5ba3b303f43282c314ec31c9f37ae81cdbde25c3eeb7def485d0bef53b479bfb",
+    "log_sha256": "7e2c24c89adea1c4017b331b972b6763ad2f2daf2ffae07d03be55f8b003f59b"
+  },
+  "rust_janus_test_log_sha256": "855cf63e237d6a2406a06a519806a2feac73a7b84dc3964afcbbf85f8792605d",
+  "commands": [
+    "CARGO_TARGET_DIR=<outside-public-output> cargo +1.99.0 package --manifest-path clients/Cargo.toml -p polybase-client --locked",
+    "npm pack --pack-destination <outside-public-output> --json (from public clients/typescript)",
+    "RUSTUP_TOOLCHAIN=1.99.0 python3 scripts/verify-client-packages.py <npm.tgz> <client.crate> --console-bin <verified extracted native console>",
+    "RUSTUP_TOOLCHAIN=1.99.0 POLYBASE_CONSOLE_BIN=<verified extracted native console> cargo test --manifest-path <independent extracted-Rust-package Janus consumer>/Cargo.toml"
+  ],
+  "scope": "Correctness and packaging qualification of unpublished SDK candidates on native x86-64 Linux. No macOS qualification or performance claim follows from these smoke checks. Published install commands remain at SDK 0.8.3.",
+  "all_checks_passed": true
+}

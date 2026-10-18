@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "source_sha": "4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+  "guard_test": {
+    "command": "node website/prepare-release.mjs target/evaluation-release-0.9",
+    "exit_code": 1,
+    "expected_rejection": "need one aarch64-apple-darwin artifact",
+    "passed": true
+  },
+  "publication": {
+    "janus_download_release_published": false,
+    "website_deployed": false,
+    "registry_0_9_published": false
+  },
+  "remaining_requirements": [
+    "Matching native Apple Silicon Mac archive and extracted runtime evidence at source4dccc0ff6593f044c6fb9237ca7c7bd891b4ec45",
+    "Registry publishing authentication (npm ENEEDAUTH; Cargo no token found)",
+    "Sites deployment capability for the existing registered project"
+  ],
+  "hosted_ci": "Latest pushed source jobs fail before runner steps; no hosted test or native Mac pass claimed."
+}
