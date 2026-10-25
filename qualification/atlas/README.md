@@ -41,3 +41,5 @@ Follow-up code is being requalified against the same immutable 1.0 baseline,
 excluded or converted into passing measurements. Passing bounded observations
 does not prove every distributed execution, hardware power-loss survival or
 authenticated storage.
+
+[Verified publication receipt](publication/333c2f0/PUBLICATION.json) records all 27 remote digests and the anonymous download probe.
