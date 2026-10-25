@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-25T14:58:01.324Z",
+  "base": "http://127.0.0.1:4377",
+  "checks": [],
+  "errors": [],
+  "externalRequests": [],
+  "evidencePayloadRequests": [],
+  "accessibility": [],
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    at file:///tmp/polybase-atlas-production-icn0tjvq/final-focus.mjs:32:10"
+}

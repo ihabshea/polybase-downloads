@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "preview_build": true,
+  "source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "availability": "1.0.0",
+  "performance_qualification": false,
+  "cross_host_schedules": 0,
+  "performance_file_sha256": "3fcccfb9ac0e42a32cc0ffa2040b9d30de08f033d6c7eb1350df5dc1440d0082",
+  "wrapper_sha256": "e30cfec3117b0c100c4e8d335e6fe724f9e36016717a99f7b7b48eb62764441e",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 390,
+      "availability": "1.0.0",
+      "source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+      "current": "11/12",
+      "cold": "36/36",
+      "p95_miss": "1.156x",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "availability": "1.0.0",
+      "source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+      "current": "11/12",
+      "cold": "36/36",
+      "p95_miss": "1.156x",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "availability": "1.0.0",
+      "source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+      "current": "11/12",
+      "cold": "36/36",
+      "p95_miss": "1.156x",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "availability": "1.0.0",
+      "source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+      "current": "11/12",
+      "cold": "36/36",
+      "p95_miss": "1.156x",
+      "passed": true
+    }
+  ],
+  "no_javascript_native_replacement_control": true,
+  "external_requests": []
+}

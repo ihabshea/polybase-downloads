@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "temporary_branch": "refs/heads/atlas-website-upload-b2c865f",
+  "commit": "dc48c13d060d217f463ac9eb6361c07f3b91d1f5",
+  "tree": "1fc93e2c940ad8d920ca05f2891ce439b4bb959d",
+  "parent_count": 0,
+  "payload_files": 8,
+  "total_tree_files": 9,
+  "release_id": 423465012,
+  "tag": "atlas-local-evidence-2026-10-25-b2c865f",
+  "temporary_index": "/tmp/atlas-website-b2-publication-work/transfer.index",
+  "workingtree_index_touched": false,
+  "canonical_deployment_claimed": false,
+  "native_assets": 0
+}

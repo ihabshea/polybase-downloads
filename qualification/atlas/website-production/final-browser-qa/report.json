@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-25T14:58:11.981Z",
+  "base": "http://127.0.0.1:4377",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 390,
+      "passed": true,
+      "scope": "final wording, source, 1.0 availability, target miss, archive, overflow and replacement control"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "passed": true,
+      "scope": "final wording, source, 1.0 availability, target miss, archive, overflow and replacement control"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "passed": true,
+      "scope": "final wording, source, 1.0 availability, target miss, archive, overflow and replacement control"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "passed": true,
+      "scope": "final wording, source, 1.0 availability, target miss, archive, overflow and replacement control"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "evidencePayloadRequests": [],
+  "accessibility": [
+    {
+      "theme": "light",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "passed": true
+}

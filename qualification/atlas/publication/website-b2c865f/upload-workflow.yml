@@ -1,0 +1,49 @@
+name: Publish verified Atlas static website candidate
+on:
+  push:
+    branches: [atlas-website-upload-b2c865f]
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify website assets and every static archive member
+        run: |
+          sha256sum --check ATLAS-WEBSITE-SHA256SUMS.txt
+          python3 - <<'PYCODE'
+          import hashlib,json,tarfile
+          from pathlib import Path,PurePosixPath
+          manifest=json.loads(Path('ATLAS-WEBSITE-MANIFEST.json').read_text())
+          assert manifest['measured_engine_source']=='b2c865f0c8299e7f54784d81d012d35aa7b79512'
+          assert manifest['asset_count_without_this_manifest_and_checksums']==6
+          assert manifest['engine_server_source_or_native_executable_assets']==0
+          assert manifest['canonical_deployed'] is False and manifest['canonical_deployment_attempted'] is False
+          assert manifest['atlas_qualified'] is False and manifest['downloaded_database_version']=='1.0.0'
+          assert len(manifest['assets'])==6
+          for asset in manifest['assets']:
+              path=Path(asset['name'])
+              assert path.name==asset['name'] and path.stat().st_size==asset['bytes']
+              assert hashlib.file_digest(path.open('rb'),'sha256').hexdigest()==asset['sha256']
+          inventory={entry['path']:entry for entry in json.loads(Path('ATLAS-WEBSITE-FILES.json').read_text())['files']}
+          assert len(inventory)==51
+          with tarfile.open('polybase-atlas-website-candidate-static.tar.gz','r:gz') as archive:
+              members=archive.getmembers()
+              assert len(members)==51 and {m.name for m in members}==set(inventory)
+              for member in members:
+                  path=PurePosixPath(member.name)
+                  assert member.isfile() and not path.is_absolute() and '..' not in path.parts
+                  assert member.name=='.openai/hosting.json' or member.name.startswith('dist/')
+                  assert 'packaged-source' not in member.name and not member.name.startswith(('crates/','target/','.git/'))
+                  assert member.size==inventory[member.name]['bytes']
+                  assert hashlib.file_digest(archive.extractfile(member),'sha256').hexdigest()==inventory[member.name]['sha256']
+          for name in ['ATLAS-WEBSITE-BROWSER-QA.json','ATLAS-WEBSITE-FINAL-QA.json']:
+              qa=json.loads(Path(name).read_text())
+              assert qa['passed'] is True and qa['errors']==[] and qa['externalRequests']==[]
+          PYCODE
+      - name: Upload separately inventoried static candidate assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload atlas-local-evidence-2026-10-25-b2c865f polybase-atlas-website-candidate-static.tar.gz ATLAS-WEBSITE-PRODUCTION.json ATLAS-WEBSITE-FILES.json ATLAS-WEBSITE-BROWSER-QA.json ATLAS-WEBSITE-FINAL-QA.json ATLAS-WEBSITE-HOSTING.json ATLAS-WEBSITE-MANIFEST.json ATLAS-WEBSITE-SHA256SUMS.txt --repo ihabshea/polybase-downloads --clobber

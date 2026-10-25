@@ -1,0 +1,2 @@
+60aafbc978793134da58155233c39d3e30ab8328002b7ce1c2ab63bcab16325f  polybase-1.0.0-aarch64-apple-darwin.tar.gz
+4fe3aca6dd326f54b1231092588c7da04efc5d28f5fdd7699c0d2e226e809f91  polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz

@@ -64,3 +64,18 @@ the anonymous download/gzip probe and the preserved latest-stable 1.0.0 identity
 and [executed integration guards](integration/validation.json) document the later
 presentation/publication merge. The [hosted CI observation](integration/hosted-ci-observation.json)
 remains failed before executed steps; local checks are separately documented.
+
+## Website candidate
+
+The [isolated production website proof](website-production/README.md) preserves
+unchanged 1.0 native guards and download targets. Actual browser QA passed 224
+responsive checks, 104 accessibility scans and seven behavior scenarios; the
+final wording-only delta is recorded and rechecked separately. The
+[preview QA](website-preview/report.json) remains labeled separately.
+A static website artifact is a publication input, not a live deployment.
+No Sites deployment capability is available in this session.
+
+[Download the verified static website candidate](https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/polybase-atlas-website-candidate-static.tar.gz).
+Its separate [website publication receipt](publication/website-b2c865f/PUBLICATION.json)
+records archive verification and the unchanged original raw-evidence assets.
+The canonical site was not redeployed.

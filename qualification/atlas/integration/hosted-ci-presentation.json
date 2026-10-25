@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "scope": "Observed hosted CI after source-equivalent documentation/site integration; separate from all passing local and public upload workflow checks",
+  "passed": false,
+  "runs": [
+    {
+      "id": 40204913811,
+      "name": "Cerberus qualification",
+      "url": "https://github.com/ihabshea/polybase/actions/runs/40204913811",
+      "source_sha": "a8e312886ae5fe091baebfe048b3de9d71c4b4c3",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": [
+        {
+          "name": "smoke",
+          "conclusion": "failure",
+          "executed_steps": 0
+        },
+        {
+          "name": "qualification",
+          "conclusion": "skipped",
+          "executed_steps": 0
+        }
+      ]
+    },
+    {
+      "id": 40204913826,
+      "name": "Atlas local verification",
+      "url": "https://github.com/ihabshea/polybase/actions/runs/40204913826",
+      "source_sha": "a8e312886ae5fe091baebfe048b3de9d71c4b4c3",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": [
+        {
+          "name": "local",
+          "conclusion": "failure",
+          "executed_steps": 0
+        }
+      ]
+    }
+  ],
+  "cause": "Not established. No build/test command ran in these jobs; do not count them as validation."
+}

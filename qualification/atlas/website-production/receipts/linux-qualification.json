@@ -1,0 +1,52 @@
+{
+  "source": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "runtime_environment": "x86-64 Ubuntu 22.04/glibc 2.35 under Docker amd64 emulation on Apple Silicon; network disabled",
+  "checks": [
+    {
+      "name": "acceptance",
+      "command": [
+        "python3",
+        "scripts/verify-release.py",
+        "/output/polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz",
+        "--runtime",
+        "--report",
+        "/output/acceptance.json"
+      ],
+      "exit_code": 0,
+      "seconds": 23.92
+    },
+    {
+      "name": "archive-safety",
+      "command": [
+        "python3",
+        "scripts/test-release-package.py",
+        "/output/polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+      ],
+      "exit_code": 0,
+      "seconds": 26.17
+    },
+    {
+      "name": "documentation",
+      "command": [
+        "python3",
+        "website/verify-examples.py",
+        "/output/polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz",
+        "--report",
+        "/output/documentation-examples.json"
+      ],
+      "exit_code": 0,
+      "seconds": 9.81
+    },
+    {
+      "name": "staging",
+      "command": [
+        "python3",
+        "scripts/test-release-staging.py",
+        "--target",
+        "x86_64-unknown-linux-gnu"
+      ],
+      "exit_code": 0,
+      "seconds": 9.46
+    }
+  ]
+}

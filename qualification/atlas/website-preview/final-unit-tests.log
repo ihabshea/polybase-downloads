@@ -1,0 +1,26 @@
+✔ Atlas accepts complete local measurements without implying a cross-host gate (5.631603ms)
+✔ Atlas rejects moved baselines, smoke, mutation and omitted sample coverage (7.144484ms)
+✔ Atlas publishes a real target miss and rejects a hidden one (12.229011ms)
+✔ Atlas local evidence keeps tmpfs, overlay, observed signals and recorded-data checking separate (23.226783ms)
+✔ Atlas rejects dirty capture labels, incomplete checks and stronger independent claims (24.9424ms)
+✔ Atlas active performance keeps the exact b2 counterexample and first-run archive (112.556499ms)
+✔ Atlas observed process exits cannot be replaced by reopen counts or a successful exit (16.959901ms)
+✔ Cerberus accepts only complete, source-stable observed qualification (9.136546ms)
+✔ scheduled terminations cannot replace measured SIGKILL deaths or named coverage (1.436729ms)
+✔ forgery controls cannot enter the independent corruption pass count (8.730098ms)
+✔ the optional client bonus requires its actual 64-history run (0.482943ms)
+✔ independent witness validation must match the measured trace and retain its narrower scope (1.225265ms)
+✔ documentation can be committed after a release without replacing its binaries (95.701381ms)
+✔ a different binary, build input or bundled guide requires new qualification (1156.336902ms)
+✔ a missing or malformed release revision is rejected (62.96647ms)
+✔ Cerberus permits packaging changes but rejects unmeasured implementation changes (226.581512ms)
+✔ Janus publication requires the full measured matrix and stable provenance (6.391916ms)
+✔ a published performance miss is permitted; suppressing it is rejected (1.835154ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1668.418405

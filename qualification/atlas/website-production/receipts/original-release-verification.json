@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-25T14:49:08.107692+00:00",
+  "live_metadata": [
+    {
+      "path": "release.json",
+      "url": "https://base.polymathlabs.xyz/release.json",
+      "final_url": "https://base.polymathlabs.xyz/release.json",
+      "status": 200,
+      "bytes": 593,
+      "sha256": "e923171b95e6286a21a49f26a866df6344b2155f873e29cde84f5617129b51a3",
+      "matches_original_publication_manifest": true
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "url": "https://base.polymathlabs.xyz/SHA256SUMS.txt",
+      "final_url": "https://base.polymathlabs.xyz/SHA256SUMS.txt",
+      "status": 200,
+      "bytes": 222,
+      "sha256": "e7303c7cd883b1e793d8451ac756f22a70704f555d0382163a0151be299098c0",
+      "matches_original_publication_manifest": true
+    }
+  ],
+  "package_source": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "measured_source": "54c92946abbaea30bae25e2e8178676e17cbd9e8",
+  "native_acceptance_receipts_preserved": true,
+  "native_builds_rerun": false,
+  "qualification_scope": "original saved native/extracted-runtime qualification; live metadata matches published manifest; no new native qualification asserted"
+}

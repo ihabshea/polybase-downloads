@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "pr": 20,
+  "merge_sha": "ec58a594d757672de64bd4964db373e8352423f6",
+  "package_source": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "presentation_source": "15ac0fd831c2e35a5d067c51d8d18805908940ab",
+  "distribution_source": "83a85aedb46d097bcc7ce4330782ad09712afe68",
+  "hosting_source": "4a8da1b765df5d540ce158d1304c7d48eb21db2e",
+  "project_id": "appgprj_6ace7991702881918f3e306d5b5dbdec",
+  "version_id": "appgprj_6ace7991702881918f3e306d5b5dbdec~appgver_ca8c251456e48191906bd583dbb1f131",
+  "version_number": 17,
+  "archive_storage": {
+    "content_hash": "sha256:848e52b14aa2d02440e3b0840b263b14dd5e8fee64f12e7c0818fb8d46121625",
+    "size_bytes": 11909120,
+    "file_count": 46,
+    "archive_format": "tar"
+  },
+  "deployment": {
+    "id": "appgdep_6addec6eabac8191b6354924c932c6ca",
+    "status": "succeeded",
+    "provider_url": "https://polybase.ihabshea.chatgpt.site",
+    "updated_at": "2026-10-25T11:48:09.678674+00:00"
+  },
+  "canonical_url": "https://base.polymathlabs.xyz",
+  "access_mode": "public",
+  "domain": {
+    "hostname": "base.polymathlabs.xyz",
+    "status": "active",
+    "provider_status": "active",
+    "ssl_status": "active",
+    "last_error": null
+  }
+}
