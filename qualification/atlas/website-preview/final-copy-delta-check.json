@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "preview_build": true,
+  "measured_source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "full_browser_receipt": "report.json",
+  "copy_delta_after_full_browser": {
+    "file": "website/atlas.mjs",
+    "from": "This report requalifies the optimized b2c865f source.",
+    "to": "This report records source-qualified measurements of b2c865f.",
+    "layout_or_data_change": false
+  },
+  "checks": [
+    {
+      "theme": "light",
+      "width": 390,
+      "passed": true,
+      "axe_violations": 0
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "passed": true,
+      "axe_violations": 0
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "passed": true,
+      "axe_violations": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "passed": true,
+      "axe_violations": 0
+    }
+  ],
+  "no_javascript_replacement_control": true,
+  "external_requests": [],
+  "evidence_payload_requests": [],
+  "final_inputs_sha256": {
+    "atlas.mjs": "4f228c2956d8fe4f3b70247b130d2e876e10a8cc9416950e3cd9baf96bbd95fb",
+    "atlas-evidence.mjs": "5a7ee0c1ebe5372c8cc813a1c21d94f4abd171195e600fbd9369de56e23af96f",
+    "components/atlas-quorum.mjs": "5d7a92970a82e48154f34d132a234c45caf36f5ebfbf00be90bf903db3fa58ca",
+    "public/atlas.css": "10ef2ae32a7498e852d9848e765af36685159c97f65d578debb7e9c7e7373529",
+    "public/atlas-1-5-performance.json": "3fcccfb9ac0e42a32cc0ffa2040b9d30de08f033d6c7eb1350df5dc1440d0082",
+    "public/atlas-1-5-local-evidence.json": "e30cfec3117b0c100c4e8d335e6fe724f9e36016717a99f7b7b48eb62764441e",
+    "test-atlas-evidence.mjs": "1e12cb00777fdf93d33463c412374219bc3934b320d73df6b97df94d02a2adea",
+    "README.md": "78f11fa31c074c27cc3ecda6f740959ef7818d972ea27879e7c8567cb370038f"
+  }
+}

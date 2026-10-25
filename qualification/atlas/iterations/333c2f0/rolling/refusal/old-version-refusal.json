@@ -1,0 +1,80 @@
+{
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Error: Corruption(\"invalid replica record header\")\n",
+  "before_files": [
+    {
+      "path": "REPLICA",
+      "bytes": 100,
+      "sha256": "2cefbcdedeb1b4b1157af7b5d7d66415c6d131d0493317dca5134ee562d0c4ff"
+    },
+    {
+      "path": "REPLICA.LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "store/CURRENT",
+      "bytes": 128,
+      "sha256": "153beea7d026ef1e5836d7978ba9efedb9b9f0d6d51223c6c583959cbd0a53d9"
+    },
+    {
+      "path": "store/IDENTITY",
+      "bytes": 32,
+      "sha256": "33886ec5690cc983cd5e67922b78ad10198f10bed7217513efc9bd3edd5ab9fe"
+    },
+    {
+      "path": "store/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "store/durable",
+      "bytes": 32,
+      "sha256": "255e633e5b87410938c7d720d6697f77b9b5d312abc7e1080c1989e739f95aa4"
+    },
+    {
+      "path": "store/wal",
+      "bytes": 1919,
+      "sha256": "4bbe550119ec347d9b8eaf6ead1e3c60c1b473061bf60ee3c629c247c1f75a5b"
+    }
+  ],
+  "after_files": [
+    {
+      "path": "REPLICA",
+      "bytes": 100,
+      "sha256": "2cefbcdedeb1b4b1157af7b5d7d66415c6d131d0493317dca5134ee562d0c4ff"
+    },
+    {
+      "path": "REPLICA.LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "store/CURRENT",
+      "bytes": 128,
+      "sha256": "153beea7d026ef1e5836d7978ba9efedb9b9f0d6d51223c6c583959cbd0a53d9"
+    },
+    {
+      "path": "store/IDENTITY",
+      "bytes": 32,
+      "sha256": "33886ec5690cc983cd5e67922b78ad10198f10bed7217513efc9bd3edd5ab9fe"
+    },
+    {
+      "path": "store/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "store/durable",
+      "bytes": 32,
+      "sha256": "255e633e5b87410938c7d720d6697f77b9b5d312abc7e1080c1989e739f95aa4"
+    },
+    {
+      "path": "store/wal",
+      "bytes": 1919,
+      "sha256": "4bbe550119ec347d9b8eaf6ead1e3c60c1b473061bf60ee3c629c247c1f75a5b"
+    }
+  ],
+  "file_bytes_unchanged": true
+}

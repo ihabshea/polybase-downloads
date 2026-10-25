@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "scope": "Final presentation working tree implementation/harness verification; not a new measurement or source-authentication claim",
+  "checked_at_utc": "2026-10-25T14:59:16.996498+00:00",
+  "presentation_parent_sha": "d51d5d80f42493259dceae3078e8676c4ee1de0b",
+  "measured_source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "implementation_and_harness_inputs_equal": true,
+  "protected_file_count": 159,
+  "protected_set_sha256": "5d29c3620022d8dc37610829e89b91f26ebb2b43c1e51a19606d104ef7117cc9",
+  "added_deleted_or_untracked_protected_files": [],
+  "packaging_scripts_excluded_and_separately_tested": [
+    "scripts/package-release.py",
+    "scripts/verify-release.py"
+  ],
+  "full_repository_tree_equal_to_b2": false,
+  "engine_execution_rerun": false,
+  "existing_b2_measurements_relabelled": false
+}

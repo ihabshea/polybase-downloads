@@ -1,0 +1,6 @@
+{
+  "command": "cargo build --release --locked -p polybase-engine --all-features --example atlas_verify",
+  "executable_sha256": "fe22f6a62b1390425a54ec1f13aedc89801c589865ff12c5e5ab841b130485fc",
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "source_tree_sha256": "5603d9fdfb883b1df2414cad3f75d8a25caecff5725395ed8b428d87b6707be7"
+}

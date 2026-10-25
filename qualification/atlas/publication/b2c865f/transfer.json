@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "temporary_branch": "refs/heads/atlas-evidence-upload-b2c865f",
+  "commit": "9d0751e06a53c2b1cbd1ad85e0e4d30ae4ea7c1f",
+  "tree": "84454fa6e395076160cb3fc45dd692115d17f30b",
+  "parent_count": 0,
+  "payload_files": 27,
+  "total_tree_files": 28,
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "release_id": 423465012,
+  "tag": "atlas-local-evidence-2026-10-25-b2c865f",
+  "temporary_index": "/tmp/atlas-b2-publication-work/transfer.index",
+  "workingtree_index_touched": false,
+  "source_branch_ancestry_contains_payloads": false
+}

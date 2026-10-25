@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "iteration": "333c2f0",
+  "first_measurement_preserved": true,
+  "binaries": [
+    {
+      "original": "target/atlas-candidate-build/release/examples/atlas_bench",
+      "preserved": "target/atlas-preserved-binaries/333c2f0/polybase-1.5.0-preview.1-atlas-bench-91f0fe60",
+      "sha256": "91f0fe604c6c94ba4a9446735325544fdf1cdf7705d54a2b807f2bd67ddc4ec2",
+      "bytes": 2517080,
+      "source_sha": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73",
+      "private_only": true,
+      "public_release_artifact": false
+    },
+    {
+      "original": "target/atlas-baseline/polybase-1.0-atlas-bench",
+      "preserved": "target/atlas-preserved-binaries/333c2f0/polybase-1.0.0-atlas-bench-4c681dc2",
+      "sha256": "4c681dc2457534c7f7b048174d5f7fcc39ead9d20113c2102f176ed5fab1ab30",
+      "bytes": 2478824,
+      "source_sha": "54c92946abbaea30bae25e2e8178676e17cbd9e8",
+      "private_only": true,
+      "public_release_artifact": false
+    }
+  ],
+  "no_public_binary_copy": true
+}

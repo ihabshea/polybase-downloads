@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "scope": "Actual Atlas checkout must not inherit released1.0 binary qualification",
+  "packaged_source": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "measured_cerberus_engine_inputs_match_packaged": true,
+  "atlas_checkout_rejected_by_unchanged_native_input_guard": true,
+  "expected_git_diff_exit_code": 1,
+  "new_native_package_qualified": false,
+  "engine_source_diff_not_published": true
+}

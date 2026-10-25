@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "captured_before_samples_utc": "2026-10-25T14:33:33.654766+00:00",
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "source_tree_sha256": "37b5889a744e116811b41e0f9f516bd5e5d3c967846b2e1c9e6505c8caa6f79c",
+  "source_dirty": false,
+  "effective_TMPDIR": "/workspace/polybase/target/atlas-benchmark-storage-b2c865f",
+  "python_tempfile_gettempdir": "/workspace/polybase/target/atlas-benchmark-storage-b2c865f",
+  "filesystem_actual_storage": "Filesystem     Type    1K-blocks     Used Available Use% Mounted on\noverlay        overlay  32978704 19136448  12148152  62% /workspace",
+  "filesystem_report_root": "Filesystem     Type    1K-blocks     Used Available Use% Mounted on\noverlay        overlay  32978704 19136448  12148152  62% /workspace",
+  "safe_parent_rust_environment": {
+    "RUSTFLAGS": null,
+    "CARGO_ENCODED_RUSTFLAGS": null,
+    "CARGO_BUILD_TARGET": null,
+    "RUSTC_WRAPPER": null
+  },
+  "binary_sha256": {
+    "baseline": "4c681dc2457534c7f7b048174d5f7fcc39ead9d20113c2102f176ed5fab1ab30",
+    "candidate": "72d13e29ae19c54de8dabccf889405bc958dbb849bf1142eb4a7278cbd856eb9"
+  },
+  "configuration": {
+    "sizes": [
+      1000,
+      10000,
+      100000
+    ],
+    "repeats": 3,
+    "warm_samples": 31,
+    "cold_samples": 5,
+    "warmups": 3,
+    "retained_commits": 128,
+    "updates_per_commit": 16,
+    "historical_depths": [
+      0,
+      64,
+      127
+    ],
+    "equality": "group == 1; approximately 1%, actual row counts in raw samples",
+    "narrow_range_keys": 64,
+    "point": "records/{floor(records/3):06}",
+    "text": "amber history; both whole words",
+    "max_index_bytes": 268435456,
+    "max_result_rows": 100000,
+    "max_result_bytes": 67108864,
+    "max_wal_bytes": 268435456,
+    "historical_limits": {
+      "max_cache_bytes": 67108864,
+      "max_replay_bytes": 67108864,
+      "max_versions": 200000
+    },
+    "memory": {
+      "readers": 4,
+      "reads_per_reader": 8,
+      "writer_commits": 32,
+      "updates_per_commit": 16,
+      "rss_sampling_ms": 1
+    },
+    "throughput": {
+      "commits": 64,
+      "mutations_per_commit": 2,
+      "value_bytes": 256,
+      "callers": 1,
+      "replicas": 3,
+      "transport": "FIFO in-process, real durable Replica API"
+    },
+    "targets": {
+      "current_head_p50_ratio_max": 1.1,
+      "current_head_p95_ratio_max": 1.1,
+      "cold_historical_p95_ratio_max": 0.5
+    }
+  },
+  "scope": "Both real engine children inherit TMPDIR on overlay storage. Identical fixed paired matrix and pinned1.0 baseline; no preceding smoke, reruns or exclusions. Reopen/recovery excluded from cold-query latency; real sync/rename protocols retained. OS caches uncontrolled. Overlay is not hardware power-loss qualification."
+}

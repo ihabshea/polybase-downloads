@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "kind": "separately-inventoried-static-website-candidate-publication",
+  "release_id": 423465012,
+  "tag": "atlas-local-evidence-2026-10-25-b2c865f",
+  "html_url": "https://github.com/ihabshea/polybase-downloads/releases/tag/atlas-local-evidence-2026-10-25-b2c865f",
+  "published": true,
+  "prerelease": true,
+  "additional_asset_count": 8,
+  "release_total_assets": 35,
+  "assets": [
+    {
+      "id": 675329552,
+      "name": "ATLAS-WEBSITE-BROWSER-QA.json",
+      "bytes": 40572,
+      "sha256": "d8cf919b30188a97feb7dee6660801a60103647dee00fcae5a0fd95fbd421cb9",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/ATLAS-WEBSITE-BROWSER-QA.json"
+    },
+    {
+      "id": 675329544,
+      "name": "ATLAS-WEBSITE-FILES.json",
+      "bytes": 8309,
+      "sha256": "23ee3acb799d09fabc070a60e4eede38ad2b833c061495b173b7357e2ef7f330",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/ATLAS-WEBSITE-FILES.json"
+    },
+    {
+      "id": 675329551,
+      "name": "ATLAS-WEBSITE-FINAL-QA.json",
+      "bytes": 1299,
+      "sha256": "f4e493517e571ec1c161eb414db42628fcff0bf0d9d7520b28dd424cb8c94528",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/ATLAS-WEBSITE-FINAL-QA.json"
+    },
+    {
+      "id": 675329583,
+      "name": "ATLAS-WEBSITE-HOSTING.json",
+      "bytes": 106,
+      "sha256": "230422c999e6ae96581e89023fd67281a2e5b94bc348cf78adf14336452cbc17",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/ATLAS-WEBSITE-HOSTING.json"
+    },
+    {
+      "id": 675329579,
+      "name": "ATLAS-WEBSITE-MANIFEST.json",
+      "bytes": 1768,
+      "sha256": "e0c515d78db57df5593215f5a0fe53057432e7ebb6051cf03b3e4023e5e02e33",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/ATLAS-WEBSITE-MANIFEST.json"
+    },
+    {
+      "id": 675329546,
+      "name": "ATLAS-WEBSITE-PRODUCTION.json",
+      "bytes": 26007,
+      "sha256": "b7af3a21750a9718c67dacccd5f11fbb3812ab74e08f20f3b9c77c990677f77b",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/ATLAS-WEBSITE-PRODUCTION.json"
+    },
+    {
+      "id": 675329582,
+      "name": "ATLAS-WEBSITE-SHA256SUMS.txt",
+      "bytes": 677,
+      "sha256": "401bb38dfcb0e01a4b03c3f77946fd0febd8d6f9e11807afaa54862b6e92c635",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/ATLAS-WEBSITE-SHA256SUMS.txt"
+    },
+    {
+      "id": 675329547,
+      "name": "polybase-atlas-website-candidate-static.tar.gz",
+      "bytes": 1278687,
+      "sha256": "91078378ab15495dd0e554ffc8ba812f7a0911dcd16d13fb150f45474bea6a71",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/polybase-atlas-website-candidate-static.tar.gz"
+    }
+  ],
+  "all_8_remote_sha256_and_sizes_match": true,
+  "original_27_raw_asset_ids_digests_sizes_unchanged": true,
+  "original_raw_publication_receipt_sha256": "521391d016ffae4c7e8820ebb2d00a476f5c0bcfe5752a8f82d1175e0d713265",
+  "measured_engine_source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "site_only_local_build_commit": "f5445b6258ac30676dd71c26bf571a40dc720d94",
+  "publication_workflow": "https://github.com/ihabshea/polybase-downloads/actions/runs/40205068076",
+  "workflow_head_sha": "dc48c13d060d217f463ac9eb6361c07f3b91d1f5",
+  "transfer_commit_parent_count": 0,
+  "temporary_remote_branch_deleted": true,
+  "temporary_local_branch_deleted": true,
+  "source_branch_ancestry_contains_transfer_commit": false,
+  "anonymous_complete_archive_download_sha256_verified": true,
+  "anonymous_gzip_integrity_verified": true,
+  "tar_members_verified": 51,
+  "every_member_bytes_and_sha256_match_approved_inventory": true,
+  "static_archive_sha256": "91078378ab15495dd0e554ffc8ba812f7a0911dcd16d13fb150f45474bea6a71",
+  "static_archive_bytes": 1278687,
+  "canonical_deployment_attempted": false,
+  "canonical_deployed": false,
+  "deployment_limitation": "Sites capability unavailable in this session; publishing this reviewable archive does not update the canonical hostname.",
+  "native_engine_assets": 0,
+  "full_atlas_release_qualified": false,
+  "observed_stable_latest_tag": "v1.0.0",
+  "observed_stable_latest_release_id": 423364378,
+  "verified_utc": "2026-10-25T15:04:57.458801+00:00"
+}

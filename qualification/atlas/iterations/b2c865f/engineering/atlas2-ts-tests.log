@@ -1,0 +1,20 @@
+
+> @polymathbase/polybase-client@0.9.0 test
+> node --test client.test.mjs
+
+✔ client validates loopback addresses, hex and unsafe numeric inputs (2.030619ms)
+✔ HTTP errors preserve status and non-JSON text; successful replies still require JSON (52.496385ms)
+✔ TypeScript client exercises real HTTP queries, revisions, streaming, backup and recovery (555.976604ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 796.70687
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

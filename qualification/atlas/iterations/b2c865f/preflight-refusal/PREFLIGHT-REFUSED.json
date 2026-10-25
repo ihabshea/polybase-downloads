@@ -1,0 +1,8 @@
+{
+  "stage": "before-build-before-engine-execution",
+  "qualified": false,
+  "engine_histories_executed": 0,
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "reason": "artifact filesystem lacks conservative64KiB/history+128MiB reserve",
+  "action": "keep reserve unchanged; use /tmp/atlas-50000-b2c865f for raw artifacts; Replica storage remains explicitly tmpfs; separate overlay campaign remains on overlay"
+}

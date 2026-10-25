@@ -4,6 +4,26 @@ Official free evaluation downloads for Polybase, an independent database researc
 
 Get the preview and documentation at **https://base.polymathlabs.xyz/download.html**.
 
+## Project Atlas — 1.5 candidate, qualification open
+
+Atlas adds bounded voter replacement, exact cluster history and lifecycle tools.
+Read the [contract](ATLAS_1_5.md), [operator guide](ATLAS_OPERATIONS.md),
+[public fault-testing harness](qualification/atlas/harness/README.md) and
+[independent reference tools](qualification/atlas/tools/README.md).
+
+The [current local qualification](qualification/atlas/README.md) records 50,000
+same-process Replica histories plus a separate 1,000 overlay-backed histories,
+independently checked with no recorded mismatch or inconclusive pass. The repeated
+paired benchmark passes **11/12 current-head and 36/36 cold-history targets**;
+the 1K range p95 misses the unchanged 1.10× gate at 1.156×. All samples and the
+[first iteration's counterexamples](qualification/atlas/iterations/333c2f0/README.md)
+remain available. Same seeded histories are not counted twice across source revisions.
+
+Cross-host schedules executed remain **zero**, by the user's local-only choice.
+Atlas is an unqualified candidate. The current downloadable database is **1.0.0**;
+there are no native 1.5 packages. See the [availability correction](qualification/atlas/AVAILABILITY_ERRATUM.md)
+for stale copy retained inside immutable candidate snapshots.
+
 The 1.0.0 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains five executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
 
 Mac executables are ad-hoc signed and not notarized. Linux executables are unsigned. Use disposable data for this experimental preview. The [evaluation license](LICENSE) permits personal or internal evaluation, experimentation and development; production use and commercial redistribution are outside those terms.

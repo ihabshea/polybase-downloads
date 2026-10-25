@@ -1,0 +1,58 @@
+[
+  {
+    "count": 125,
+    "directory": "local-durable-000",
+    "seed": 20311025,
+    "start": 0,
+    "worker": 0
+  },
+  {
+    "count": 125,
+    "directory": "local-durable-001",
+    "seed": 4690058739784647218,
+    "start": 125,
+    "worker": 1
+  },
+  {
+    "count": 125,
+    "directory": "local-durable-002",
+    "seed": 9380117479548983411,
+    "start": 250,
+    "worker": 2
+  },
+  {
+    "count": 125,
+    "directory": "local-durable-003",
+    "seed": 14070176219313319604,
+    "start": 375,
+    "worker": 3
+  },
+  {
+    "count": 125,
+    "directory": "local-durable-004",
+    "seed": 313490885368104181,
+    "start": 500,
+    "worker": 4
+  },
+  {
+    "count": 125,
+    "directory": "local-durable-005",
+    "seed": 5003549625132440374,
+    "start": 625,
+    "worker": 5
+  },
+  {
+    "count": 125,
+    "directory": "local-durable-006",
+    "seed": 9693608364896776567,
+    "start": 750,
+    "worker": 6
+  },
+  {
+    "count": 125,
+    "directory": "local-durable-007",
+    "seed": 14383667104661112760,
+    "start": 875,
+    "worker": 7
+  }
+]

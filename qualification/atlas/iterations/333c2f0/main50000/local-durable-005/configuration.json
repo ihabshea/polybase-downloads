@@ -1,0 +1,15 @@
+{
+  "checker_state_budget": 200000,
+  "cross_host_gate": false,
+  "database_directory": "/tmp/atlas-main-storage",
+  "durability": "each Replica transition uses existing synchronized Engine; OS page cache not hardware power loss",
+  "engine_version": "1.5.0-preview.1",
+  "histories": 6250,
+  "profile": "all",
+  "schedules_are_recorded_not_network_deployment_measurements": true,
+  "schema": 1,
+  "seed": 10369808297402557467,
+  "source_sha": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73",
+  "start": 31250,
+  "transport": "deterministic single-process scheduled delivery between three actual durable Replica directories"
+}

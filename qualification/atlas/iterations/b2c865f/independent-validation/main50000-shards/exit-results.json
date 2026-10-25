@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "all_passed": true,
+  "results": [
+    {
+      "shard": 0,
+      "returncode": 0
+    },
+    {
+      "shard": 1,
+      "returncode": 0
+    },
+    {
+      "shard": 2,
+      "returncode": 0
+    },
+    {
+      "shard": 3,
+      "returncode": 0
+    },
+    {
+      "shard": 4,
+      "returncode": 0
+    },
+    {
+      "shard": 5,
+      "returncode": 0
+    },
+    {
+      "shard": 6,
+      "returncode": 0
+    },
+    {
+      "shard": 7,
+      "returncode": 0
+    }
+  ]
+}

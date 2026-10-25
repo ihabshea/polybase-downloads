@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": ".openai/hosting.json",
+      "bytes": 106,
+      "sha256": "230422c999e6ae96581e89023fd67281a2e5b94bc348cf78adf14336452cbc17"
+    },
+    {
+      "path": "dist/SHA256SUMS.txt",
+      "bytes": 222,
+      "sha256": "e7303c7cd883b1e793d8451ac756f22a70704f555d0382163a0151be299098c0"
+    },
+    {
+      "path": "dist/assets/atlas-preview.png",
+      "bytes": 58085,
+      "sha256": "4a2f5d38dbb52af3adbfb7f9b0be225122cd31e95ee5645ed00f88f2d8e90a57"
+    },
+    {
+      "path": "dist/assets/cerberus-preview.png",
+      "bytes": 73528,
+      "sha256": "920a1f4f704c24f32736fb86bb3478ce9368cd85b6effa0ee87b6bb13fc8779c"
+    },
+    {
+      "path": "dist/assets/console.png",
+      "bytes": 115443,
+      "sha256": "741cb6e2aa5fe0b19c753fa8424ac33962ac97de1942afc5fed7122c3ef53b58"
+    },
+    {
+      "path": "dist/assets/fonts/README.txt",
+      "bytes": 614,
+      "sha256": "4bda40a9e67d2f33768d0a9fccc466f4524c2f45270f767e7c6fb335395c1817"
+    },
+    {
+      "path": "dist/assets/fonts/dm-sans-latin.woff2",
+      "bytes": 36980,
+      "sha256": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb"
+    },
+    {
+      "path": "dist/assets/fonts/dmsans-OFL.txt",
+      "bytes": 4482,
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1"
+    },
+    {
+      "path": "dist/assets/fonts/instrument-serif-italic-latin.woff2",
+      "bytes": 15684,
+      "sha256": "6ee678c33f388dd7ba59700ebea635deb98821baafd817b09891f7927177f702"
+    },
+    {
+      "path": "dist/assets/fonts/instrument-serif-normal-latin.woff2",
+      "bytes": 15040,
+      "sha256": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d"
+    },
+    {
+      "path": "dist/assets/fonts/instrumentserif-OFL.txt",
+      "bytes": 4405,
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+    },
+    {
+      "path": "dist/assets/mark.svg",
+      "bytes": 266,
+      "sha256": "0884b51f4652cfe8709bf8be12eacedde3792e2a4490a554e5ffdf20cf116383"
+    },
+    {
+      "path": "dist/assets/social-preview.png",
+      "bytes": 67268,
+      "sha256": "e48dec0875e7553b9a1a62baf717bbe03fd121e57499929be7bad19f474559b2"
+    },
+    {
+      "path": "dist/atlas-1-5-local-evidence.json",
+      "bytes": 600248,
+      "sha256": "e30cfec3117b0c100c4e8d335e6fe724f9e36016717a99f7b7b48eb62764441e"
+    },
+    {
+      "path": "dist/atlas-1-5-performance.json",
+      "bytes": 16792282,
+      "sha256": "3fcccfb9ac0e42a32cc0ffa2040b9d30de08f033d6c7eb1350df5dc1440d0082"
+    },
+    {
+      "path": "dist/atlas-1-5.html",
+      "bytes": 27983,
+      "sha256": "b62d0450e542b1a382321aa8a7552185414be86fa17e8a689488d28a1d0aa9aa"
+    },
+    {
+      "path": "dist/atlas.css",
+      "bytes": 13769,
+      "sha256": "10ef2ae32a7498e852d9848e765af36685159c97f65d578debb7e9c7e7373529"
+    },
+    {
+      "path": "dist/cerberus-1-0-validation.json",
+      "bytes": 18268,
+      "sha256": "9a5f77681901c25f460c2c878a28a4cf803451006a2538cd63716a75cc0b83dc"
+    },
+    {
+      "path": "dist/cerberus-1-0.html",
+      "bytes": 21671,
+      "sha256": "a1e1522217eff3dc8a07c22135bcaab6f083d3096e4e736977b7340b74472be4"
+    },
+    {
+      "path": "dist/cerberus-independent-witness-validation.json",
+      "bytes": 2005,
+      "sha256": "8e448dfb81ded879de10371b972eeaadbcbbd8d51343d4e1182563d530fa67b4"
+    },
+    {
+      "path": "dist/cerberus.css",
+      "bytes": 13529,
+      "sha256": "3b6e66416da8c691bce60da9cf25d13edb1b63793335e06a3645b381944b0e8b"
+    },
+    {
+      "path": "dist/clients.html",
+      "bytes": 9051,
+      "sha256": "ac12662e9419c96d2be048c1c8d8a7f7eed1e222ac24510375a38286cd0ee012"
+    },
+    {
+      "path": "dist/docs-concepts.html",
+      "bytes": 31385,
+      "sha256": "cbc386f7c15a57fc8783388d1be4f3e404d9f8e5917b798fb2391e9084fd1281"
+    },
+    {
+      "path": "dist/docs-how-to.html",
+      "bytes": 28630,
+      "sha256": "d7c2e467e0d4d0760dd8cc81a8361927d7e8ff5e04059076b92d59d5ad58006b"
+    },
+    {
+      "path": "dist/docs-reference.html",
+      "bytes": 36578,
+      "sha256": "1467d8aad0f68273bdf112724a7fcbfd7c85d54eb6909183fc8a386e9490348c"
+    },
+    {
+      "path": "dist/docs-tutorial.html",
+      "bytes": 18967,
+      "sha256": "dfde4cda3343e258b0e899ad30e14ce02611e4b0ffbdac9bec96f9edac280eef"
+    },
+    {
+      "path": "dist/docs.html",
+      "bytes": 8961,
+      "sha256": "344777c34750f4114833cbabacedcee69483dae45ebfaa36cf2b37d1c60d1cd2"
+    },
+    {
+      "path": "dist/download.html",
+      "bytes": 7709,
+      "sha256": "55c06fa3d6e07ba183228599c2ae19e18fa52ec8398d8670e5ed690937fae495"
+    },
+    {
+      "path": "dist/examples/live-workspace.py",
+      "bytes": 3377,
+      "sha256": "868761133f4a2bc448a990b4e9ee8e5941d11eac313fbdd7c4b34ec23ebaeb4c"
+    },
+    {
+      "path": "dist/examples/local_client.py",
+      "bytes": 4194,
+      "sha256": "f48222130541f7b8e798ef1606832971fd624220bb1802268c14edf52e5af9bd"
+    },
+    {
+      "path": "dist/examples/polybase-client.rs",
+      "bytes": 16932,
+      "sha256": "88cf8d7ab466044850e60e8a20a833279c636d2836064b71000d4cfbc6b34572"
+    },
+    {
+      "path": "dist/examples/polybase-client.ts",
+      "bytes": 12299,
+      "sha256": "dea178c87d6f18d418427a87ef244001a26ec5fd0c2b6958495793affca431e1"
+    },
+    {
+      "path": "dist/home.css",
+      "bytes": 19678,
+      "sha256": "96c15689b02e369aa85fb8dee1a44fe636870b305a7c7d48a8ef656f49267e8b"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 24012,
+      "sha256": "7a9e4730fde219416f4552297153065c3c89e04094ed79473a41b7d8b406f593"
+    },
+    {
+      "path": "dist/janus-0-9-validation.json",
+      "bytes": 619615,
+      "sha256": "6c762f119fc62de8cfd5b2f0bd007574307e0b71fef95cb28189e0c7d062c605"
+    },
+    {
+      "path": "dist/janus-0-9.html",
+      "bytes": 28331,
+      "sha256": "040476e881d84e5f10894a28b4354ef00ea586b5e2f6d7b2c9df5d6e4044a5ef"
+    },
+    {
+      "path": "dist/janus.css",
+      "bytes": 9708,
+      "sha256": "9889cc5057583bb7ba51938406d45875963937a15631553a457e38deba41b6b6"
+    },
+    {
+      "path": "dist/npm-downloads.json",
+      "bytes": 597,
+      "sha256": "16636a80700e0aa004b42fe63b089624393489d437708697864af139e13aab3d"
+    },
+    {
+      "path": "dist/preview-0-7-validation.json",
+      "bytes": 8367,
+      "sha256": "d705d5da74a249a8ca15abb4b9c1a52bf4d1e5b55f883be422d61eb389ee6609"
+    },
+    {
+      "path": "dist/preview-0-7.html",
+      "bytes": 20796,
+      "sha256": "b2aba2788ddda17e7813f75f10ddcc15801f3af7d2976082cb8753251001ccee"
+    },
+    {
+      "path": "dist/preview-0-8-2-validation.json",
+      "bytes": 10467287,
+      "sha256": "b7617e427b109cebd2412c170e0d44600655419b3b428773ab95115cbdb95913"
+    },
+    {
+      "path": "dist/preview-0-8-2.html",
+      "bytes": 21116,
+      "sha256": "927bce6c2eae93f062532cc914769183e326666909a05706925a282499c6a33f"
+    },
+    {
+      "path": "dist/preview-0-8-validation.json",
+      "bytes": 28680,
+      "sha256": "fe38734a61428dacc4a7c227588de0a3fb72813b20c95d758e27584186e14a3c"
+    },
+    {
+      "path": "dist/preview-0-8.html",
+      "bytes": 16578,
+      "sha256": "e879f0bce40f02ae6c6cffc73e398d5a97c8298d4d1d3e29b8891327c5fb7351"
+    },
+    {
+      "path": "dist/privacy.html",
+      "bytes": 5739,
+      "sha256": "666b5a018d9b0631b78ea2496e1df913b6816c027432bdc1647c3728ae09a393"
+    },
+    {
+      "path": "dist/release-notes.html",
+      "bytes": 6875,
+      "sha256": "5f358b6f66aebc0983541a185ce7eb70ec046ca71df4a4d9fc40b47deae96f11"
+    },
+    {
+      "path": "dist/release.json",
+      "bytes": 593,
+      "sha256": "e923171b95e6286a21a49f26a866df6344b2155f873e29cde84f5617129b51a3"
+    },
+    {
+      "path": "dist/robots.txt",
+      "bytes": 74,
+      "sha256": "f8a0a98884646a808becf53cc11dafe2b7295caa8d8fbb21d2162546e7c084b3"
+    },
+    {
+      "path": "dist/sitemap.xml",
+      "bytes": 1170,
+      "sha256": "1e5018e98f1cf318e44dc7ce1fe7c33145b5115af9e3e1e2ee90e873b2c8786b"
+    },
+    {
+      "path": "dist/styles.css",
+      "bytes": 15848,
+      "sha256": "d062f561db84ee335fd3774cfad50399ea588c9e7320007afd8332ca1c853161"
+    },
+    {
+      "path": "dist/theme.js",
+      "bytes": 1398,
+      "sha256": "95a1fc1937b3c95bf6b93dec706576bb75db8655dd7503d5d88d1406653b5f11"
+    }
+  ],
+  "engine_included": false,
+  "native_archives_included": false
+}

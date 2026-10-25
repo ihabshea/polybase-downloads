@@ -1,0 +1,6 @@
+    Checking polybase-engine v1.5.0-preview.1 (/workspace/polybase/crates/engine)
+ Documenting polybase-engine v1.5.0-preview.1 (/workspace/polybase/crates/engine)
+ Documenting polybase-cli v1.5.0-preview.1 (/workspace/polybase/crates/cli)
+    Checking polybase-cli v1.5.0-preview.1 (/workspace/polybase/crates/cli)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.55s
+   Generated /workspace/polybase/target/doc/polybase_cli/index.html and 8 other files

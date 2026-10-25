@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "iteration": "b2c865f",
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "identity_basis": "unchanged paired performance runtime/summary executable hashes, not stale333 candidate-build provenance",
+  "public_binary_copies": 0,
+  "private_binaries": [
+    {
+      "path": "target/atlas-preserved-binaries/b2c865f/candidate-atlas-bench",
+      "sha256": "72d13e29ae19c54de8dabccf889405bc958dbb849bf1142eb4a7278cbd856eb9",
+      "bytes": 2514408,
+      "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512"
+    },
+    {
+      "path": "target/atlas-preserved-binaries/b2c865f/baseline-atlas-bench",
+      "sha256": "4c681dc2457534c7f7b048174d5f7fcc39ead9d20113c2102f176ed5fab1ab30",
+      "bytes": 2478824,
+      "source_sha": "54c92946abbaea30bae25e2e8178676e17cbd9e8"
+    }
+  ]
+}

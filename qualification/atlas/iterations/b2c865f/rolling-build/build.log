@@ -1,0 +1,4 @@
+    Blocking waiting for file lock on build directory
+   Compiling polybase-engine v1.5.0-preview.1 (/workspace/polybase/crates/engine)
+   Compiling polybase-cli v1.5.0-preview.1 (/workspace/polybase/crates/cli)
+    Finished `release` profile [optimized] target(s) in 54.56s

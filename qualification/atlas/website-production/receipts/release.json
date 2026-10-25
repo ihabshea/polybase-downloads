@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "source_commit": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "assets": [
+    {
+      "filename": "polybase-1.0.0-aarch64-apple-darwin.tar.gz",
+      "target": "aarch64-apple-darwin",
+      "sha256": "60aafbc978793134da58155233c39d3e30ab8328002b7ce1c2ab63bcab16325f",
+      "runtime_verified": true
+    },
+    {
+      "filename": "polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz",
+      "target": "x86_64-unknown-linux-gnu",
+      "sha256": "4fe3aca6dd326f54b1231092588c7da04efc5d28f5fdd7699c0d2e226e809f91",
+      "runtime_verified": true
+    }
+  ]
+}

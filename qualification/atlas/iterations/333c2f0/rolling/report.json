@@ -1,0 +1,73 @@
+{
+  "ack_loss_scope": "full wire ACK read and recorded, then deliberately discarded before application delivery",
+  "after": {
+    "new_binary_sha256": "1c23a413758e6c468230a95060da0b76adeda596fd25250537267eefb7291628",
+    "old_binary_sha256": "46cd7200219ab308fe725406cb5f24d883722afe43923819fea60d6989dd3d68",
+    "source": {
+      "dirty": [],
+      "fingerprint": "b78c897cedccbc339369a69026a14c1429d75128cb232b8b85919b766c6c8f9b",
+      "head": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73"
+    }
+  },
+  "before": {
+    "new_binary_sha256": "1c23a413758e6c468230a95060da0b76adeda596fd25250537267eefb7291628",
+    "old_binary_sha256": "46cd7200219ab308fe725406cb5f24d883722afe43923819fea60d6989dd3d68",
+    "source": {
+      "dirty": [],
+      "fingerprint": "b78c897cedccbc339369a69026a14c1429d75128cb232b8b85919b766c6c8f9b",
+      "head": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73"
+    }
+  },
+  "binary_versions": {
+    "new": "polybase-node 1.5.0-preview.1",
+    "old": "polybase-node 1.0.0"
+  },
+  "configurations": [
+    {
+      "after_sha256": "e07b65399bd02ea23bcec8b0cbbf8564ddaf362bb82dbbe238061aec8c076585",
+      "before_sha256": "e07b65399bd02ea23bcec8b0cbbf8564ddaf362bb82dbbe238061aec8c076585",
+      "path": "refusal/atlas.json"
+    },
+    {
+      "after_sha256": "24ddac917637fd77f943636d3d32b67453f1b70466184f53411c0ed89cdd60f6",
+      "before_sha256": "24ddac917637fd77f943636d3d32b67453f1b70466184f53411c0ed89cdd60f6",
+      "path": "refusal/legacy.json"
+    },
+    {
+      "after_sha256": "bb2d27ec29869c4bd77ab77e66bee13e9840ff0d08f9a4ab543a5ddd7a04ccd7",
+      "before_sha256": "bb2d27ec29869c4bd77ab77e66bee13e9840ff0d08f9a4ab543a5ddd7a04ccd7",
+      "path": "rolling/cluster.json"
+    }
+  ],
+  "development": false,
+  "elapsed_ns": 5986817455,
+  "host": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "observations_sha256": "7eb145f125617affb0f0fa0756e918748118ec36e3ff0b8a2ef29bfad1de78c4",
+  "old_source_sha": "54c92946abbaea30bae25e2e8178676e17cbd9e8",
+  "passed": true,
+  "python": "3.12.14",
+  "raw_client_calls": 544,
+  "recorded_events": 42,
+  "release_gate_claimed": false,
+  "replay_command": "scripts/run-atlas-upgrade.py --old-binary /tmp/polybase-atlas-baseline-jxchw3ks/target/release/polybase-node --new-binary target/atlas-compat-bin/polybase-node --out target/atlas-upgrade-qualification-20261025",
+  "rolling": {
+    "acknowledged_pair_writes": 5,
+    "client_sdk_test": false,
+    "cross_host": false,
+    "discarded_ack_pair_writes": 1,
+    "fixed_genesis_downgrade_tested": true,
+    "linearizability_search": false,
+    "original_named_outcomes_checked": 6,
+    "passed": true
+  },
+  "schema": 1,
+  "scope": "same-host real-process fixed-genesis rolling wire compatibility only",
+  "unchanged_source_and_executables": true,
+  "unsupported_metadata": {
+    "failed_retiree": 3,
+    "file_bytes_unchanged": true,
+    "old_process_returncode": 1,
+    "passed": true,
+    "staged_epoch": 1
+  }
+}

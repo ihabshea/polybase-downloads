@@ -1,0 +1,23 @@
+{
+  "actual_execution_authenticated": false,
+  "all_hash_linked_witnesses_verified": true,
+  "all_ids_unique": true,
+  "all_passed": true,
+  "all_record_order_verified": true,
+  "all_seeds_unique": true,
+  "audit_report_sha256": "b0541f8af699af54b45ef3533e991cc4a31554ece741e1908da5ae50039d0dad",
+  "declared_profile_totals": {
+    "asymmetric-leader-change": 333,
+    "interrupted-snapshot": 333,
+    "loss-delay-reorder": 334
+  },
+  "engine_version": "1.5.0-preview.1",
+  "exact_history_ids": "0..999",
+  "master_seed": 20311025,
+  "profile_scope": "Exact per-shard/global declared profile totals checked; per-record profile cycle not re-inferred from absent witness fields.",
+  "records": 1000,
+  "schema": 1,
+  "seed_rule": "(master_seed + history_id * 0x9e3779b97f4a7c15) modulo 2^64",
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "witnesses_sha256": "d9c29d16a07636bcffcebe7f98f68d328767a10e65d7da3e9a1422cb85413f67"
+}

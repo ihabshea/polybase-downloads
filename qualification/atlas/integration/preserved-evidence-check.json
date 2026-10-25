@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "scope": "Final byte verification of immutable local-evidence packages; no new engine execution",
+  "all_manifest_entries_match": true,
+  "first_iteration_git_blobs_unchanged": true,
+  "checks": [
+    {
+      "repository": "polybase",
+      "iteration": "333c2f0",
+      "verified_files": 199,
+      "checksum_manifest_sha256": "eb66525cb7adce41fcab8e7f51b704aeb287dc38b33c4597e8899c9f81a2a9cd"
+    },
+    {
+      "repository": "polybase",
+      "iteration": "b2c865f",
+      "verified_files": 212,
+      "checksum_manifest_sha256": "5a42add41413408e36fbcfaa184464fb5962550495c8519adb5802da967dea2a"
+    },
+    {
+      "repository": "polybase-downloads",
+      "iteration": "333c2f0",
+      "verified_files": 157,
+      "checksum_manifest_sha256": "6eb0e35f3d6642c41ab30c2666163eee5f2a0eeb361acd38add5ec0791be42a2"
+    },
+    {
+      "repository": "polybase-downloads",
+      "iteration": "b2c865f",
+      "verified_files": 170,
+      "checksum_manifest_sha256": "8864d249fa9994e5b4ba96b098ed66949eb89a9cb147e0c832c2efb3a7fefdcc"
+    }
+  ]
+}

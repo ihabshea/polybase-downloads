@@ -1,0 +1,25 @@
+{
+  "source": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "checks": [
+    {
+      "name": "acceptance",
+      "exit_code": 0,
+      "seconds": 32.63
+    },
+    {
+      "name": "archive-safety",
+      "exit_code": 0,
+      "seconds": 46.44
+    },
+    {
+      "name": "documentation",
+      "exit_code": 0,
+      "seconds": 29.42
+    },
+    {
+      "name": "staging",
+      "exit_code": 0,
+      "seconds": 11.47
+    }
+  ]
+}

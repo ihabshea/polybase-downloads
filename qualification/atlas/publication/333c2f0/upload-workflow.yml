@@ -1,0 +1,28 @@
+name: Publish verified Atlas local evidence
+on:
+  push:
+    branches: [atlas-evidence-upload-333c2f0]
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify every immutable evidence byte
+        run: |
+          sha256sum --check SHA256SUMS.txt
+          python3 - <<'PYCODE'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('ASSET-MANIFEST.json').read_text())
+          assert r['source_sha']=='333c2f0ecf25c5987087f7cecc0bcd9fe269af73'
+          assert r['asset_count']==25 and r['engine_or_native_binary_assets']==0
+          assert {a['kind'] for a in r['assets']}=={'independent-reference-witness','raw-recorded-history'}
+          assert all(Path(a['name']).stat().st_size==a['bytes'] for a in r['assets'])
+          PYCODE
+      - name: Upload exact evidence to the draft prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload atlas-local-evidence-2026-10-25-333c2f0 ./*.jsonl.gz ASSET-MANIFEST.json SHA256SUMS.txt --repo ihabshea/polybase-downloads --clobber

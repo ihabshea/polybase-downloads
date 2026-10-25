@@ -1,0 +1,491 @@
+{
+  "schema": 1,
+  "kind": "isolated_production_website_candidate",
+  "utc": "2026-10-25T14:53:29.496381+00:00",
+  "guarded_source_directory": "/tmp/polybase-atlas-production-icn0tjvq/source",
+  "upload_source_directory": "/tmp/polybase-atlas-production-icn0tjvq/upload",
+  "archive": {
+    "path": "/tmp/polybase-atlas-production-icn0tjvq/polybase-atlas-production-static.tar.gz",
+    "bytes": 1278688,
+    "sha256": "c7e161314cc3476888106dda5ebc4d448fcb87e4acec0016a56f4f427e640c58",
+    "file_count": 51,
+    "format": "deterministic gzip/tar of dist plus original tracked source manifest; not a Sites accepted-package receipt"
+  },
+  "isolated_local_build_commit": "63bffeb226940d92f1b153993197369e9f6361cc",
+  "packaged_native_source": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "measured_cerberus_source": "54c92946abbaea30bae25e2e8178676e17cbd9e8",
+  "frontend_from_main_head": "d51d5d80f42493259dceae3078e8676c4ee1de0b",
+  "release_inputs_byte_identical": true,
+  "release_input_paths": [
+    "Cargo.toml",
+    "Cargo.lock",
+    ".cargo",
+    "rust-toolchain",
+    "rust-toolchain.toml",
+    "crates/engine",
+    "crates/cli",
+    "scripts/package-release.py",
+    "scripts/start-local-cluster.py",
+    "scripts/cluster_driver.py",
+    "LICENSE",
+    "GUARANTEES.md",
+    "docs/DOWNLOAD.md",
+    "docs/DOWNLOAD_REPLICATION.md",
+    "docs/SEARCH.md",
+    "docs/PREVIEW_0_7.md",
+    "docs/PREVIEW_0_8.md",
+    "docs/PREVIEW_0_8_2.md",
+    "docs/JANUS_0_9.md",
+    "docs/CERBERUS_1_0.md",
+    "clients",
+    "scripts/fault-lab-v2.py"
+  ],
+  "cerberus_measured_to_packaged_equal": true,
+  "cerberus_input_paths": [
+    "Cargo.toml",
+    "Cargo.lock",
+    ".cargo",
+    "rust-toolchain",
+    "rust-toolchain.toml",
+    "crates",
+    "clients",
+    "scripts/run-cerberus.py",
+    "scripts/cerberus-client-parity.py"
+  ],
+  "changed_candidate_paths": [
+    "docs/ATLAS_1_5.md",
+    "docs/ATLAS_1_5_TRACKER.md",
+    "docs/ATLAS_COMPATIBILITY.md",
+    "docs/ATLAS_CROSS_HOST.md",
+    "docs/ATLAS_OPERATIONS.md",
+    "docs/ATLAS_PERFORMANCE.md",
+    "website/README.md",
+    "website/atlas-evidence.mjs",
+    "website/atlas-social-preview.mjs",
+    "website/atlas.mjs",
+    "website/build.mjs",
+    "website/cerberus-card.html",
+    "website/check.mjs",
+    "website/components/atlas-quorum.mjs",
+    "website/home.mjs",
+    "website/hosting.md",
+    "website/preview7.mjs",
+    "website/public/assets/atlas-preview.png",
+    "website/public/assets/cerberus-preview.png",
+    "website/public/atlas-1-5-local-evidence.json",
+    "website/public/atlas-1-5-performance.json",
+    "website/public/atlas.css",
+    "website/test-atlas-evidence.mjs",
+    "website/verify.mjs"
+  ],
+  "protected_guard_files": {
+    "release-inputs.mjs": "13419a6a9c51ea9fcdadc67e75ed143e3cf62d68f09a49a8a1561819c2748378",
+    "prepare-release.mjs": "364ffb27afce41248589b3c07fd089b5536b09147d01d1a525bcc110b7fed218",
+    "test-release-inputs.mjs": "8239a4eeb2f0a830ec22a70fbcc4abd245779e9279414ef4becbc39c136d5155",
+    "cerberus-evidence.mjs": "502e30213ac7198284bfa2c7eac5f4a6f17da93168b6ea792e7d735ae2519e86",
+    "test-cerberus-evidence.mjs": "dfac27a1ca08b0cfcb2e964c38ecc6a1cf4f039be953c66741c07351c68a1055",
+    "janus-evidence.mjs": "3aac7855802a34d9fe7f65bd343a10fc82e00f912cb8c72eb992ba6bf2f1eee9",
+    ".openai/hosting.json": "230422c999e6ae96581e89023fd67281a2e5b94bc348cf78adf14336452cbc17",
+    "public/cerberus-1-0-validation.json": "9a5f77681901c25f460c2c878a28a4cf803451006a2538cd63716a75cc0b83dc",
+    "public/cerberus-independent-witness-validation.json": "8e448dfb81ded879de10371b972eeaadbcbbd8d51343d4e1182563d530fa67b4",
+    "public/janus-0-9-validation.json": "6c762f119fc62de8cfd5b2f0bd007574307e0b71fef95cb28189e0c7d062c605",
+    "public/preview-0-7-validation.json": "d705d5da74a249a8ca15abb4b9c1a52bf4d1e5b55f883be422d61eb389ee6609",
+    "public/preview-0-8-validation.json": "fe38734a61428dacc4a7c227588de0a3fb72813b20c95d758e27584186e14a3c",
+    "public/preview-0-8-2-validation.json": "b7617e427b109cebd2412c170e0d44600655419b3b428773ab95115cbdb95913"
+  },
+  "native_guard_block_sha256": "940b74fc199d98cb38bec952e9aacd31b14f6a9e99cedab2a7a21d901001ee20",
+  "overlay_source_sha256": {
+    "website/.openai/hosting.json": "230422c999e6ae96581e89023fd67281a2e5b94bc348cf78adf14336452cbc17",
+    "website/README.md": "e07934194a64ce88ae25e600dc672cd18c94964541b00f1408646efb9d3a6e51",
+    "website/atlas-evidence.mjs": "5a7ee0c1ebe5372c8cc813a1c21d94f4abd171195e600fbd9369de56e23af96f",
+    "website/atlas-social-preview.mjs": "b7b74f4fa17eb4814382419669a96997e094068d88f0cad884139a246990ebf8",
+    "website/atlas.mjs": "955441a896d833269126ebd27d2483cfccb4c4b3c3493532312620e0a275c71b",
+    "website/build.mjs": "5f0006cd8730f1e796cb893baf8f6ec9c6ac772ed44a5d447ff1f88e38955585",
+    "website/cerberus-card.html": "b4845ff965d85714d9551082fdf3cdec3a818b3f5b5bad4ca1a86673195a9858",
+    "website/cerberus-evidence.mjs": "502e30213ac7198284bfa2c7eac5f4a6f17da93168b6ea792e7d735ae2519e86",
+    "website/cerberus-social-preview.mjs": "bad88f463fb7784ae03613a5f8a9bedef19867fff494a43c0f6683e818816476",
+    "website/cerberus.mjs": "e36e7e1624260c258a1079042cbaef99dc2d5a7261ec531ac72d0a2014db7b6a",
+    "website/check.mjs": "7591576c810bbf20ace7913a4202674d4a04800a758a82a899538bf1931ec334",
+    "website/clients.mjs": "7b7b4fb22cd1d44f13ac55fcdd5e225fb0482d099c7056cead65a33355bb82c4",
+    "website/components/atlas-quorum.mjs": "5d7a92970a82e48154f34d132a234c45caf36f5ebfbf00be90bf903db3fa58ca",
+    "website/components/cerberus-guard.mjs": "2f260007aba6ea9c2965d087a6344a8b52e2c185e4f92de77ab932d351681bc9",
+    "website/components/commit-figure.mjs": "21558882be33506771f32c53d1063360306b5ce6aee58a4c9673cc7cf8b6f92f",
+    "website/components/execution-stage.mjs": "8874e8d1fc293e8fdfd24848413d26d5e62c14a86cb7009fd7ae1946415510d0",
+    "website/components/janus-explorer.mjs": "089a1ded315577ea778830c0416b037a85c1654c476877264cc1ba9b93c06656",
+    "website/components/planning-figure.mjs": "78157f9f280e270c794e515a7347f42b7353890c20afb9fd32c04d2dfbeff000",
+    "website/docs/choosing.mjs": "863b12cc835b4444100e03363fd6170fa1eec3baba6d55995ef7d1391c7e27d3",
+    "website/docs/concepts.mjs": "2f04ad40083ec5ee2ea4b18f665048048a8babeb1eec1632b0bc2df284a51cb2",
+    "website/docs/helpers.mjs": "71dc590bc821c940ea966adc95411d5cc4425d055dac39aa8e6ecf6fb580035e",
+    "website/docs/how-to.mjs": "7a7bac60d55e68fa7fc35076af213d59c563ca82035b960562ebcda9d659311a",
+    "website/docs/reference.mjs": "3db464585453673ca2f2617333f273a8443d016a9feb160764ca6451d1820981",
+    "website/docs/tutorial.mjs": "09a7a0a6e2e3417cb7226942da51ade132f90640e0ed735059221de4b2c3ccc3",
+    "website/home.mjs": "7937469ee2e5012c35066018c39f1e8ee901ce50e9a40550a800df4b9e0affba",
+    "website/hosting.md": "70e36d0da9960233c6259eed94285c173dd3fc2c6db488598cf4c40622078b33",
+    "website/janus-evidence.mjs": "3aac7855802a34d9fe7f65bd343a10fc82e00f912cb8c72eb992ba6bf2f1eee9",
+    "website/janus.mjs": "79bdd65a56919426d71c6155ab46738ce9864c1ba292a41f5b129c41f156108f",
+    "website/prepare-release.mjs": "364ffb27afce41248589b3c07fd089b5536b09147d01d1a525bcc110b7fed218",
+    "website/preview7.mjs": "c7e89f463e7b01f480021975e627af610516225f31bc3ad06772e97b2892d632",
+    "website/public/assets/atlas-preview.png": "4a2f5d38dbb52af3adbfb7f9b0be225122cd31e95ee5645ed00f88f2d8e90a57",
+    "website/public/assets/cerberus-preview.png": "920a1f4f704c24f32736fb86bb3478ce9368cd85b6effa0ee87b6bb13fc8779c",
+    "website/public/assets/console.png": "741cb6e2aa5fe0b19c753fa8424ac33962ac97de1942afc5fed7122c3ef53b58",
+    "website/public/assets/fonts/README.txt": "4bda40a9e67d2f33768d0a9fccc466f4524c2f45270f767e7c6fb335395c1817",
+    "website/public/assets/fonts/dm-sans-latin.woff2": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb",
+    "website/public/assets/fonts/dmsans-OFL.txt": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+    "website/public/assets/fonts/instrument-serif-italic-latin.woff2": "6ee678c33f388dd7ba59700ebea635deb98821baafd817b09891f7927177f702",
+    "website/public/assets/fonts/instrument-serif-normal-latin.woff2": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d",
+    "website/public/assets/fonts/instrumentserif-OFL.txt": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521",
+    "website/public/assets/mark.svg": "0884b51f4652cfe8709bf8be12eacedde3792e2a4490a554e5ffdf20cf116383",
+    "website/public/assets/social-preview.png": "e48dec0875e7553b9a1a62baf717bbe03fd121e57499929be7bad19f474559b2",
+    "website/public/atlas-1-5-local-evidence.json": "e30cfec3117b0c100c4e8d335e6fe724f9e36016717a99f7b7b48eb62764441e",
+    "website/public/atlas-1-5-performance.json": "3fcccfb9ac0e42a32cc0ffa2040b9d30de08f033d6c7eb1350df5dc1440d0082",
+    "website/public/atlas.css": "10ef2ae32a7498e852d9848e765af36685159c97f65d578debb7e9c7e7373529",
+    "website/public/cerberus-1-0-validation.json": "9a5f77681901c25f460c2c878a28a4cf803451006a2538cd63716a75cc0b83dc",
+    "website/public/cerberus-independent-witness-validation.json": "8e448dfb81ded879de10371b972eeaadbcbbd8d51343d4e1182563d530fa67b4",
+    "website/public/cerberus.css": "3b6e66416da8c691bce60da9cf25d13edb1b63793335e06a3645b381944b0e8b",
+    "website/public/examples/live-workspace.py": "868761133f4a2bc448a990b4e9ee8e5941d11eac313fbdd7c4b34ec23ebaeb4c",
+    "website/public/examples/local_client.py": "f48222130541f7b8e798ef1606832971fd624220bb1802268c14edf52e5af9bd",
+    "website/public/home.css": "96c15689b02e369aa85fb8dee1a44fe636870b305a7c7d48a8ef656f49267e8b",
+    "website/public/janus-0-9-validation.json": "6c762f119fc62de8cfd5b2f0bd007574307e0b71fef95cb28189e0c7d062c605",
+    "website/public/janus.css": "9889cc5057583bb7ba51938406d45875963937a15631553a457e38deba41b6b6",
+    "website/public/npm-downloads.json": "16636a80700e0aa004b42fe63b089624393489d437708697864af139e13aab3d",
+    "website/public/preview-0-7-validation.json": "d705d5da74a249a8ca15abb4b9c1a52bf4d1e5b55f883be422d61eb389ee6609",
+    "website/public/preview-0-8-2-validation.json": "b7617e427b109cebd2412c170e0d44600655419b3b428773ab95115cbdb95913",
+    "website/public/preview-0-8-validation.json": "fe38734a61428dacc4a7c227588de0a3fb72813b20c95d758e27584186e14a3c",
+    "website/public/styles.css": "d062f561db84ee335fd3774cfad50399ea588c9e7320007afd8332ca1c853161",
+    "website/public/theme.js": "95a1fc1937b3c95bf6b93dec706576bb75db8655dd7503d5d88d1406653b5f11",
+    "website/release-inputs.mjs": "13419a6a9c51ea9fcdadc67e75ed143e3cf62d68f09a49a8a1561819c2748378",
+    "website/release-notes.mjs": "86a77f49255de56851a70179d37752d2041c802b9213f5bbb6a7c20c749e1e70",
+    "website/serve.mjs": "aa3d808d7f19710a46600119bc667d6dd44c8fa388813b4bbc80c6e33a71b088",
+    "website/social-card.html": "8947ae60deff10c7acea35de419a69cc2052a92b6b460b4bc6423fb3e1e28505",
+    "website/social-preview.mjs": "e7bbf70c1137c18cba395c26161b24af64e76bfeb471044bc1620b92cbc286b8",
+    "website/test-atlas-evidence.mjs": "1e12cb00777fdf93d33463c412374219bc3934b320d73df6b97df94d02a2adea",
+    "website/test-cerberus-evidence.mjs": "dfac27a1ca08b0cfcb2e964c38ecc6a1cf4f039be953c66741c07351c68a1055",
+    "website/test-release-inputs.mjs": "8239a4eeb2f0a830ec22a70fbcc4abd245779e9279414ef4becbc39c136d5155",
+    "website/theme.mjs": "662abf6d9ed2194e08d5cb83181dc69851d2f7d80f24538ee519b9969cdfe0e1",
+    "website/verify-examples.py": "5e359c822a1101938ecc887032b27cbd1183b9f46d4636cc24226510daf9cf06",
+    "website/verify.mjs": "7d3d8d87c741d9e3b584cd956003bd65789c30d2b4b969328621cdeec95fa866",
+    "docs/ATLAS_1_5.md": "f5d3508a93c684da965d27720be4d795c73191dba658f7dda40a1372fc3a9049",
+    "docs/ATLAS_1_5_TRACKER.md": "b14e6694e31e6c32f58348fcae2b4f113e004c1e47c9375e401a400895180618",
+    "docs/ATLAS_COMPATIBILITY.md": "a7769cc5ed9bfa70fcd64c1ba824d38f61b05a467cf0af78f4a2bcddd3c517c2",
+    "docs/ATLAS_CROSS_HOST.md": "3a0ffd93858697332d37c2b8ef3a5316abe5d99eeaf96314985966f2c591cf31",
+    "docs/ATLAS_OPERATIONS.md": "92e92e5a069599e81c95eac89bbbbbd5040898fdf8b5f78b71dbd23f4d48bc17",
+    "docs/ATLAS_PERFORMANCE.md": "fd9d68bdb3c22c5913c7a6f9b5cbfa5cfd546966e31653ab0cbcb4d5dee6e3cc"
+  },
+  "checks": [
+    {
+      "name": "production-build",
+      "command": [
+        "node",
+        "website/build.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.4062550039998314,
+      "stdout_sha256": "4bf94846dce375d6ee80ec34eed8517778e3df2360805fa4c4a4d43d3fc43bc4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "production-check",
+      "command": [
+        "node",
+        "website/check.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3877822520007612,
+      "stdout_sha256": "a20e1042e10de1a2d45800d87907e867ceab27db113f90ce0da57db51a66f70c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "guard-tests",
+      "command": [
+        "node",
+        "--test",
+        "website/test-release-inputs.mjs",
+        "website/test-cerberus-evidence.mjs",
+        "website/test-atlas-evidence.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 1.3999310190010874,
+      "stdout_sha256": "798191821b96f3fddddd95fd06855fe39419d8fd40cb776854b2906a72dd52bd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "production": true,
+  "download_version": "1.0.0",
+  "atlas_source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "atlas_current_targets": {
+    "passed": 11,
+    "total": 12
+  },
+  "atlas_cold_targets": {
+    "passed": 36,
+    "total": 36
+  },
+  "cross_host_schedules": 0,
+  "engine_in_upload": false,
+  "native_archives_in_upload": false,
+  "only_sdk_documentation_examples_in_upload": true,
+  "deployed": false,
+  "deployment_blocker": "Sites save/package/deploy capabilities are not exposed in this managed environment; real existing manifest preserved, no new hosting configuration invented.",
+  "hosting_manifest_sha256": "230422c999e6ae96581e89023fd67281a2e5b94bc348cf78adf14336452cbc17",
+  "files": [
+    {
+      "path": ".openai/hosting.json",
+      "bytes": 106,
+      "sha256": "230422c999e6ae96581e89023fd67281a2e5b94bc348cf78adf14336452cbc17"
+    },
+    {
+      "path": "dist/SHA256SUMS.txt",
+      "bytes": 222,
+      "sha256": "e7303c7cd883b1e793d8451ac756f22a70704f555d0382163a0151be299098c0"
+    },
+    {
+      "path": "dist/assets/atlas-preview.png",
+      "bytes": 58085,
+      "sha256": "4a2f5d38dbb52af3adbfb7f9b0be225122cd31e95ee5645ed00f88f2d8e90a57"
+    },
+    {
+      "path": "dist/assets/cerberus-preview.png",
+      "bytes": 73528,
+      "sha256": "920a1f4f704c24f32736fb86bb3478ce9368cd85b6effa0ee87b6bb13fc8779c"
+    },
+    {
+      "path": "dist/assets/console.png",
+      "bytes": 115443,
+      "sha256": "741cb6e2aa5fe0b19c753fa8424ac33962ac97de1942afc5fed7122c3ef53b58"
+    },
+    {
+      "path": "dist/assets/fonts/README.txt",
+      "bytes": 614,
+      "sha256": "4bda40a9e67d2f33768d0a9fccc466f4524c2f45270f767e7c6fb335395c1817"
+    },
+    {
+      "path": "dist/assets/fonts/dm-sans-latin.woff2",
+      "bytes": 36980,
+      "sha256": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb"
+    },
+    {
+      "path": "dist/assets/fonts/dmsans-OFL.txt",
+      "bytes": 4482,
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1"
+    },
+    {
+      "path": "dist/assets/fonts/instrument-serif-italic-latin.woff2",
+      "bytes": 15684,
+      "sha256": "6ee678c33f388dd7ba59700ebea635deb98821baafd817b09891f7927177f702"
+    },
+    {
+      "path": "dist/assets/fonts/instrument-serif-normal-latin.woff2",
+      "bytes": 15040,
+      "sha256": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d"
+    },
+    {
+      "path": "dist/assets/fonts/instrumentserif-OFL.txt",
+      "bytes": 4405,
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+    },
+    {
+      "path": "dist/assets/mark.svg",
+      "bytes": 266,
+      "sha256": "0884b51f4652cfe8709bf8be12eacedde3792e2a4490a554e5ffdf20cf116383"
+    },
+    {
+      "path": "dist/assets/social-preview.png",
+      "bytes": 67268,
+      "sha256": "e48dec0875e7553b9a1a62baf717bbe03fd121e57499929be7bad19f474559b2"
+    },
+    {
+      "path": "dist/atlas-1-5-local-evidence.json",
+      "bytes": 600248,
+      "sha256": "e30cfec3117b0c100c4e8d335e6fe724f9e36016717a99f7b7b48eb62764441e"
+    },
+    {
+      "path": "dist/atlas-1-5-performance.json",
+      "bytes": 16792282,
+      "sha256": "3fcccfb9ac0e42a32cc0ffa2040b9d30de08f033d6c7eb1350df5dc1440d0082"
+    },
+    {
+      "path": "dist/atlas-1-5.html",
+      "bytes": 27975,
+      "sha256": "1400a5c0b55015eef036bfce1b63b310f6388f954e021d4e48c3b8855b0d9219"
+    },
+    {
+      "path": "dist/atlas.css",
+      "bytes": 13769,
+      "sha256": "10ef2ae32a7498e852d9848e765af36685159c97f65d578debb7e9c7e7373529"
+    },
+    {
+      "path": "dist/cerberus-1-0-validation.json",
+      "bytes": 18268,
+      "sha256": "9a5f77681901c25f460c2c878a28a4cf803451006a2538cd63716a75cc0b83dc"
+    },
+    {
+      "path": "dist/cerberus-1-0.html",
+      "bytes": 21671,
+      "sha256": "a1e1522217eff3dc8a07c22135bcaab6f083d3096e4e736977b7340b74472be4"
+    },
+    {
+      "path": "dist/cerberus-independent-witness-validation.json",
+      "bytes": 2005,
+      "sha256": "8e448dfb81ded879de10371b972eeaadbcbbd8d51343d4e1182563d530fa67b4"
+    },
+    {
+      "path": "dist/cerberus.css",
+      "bytes": 13529,
+      "sha256": "3b6e66416da8c691bce60da9cf25d13edb1b63793335e06a3645b381944b0e8b"
+    },
+    {
+      "path": "dist/clients.html",
+      "bytes": 9051,
+      "sha256": "ac12662e9419c96d2be048c1c8d8a7f7eed1e222ac24510375a38286cd0ee012"
+    },
+    {
+      "path": "dist/docs-concepts.html",
+      "bytes": 31385,
+      "sha256": "cbc386f7c15a57fc8783388d1be4f3e404d9f8e5917b798fb2391e9084fd1281"
+    },
+    {
+      "path": "dist/docs-how-to.html",
+      "bytes": 28630,
+      "sha256": "d7c2e467e0d4d0760dd8cc81a8361927d7e8ff5e04059076b92d59d5ad58006b"
+    },
+    {
+      "path": "dist/docs-reference.html",
+      "bytes": 36578,
+      "sha256": "1467d8aad0f68273bdf112724a7fcbfd7c85d54eb6909183fc8a386e9490348c"
+    },
+    {
+      "path": "dist/docs-tutorial.html",
+      "bytes": 18967,
+      "sha256": "dfde4cda3343e258b0e899ad30e14ce02611e4b0ffbdac9bec96f9edac280eef"
+    },
+    {
+      "path": "dist/docs.html",
+      "bytes": 8961,
+      "sha256": "344777c34750f4114833cbabacedcee69483dae45ebfaa36cf2b37d1c60d1cd2"
+    },
+    {
+      "path": "dist/download.html",
+      "bytes": 7709,
+      "sha256": "55c06fa3d6e07ba183228599c2ae19e18fa52ec8398d8670e5ed690937fae495"
+    },
+    {
+      "path": "dist/examples/live-workspace.py",
+      "bytes": 3377,
+      "sha256": "868761133f4a2bc448a990b4e9ee8e5941d11eac313fbdd7c4b34ec23ebaeb4c"
+    },
+    {
+      "path": "dist/examples/local_client.py",
+      "bytes": 4194,
+      "sha256": "f48222130541f7b8e798ef1606832971fd624220bb1802268c14edf52e5af9bd"
+    },
+    {
+      "path": "dist/examples/polybase-client.rs",
+      "bytes": 16932,
+      "sha256": "88cf8d7ab466044850e60e8a20a833279c636d2836064b71000d4cfbc6b34572"
+    },
+    {
+      "path": "dist/examples/polybase-client.ts",
+      "bytes": 12299,
+      "sha256": "dea178c87d6f18d418427a87ef244001a26ec5fd0c2b6958495793affca431e1"
+    },
+    {
+      "path": "dist/home.css",
+      "bytes": 19678,
+      "sha256": "96c15689b02e369aa85fb8dee1a44fe636870b305a7c7d48a8ef656f49267e8b"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 24012,
+      "sha256": "7a9e4730fde219416f4552297153065c3c89e04094ed79473a41b7d8b406f593"
+    },
+    {
+      "path": "dist/janus-0-9-validation.json",
+      "bytes": 619615,
+      "sha256": "6c762f119fc62de8cfd5b2f0bd007574307e0b71fef95cb28189e0c7d062c605"
+    },
+    {
+      "path": "dist/janus-0-9.html",
+      "bytes": 28331,
+      "sha256": "040476e881d84e5f10894a28b4354ef00ea586b5e2f6d7b2c9df5d6e4044a5ef"
+    },
+    {
+      "path": "dist/janus.css",
+      "bytes": 9708,
+      "sha256": "9889cc5057583bb7ba51938406d45875963937a15631553a457e38deba41b6b6"
+    },
+    {
+      "path": "dist/npm-downloads.json",
+      "bytes": 597,
+      "sha256": "16636a80700e0aa004b42fe63b089624393489d437708697864af139e13aab3d"
+    },
+    {
+      "path": "dist/preview-0-7-validation.json",
+      "bytes": 8367,
+      "sha256": "d705d5da74a249a8ca15abb4b9c1a52bf4d1e5b55f883be422d61eb389ee6609"
+    },
+    {
+      "path": "dist/preview-0-7.html",
+      "bytes": 20796,
+      "sha256": "b2aba2788ddda17e7813f75f10ddcc15801f3af7d2976082cb8753251001ccee"
+    },
+    {
+      "path": "dist/preview-0-8-2-validation.json",
+      "bytes": 10467287,
+      "sha256": "b7617e427b109cebd2412c170e0d44600655419b3b428773ab95115cbdb95913"
+    },
+    {
+      "path": "dist/preview-0-8-2.html",
+      "bytes": 21116,
+      "sha256": "927bce6c2eae93f062532cc914769183e326666909a05706925a282499c6a33f"
+    },
+    {
+      "path": "dist/preview-0-8-validation.json",
+      "bytes": 28680,
+      "sha256": "fe38734a61428dacc4a7c227588de0a3fb72813b20c95d758e27584186e14a3c"
+    },
+    {
+      "path": "dist/preview-0-8.html",
+      "bytes": 16578,
+      "sha256": "e879f0bce40f02ae6c6cffc73e398d5a97c8298d4d1d3e29b8891327c5fb7351"
+    },
+    {
+      "path": "dist/privacy.html",
+      "bytes": 5739,
+      "sha256": "666b5a018d9b0631b78ea2496e1df913b6816c027432bdc1647c3728ae09a393"
+    },
+    {
+      "path": "dist/release-notes.html",
+      "bytes": 6875,
+      "sha256": "5f358b6f66aebc0983541a185ce7eb70ec046ca71df4a4d9fc40b47deae96f11"
+    },
+    {
+      "path": "dist/release.json",
+      "bytes": 593,
+      "sha256": "e923171b95e6286a21a49f26a866df6344b2155f873e29cde84f5617129b51a3"
+    },
+    {
+      "path": "dist/robots.txt",
+      "bytes": 74,
+      "sha256": "f8a0a98884646a808becf53cc11dafe2b7295caa8d8fbb21d2162546e7c084b3"
+    },
+    {
+      "path": "dist/sitemap.xml",
+      "bytes": 1170,
+      "sha256": "1e5018e98f1cf318e44dc7ce1fe7c33145b5115af9e3e1e2ee90e873b2c8786b"
+    },
+    {
+      "path": "dist/styles.css",
+      "bytes": 15848,
+      "sha256": "d062f561db84ee335fd3774cfad50399ea588c9e7320007afd8332ca1c853161"
+    },
+    {
+      "path": "dist/theme.js",
+      "bytes": 1398,
+      "sha256": "95a1fc1937b3c95bf6b93dec706576bb75db8655dd7503d5d88d1406653b5f11"
+    }
+  ],
+  "atlas_release_qualification_passed": false,
+  "website_production_checks_passed": true,
+  "main_repositories_modified_by_this_preparation": false,
+  "source_scope": "Only upload/ and the static tar are public candidates; source/ and packaged-source.tar contain private 1.0 guard inputs and must not be uploaded."
+}
