@@ -1,0 +1,9 @@
+{
+  "failure_point": "qualification-runner-or-audit",
+  "minimality": "infrastructure failure; no engine mismatch or minimized workload inferred",
+  "reason": "artifact filesystem lacks the conservative 64KiB-per-history +128MiB reserve",
+  "replay_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/run-atlas-verify.py --histories 50000 --workers 8 --seed 20261025 --database-directory /tmp/atlas-b2c865f-main-storage --require-local-thresholds --output target/atlas-50000-b2c865f",
+  "requested_histories": 50000,
+  "schema": 1,
+  "seed": 20261025
+}

@@ -1,0 +1,14 @@
+✔ documentation can be committed after a release without replacing its binaries (59.035223ms)
+✔ a different binary, build input or bundled guide requires new qualification (833.711823ms)
+✔ a missing or malformed release revision is rejected (27.485086ms)
+✔ Cerberus permits packaging changes but rejects unmeasured implementation changes (195.316891ms)
+✔ Janus publication requires the full measured matrix and stable provenance (6.496755ms)
+✔ a published performance miss is permitted; suppressing it is rejected (2.352683ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1216.854678

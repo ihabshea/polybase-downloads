@@ -1,0 +1,308 @@
+{
+  "all_public_audit_wrapper_and_checker_pids_ended": true,
+  "all_recorded_observations_consistent": true,
+  "audit_python_sha256": "938d6a6961049438a2671a13325b6a5bd091b78feb10ce115122f8dca5d6fc99",
+  "canonical_recorded_history_comparison_to_preserved_333": [
+    {
+      "same_canonical_recorded_history_digest_as_333c2f0": true,
+      "shard": 0
+    },
+    {
+      "same_canonical_recorded_history_digest_as_333c2f0": true,
+      "shard": 1
+    },
+    {
+      "same_canonical_recorded_history_digest_as_333c2f0": true,
+      "shard": 2
+    },
+    {
+      "same_canonical_recorded_history_digest_as_333c2f0": true,
+      "shard": 3
+    },
+    {
+      "same_canonical_recorded_history_digest_as_333c2f0": true,
+      "shard": 4
+    },
+    {
+      "same_canonical_recorded_history_digest_as_333c2f0": true,
+      "shard": 5
+    },
+    {
+      "same_canonical_recorded_history_digest_as_333c2f0": true,
+      "shard": 6
+    },
+    {
+      "same_canonical_recorded_history_digest_as_333c2f0": true,
+      "shard": 7
+    }
+  ],
+  "checker_executable_sha256": "5a50260cb512623938817d60b3a8f6c70b819866aed82bb032e1281a997433b6",
+  "claims": {
+    "actual_engine_execution_verified": false,
+    "capture_completeness_verified": false,
+    "cross_host_faults_verified": false,
+    "release_qualification": false
+  },
+  "ended_wrapper_pids": [
+    251653,
+    251656,
+    251658,
+    251659,
+    251660,
+    251663,
+    251665,
+    251666
+  ],
+  "engine_version": "1.5.0-preview.1",
+  "full_shards_passed": 8,
+  "full_shards_required": 8,
+  "global_identity_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-identity.json",
+  "global_identity_sha256": "3f7e72651751fe44647b91c7cf8ecd0e3ca3b791c6417ee8d03cefdc9f90ad6b",
+  "inconclusive": 0,
+  "independently_recounted_stored_observations": {
+    "client_operations": 825401,
+    "compactions": 100000,
+    "delivery_reorder_observations": 1252006,
+    "historical_expired_errors": 100000,
+    "historical_point_reads": 10116092,
+    "historical_positions": 2426203,
+    "historical_searches": 2426203,
+    "interrupted_snapshots": 50000,
+    "leader_elections": 100000,
+    "leadership_changes": 50000,
+    "local_reads": 250000,
+    "message_delays": 272852,
+    "message_deliveries": 7815991,
+    "message_drops": 1325227,
+    "message_duplicates": 365652,
+    "message_sends": 8775566,
+    "named_retries": 100000,
+    "quorum_reads": 150000,
+    "restarts": 250000,
+    "unknown_writes": 100000
+  },
+  "input_and_tool_stability_report": "/workspace/polybase/target/atlas-independent-b2c865f/input-and-tool-stability.json",
+  "input_and_tool_stability_sha256": "86c86c82d2981a8636c57156de27ac984300a7b813f2a4cc1fa3bbcc0aed1ac1",
+  "invalid": 0,
+  "limitations": [
+    "Validates supplied observations; execution/capture/source labels remain unauthenticated.",
+    "Historical page boundaries/cursors and dropped/delayed reorder offsets are not stored and are not inferred.",
+    "Local reads are prefix consistency; only quorum-labeled observations receive interval linearizability checking.",
+    "The refused overlay artifact preflight produced zero engine cases and is not counted in this corpus."
+  ],
+  "main_artifact_and_replica_storage_scope": "tmpfs, actual Replica API/drop-reopen only, not persistent-media or process-kill qualification",
+  "master_seed": 20261025,
+  "ordered_certificate_manifest_sha256": "9de6403f9a6cebd7d046f0c78b25fbee3163d3ef0f7a878f9adf5ac6b7e95539",
+  "parent_private_master_is_separately_required": true,
+  "parent_private_master_report_observed_complete": false,
+  "profiles": {
+    "asymmetric-leader-change": 16667,
+    "interrupted-snapshot": 16666,
+    "loss-delay-reorder": 16667
+  },
+  "recorded_histories_checked": 50000,
+  "recorder_only_counters_not_independently_recounted": [
+    "historical_pages",
+    "message_reorders"
+  ],
+  "reference_module_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+  "schema": 1,
+  "separate_overlay1000_identity_sha256": "19e00329df45e17dddb4688ed4b685c1dcd231d1b03216fadc6eca45be8c8161",
+  "separate_overlay1000_report": "/workspace/polybase/target/atlas-independent-b2c865f/overlay1000-audit.json",
+  "separate_overlay1000_report_sha256": "b0541f8af699af54b45ef3533e991cc4a31554ece741e1908da5ae50039d0dad",
+  "shards": [
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/audit-000.json",
+      "audit_report_sha256": "e4446d5ea9bb794186a885f5f1e3562661f86327698cee7c1ed7428198bae0db",
+      "canonical_histories_sha256": "ca6b7a359a589fdc729b26adb34f702744b90efd41310107809e1a126e0aece5",
+      "checker_responses_sha256": "e55eea2d26d88bb7535f387065c3967dd53b699a5e7de6d7eedfda446b3fdc3e",
+      "client_operations": 103250,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "20e05ad2248cdd5a771fff387572ba49b8a9b9d17d8c0a14762e732ead04fff2",
+        "file_sha256": "dddc4cdfc251e939697162bd3cae8250686fe1534f6413d06d3871f3fe8a6201",
+        "path": "/tmp/atlas-50000-b2c865f/local-durable-000/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2084
+      },
+      "records": 6250,
+      "shard": 0,
+      "witnesses": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/witnesses-000.jsonl.gz",
+      "witnesses_sha256": "b4737a9e7929ff5da8635c3fce609440c71e16b09cd1119e6df1df684970b7af"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/audit-001.json",
+      "audit_report_sha256": "040507ab76fd5bf02bc47cd428d4f8acd25d8d838ee82ddff94c9b05411780b3",
+      "canonical_histories_sha256": "633dd0eb006da216f8716c62fb5e18dbb1834ba5ae9cd4a17bc87dc5f64f3782",
+      "checker_responses_sha256": "73ef4bd331d818807dd9eb602332069d0e672c9ba7226effd3ee4915201148d9",
+      "client_operations": 102882,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "177d01cd24651cb176a80afc7a6aa9bd2d5b2dafde4d40191f843b9591f45c74",
+        "file_sha256": "f4abc593dad2a2a58e3625efac00af9752f26a88e7a1793ed754d2aebe2ef868",
+        "path": "/tmp/atlas-50000-b2c865f/local-durable-001/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2084,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 1,
+      "witnesses": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/witnesses-001.jsonl.gz",
+      "witnesses_sha256": "9147064c820e4a61ad5cfa77f5560b273a0c4ff0ca2921570bd850c0b051a431"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/audit-002.json",
+      "audit_report_sha256": "bf41c53143ed32b07992846747db8c383abade5ff2f3e0847d529959363d62a8",
+      "canonical_histories_sha256": "80fc2ae4a2b9343698ae694ab2f55c2783470a0ead2b4f050495fb78609e86b3",
+      "checker_responses_sha256": "7e2fc9f5e2362fb140f1576485786ca209eac70f7a50892c92e1d428de2bd925",
+      "client_operations": 103210,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "9480f81ff3f576c7bfc0da222e638afe491c9f39bf93b62c2398598436392820",
+        "file_sha256": "115403f5c85224f6aabeeddfbd6148253dfdc43b620a03ad43c5ec4059783123",
+        "path": "/tmp/atlas-50000-b2c865f/local-durable-002/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2084,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 2,
+      "witnesses": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/witnesses-002.jsonl.gz",
+      "witnesses_sha256": "e88982f5218bb206350ade2349ef470bf39d1a672bc9c2f4151038a27f2751f1"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/audit-003.json",
+      "audit_report_sha256": "0e71d450589d748c0e80d898e98bfb55d48a975350e2073b79e8dd4167b0d5cc",
+      "canonical_histories_sha256": "694816f78525f67cc2adf7033d9553766f32c4e511504fa0267d17ecf977412b",
+      "checker_responses_sha256": "cbcf85ac6a4cb903831cf003cc317b6516d0ca1790c7e0eca90723ae92f39508",
+      "client_operations": 103278,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "1879c00d832c15f6d0a075dc89cf6961a4b134c29e511afc68fb0b00f0a0c2bc",
+        "file_sha256": "345c893e6e5fd3830515a427e7349c6d88753712dc46fb51e11b6d948bfef4c4",
+        "path": "/tmp/atlas-50000-b2c865f/local-durable-003/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2084
+      },
+      "records": 6250,
+      "shard": 3,
+      "witnesses": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/witnesses-003.jsonl.gz",
+      "witnesses_sha256": "1d7284e2f63cbad045cecad83654355d3fa8f46104cf80146d98bfeab61d5f3e"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/audit-004.json",
+      "audit_report_sha256": "37c6d833d23854b50cef5b99bf7c3bb486305f5e5f2d8dc95e991259dd8d2cb3",
+      "canonical_histories_sha256": "e6a215d5b56ba06cf45f18da93392ea5ee1690ee72896059ef776d72d639049e",
+      "checker_responses_sha256": "d4671623e9afec78bf327042b277bc47e48fbb21d17db1b561a1112721465b76",
+      "client_operations": 102780,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "64790f78dbd8c8c8f4bc6bba1d67da8d40b77175d023e8474a34c948fbed7b8a",
+        "file_sha256": "f9183c3b791facad376e8d6a43f9e3dc25a445595303b77e110c7ff61a86d843",
+        "path": "/tmp/atlas-50000-b2c865f/local-durable-004/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2084,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 4,
+      "witnesses": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/witnesses-004.jsonl.gz",
+      "witnesses_sha256": "b55215668a8aa6534e92d2ee8168b950dbee1b79515fb52d498edc0c3cf3e6cf"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/audit-005.json",
+      "audit_report_sha256": "34bec50c2843f81538f947954d44b1a3f866b63375fd201f1098288313c80a40",
+      "canonical_histories_sha256": "c862b2beadb94ab1855a6d07dad61be14a33f2106da7d07d0fefb5b4c1ab96dd",
+      "checker_responses_sha256": "d80bef0f6c57f72da991939fac717c4c7a2acfa325c9c18ff5f3fab477791e37",
+      "client_operations": 103274,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "771585934f38cdde994c0fdbb311f81f83c21628f2481a4bf5e390b9f84e89c3",
+        "file_sha256": "d03e7d72f4b8b4b4a294a12872639b1600a96a143dc38ad1e4a044bdb383b849",
+        "path": "/tmp/atlas-50000-b2c865f/local-durable-005/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2084,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 5,
+      "witnesses": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/witnesses-005.jsonl.gz",
+      "witnesses_sha256": "c590bd501fc1be0e3e8bd2c13ccaceb495483471f587d6d5d3ffe7ce22365459"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/audit-006.json",
+      "audit_report_sha256": "addfc53cfac1e1ba9aed9f4d6d27b4a6d9ce31a5fd5c66505511eef84218db75",
+      "canonical_histories_sha256": "eeb228785f8daa1b8a36ea8bba05ed9a90cb2fc69d93361806851ab529d7e798",
+      "checker_responses_sha256": "64c662f0a8640d382c89c80247e3a58d768afd795a5c435659421a0512ea3da7",
+      "client_operations": 103251,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "ed7ce295917edc03cd25d4e02a02c341450c4c57f396db46b5a23bda4e32ccda",
+        "file_sha256": "b62746b2993121f5ebdf41269b7f96dfb3796d5289943737bc8664bf8100be73",
+        "path": "/tmp/atlas-50000-b2c865f/local-durable-006/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2084
+      },
+      "records": 6250,
+      "shard": 6,
+      "witnesses": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/witnesses-006.jsonl.gz",
+      "witnesses_sha256": "44cbe02295f6f507d164581d3ce0322343c2f5dedc3c34000b4b3eb6040a95ec"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/audit-007.json",
+      "audit_report_sha256": "5e0ce0f3b2be5bbefcc261599f593d23697e1b1bc66a02da940154be6dd843c2",
+      "canonical_histories_sha256": "31013bdd13014d6a6bb43cc6b8c2f6dca30718308112241cc7ae8e6e777c871d",
+      "checker_responses_sha256": "6a32a6e7fe17c7aaca9106165e8235917d82668b291990014666e37d766e6f4a",
+      "client_operations": 103476,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "560e03f6088b46bf3cfec5af69c06acba90e533661fe9193393b6b2b30514ee1",
+        "file_sha256": "8794ee39a3e5d76968d10852335ae362adf65b903bb3badaa5f66aea93e9d41e",
+        "path": "/tmp/atlas-50000-b2c865f/local-durable-007/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2084,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 7,
+      "witnesses": "/workspace/polybase/target/atlas-independent-b2c865f/main50000-shards/witnesses-007.jsonl.gz",
+      "witnesses_sha256": "e91011fbe368ec4c189ad3ee956c23251dcfdcfe84d26aef5f0d1c7d688ddc77"
+    }
+  ],
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "strategy": "Eight complete independent public shard audits, one persistent reference checker per shard, followed by strict global identity/hash/witness/count checks; no serial prefix counted.",
+  "tool_manifest_sha256": "d361b0482b7fa6d707e2041940caf4b407077b40236b58700653f69322a3aead",
+  "violations": 0,
+  "witness_verified_local_prefix_reads": 250000,
+  "witness_verified_named_replays": 100000,
+  "witness_verified_operation_count": 825401,
+  "witness_verified_quorum_reads": 150000,
+  "witness_verified_unknown_calls": 100000
+}

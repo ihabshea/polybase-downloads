@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "kind": "post_merge_integration_validation",
+  "checked_at_utc": "2026-10-25T14:50:28.966667+00:00",
+  "merge_commit": "d51d5d80f42493259dceae3078e8676c4ee1de0b",
+  "measured_implementation_source": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "upstream_main_sha": "a6407d670d9f59220b3e2527b35c8870727306ac",
+  "protected_file_count": 159,
+  "protected_set_sha256": "5d29c3620022d8dc37610829e89b91f26ebb2b43c1e51a19606d104ef7117cc9",
+  "implementation_unchanged_after_checks": true,
+  "checks": [
+    {
+      "name": "release-input-guards",
+      "command": [
+        "node",
+        "--test",
+        "website/test-release-inputs.mjs"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "elapsed_seconds": 1.2702763460001734,
+      "log": "release-input-guards.log",
+      "log_sha256": "bb199a11faa6d427b70ff5e2802666718efc6e6192e16c66dcd2113834063ef7"
+    },
+    {
+      "name": "archive-rejection",
+      "command": [
+        "python3",
+        "-B",
+        "scripts/test-release-package.py",
+        "/tmp/atlas-release-inputs-1.0.0/polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "elapsed_seconds": 9.994682410000678,
+      "log": "archive-rejection.log",
+      "log_sha256": "fd71e7ba1847a7c7d037989d154746727165474c73170c955c1fd2b4459180bc"
+    },
+    {
+      "name": "staging-boundary",
+      "command": [
+        "python3",
+        "-B",
+        "scripts/test-release-staging.py",
+        "--target",
+        "x86_64-unknown-linux-gnu"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "elapsed_seconds": 29.322059549998812,
+      "log": "staging-boundary.log",
+      "log_sha256": "e8dffafffce281c9bcebcda16beff78e5c67190f9d7149a6dd7354efbc31dd21"
+    }
+  ],
+  "passed": true,
+  "archive_input": {
+    "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz",
+    "sha256": "4fe3aca6dd326f54b1231092588c7da04efc5d28f5fdd7699c0d2e226e809f91",
+    "source_sha": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+    "scope": "Existing published1.0archive verified before negative mutation controls; no new native release qualification."
+  },
+  "engine_tests_repeated": false,
+  "measurement_relabelled": false,
+  "native_release_qualified": false,
+  "website_deployed": false,
+  "scope": "Packaging boundary/source guard integration only; full site policy/browser checks are separately recorded by frontend. Staging test performs a disposable default-feature CLI build before its expected symlink rejection; it does not publish a package."
+}

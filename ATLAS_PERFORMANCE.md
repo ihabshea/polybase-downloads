@@ -4,13 +4,51 @@ Atlas compares measured execution with the immutable Polybase 1.0 source commit
 `54c92946abbaea30bae25e2e8178676e17cbd9e8`. The 0.8.2 measurements provide
 historical context only. They are not the regression baseline. Performance
 targets become release evidence only after an unchanged, clean-source paired
-run; this document alone reports no improvement or passing measurement.
+run; the measurements below are source-qualified local evidence, not a full Atlas release.
 
 The fixed targets are candidate/baseline ratios of at most **1.10 for both p50
 and p95 current-head latency**, and **0.50 for p95 cold historical latency**.
 Cold p50 ratios are reported as diagnostics. Every workload is reported, including failures to meet those targets.
 The runner never moves the baseline, adjusts predicates, excludes slow samples,
 or substitutes modeled costs for measured durations after observing a result.
+
+## Recorded qualification — 25 October 2026
+
+Candidate source `b2c865f0c8299e7f54784d81d012d35aa7b79512` completed all
+84 cases, three paired repeats, 5,004 measured pairs and independent result parity.
+Source and executable before/after checks passed. The measurement is valid;
+**performance qualification failed** because one fixed target was missed.
+
+| Gate | Result |
+| --- | --- |
+| Current-head p50 and p95 ≤1.10× | 11/12 cases pass |
+| Cold-history p95 ≤0.50× | 36/36 pass; ratios 0.0356–0.2468× |
+| Remaining miss | 1K range p95: 34.927 µs / 30.202 µs = 1.156× |
+| That case's p50 | 13.913 µs / 17.009 µs = 0.818× |
+| Warm-history diagnostics, ungated | 11/36 cases exceed 1.10× at p50 or p95; p95 ratios 0.483–3.022× |
+
+The original `333c2f0` iteration passed 5/12 current-head and 36/36 cold-history
+cases. Both iterations retain all samples and misses. These are distinct source
+revisions on the same fixed workload, not selectively combined sample pools.
+The baseline remains `54c92946abbaea30bae25e2e8178676e17cbd9e8`; the subsequently
+published 1.0 package has the same engine/client/campaign inputs.
+
+At 100K records, sampled process peak RSS was 594,408 KiB candidate versus
+594,344 KiB baseline. This short bounded probe does not establish indefinite
+memory stability. Candidate single/three-Replica throughput was 679.23/123.35
+commits/s, compared with baseline 674.47/122.00; candidate commit p95s were
+2.198/10.880 ms versus 1.974/11.649 ms. These are fsynced local FIFO-delivery
+measurements, including all-peer drain, not cross-host networking measurements.
+
+The host was a shared x86-64 Linux environment, five visible Intel Xeon Platinum
+8573C CPUs, Rust 1.99.1, overlay-backed database directories. History-cache cold
+means empty disposable engine cache; OS/page-cache coldness is uncontrolled.
+Full configuration, actual samples and limits accompany the immutable report.
+Report SHA256: `3fcccfb9ac0e42a32cc0ffa2040b9d30de08f033d6c7eb1350df5dc1440d0082`.
+
+[Both immutable iterations and raw evidence](https://github.com/ihabshea/polybase-downloads/tree/feature/1.5-atlas/qualification/atlas)
+remain public. Later documentation/site integration does not relabel measured b2
+reports as runs against the final whole repository tree.
 
 Run from the repository with the configured Rust toolchain, after source freeze
 and after other builds finish:

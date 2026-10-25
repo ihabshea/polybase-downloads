@@ -1,0 +1,33 @@
+   Compiling polybase-engine v1.5.0-preview.1 (/workspace/polybase/crates/engine)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.61s
+     Running unittests examples/atlas_verify.rs (target/debug/examples/atlas_verify-0ce834cca6881980)
+
+running 25 tests
+test checker::tests::binary_range_order_duplicates_and_repeated_mutations ... ok
+test checker::tests::concurrent_named_duplicates_have_one_original_and_one_replay ... ok
+test checker::tests::atomic_multi_key_and_barrier_gaps ... ok
+test checker::tests::conditional_writes_must_choose_exactly_one_winner ... ok
+test checker::tests::false_conflict_and_partial_conflict_mutation_are_rejected ... ok
+test checker::tests::duplicate_named_conditional_conflict_stays_conflict_after_state_changes ... ok
+test checker::tests::limits_and_invalid_are_never_reported_as_violations_or_witnesses ... ok
+test checker::tests::local_reads_cannot_predict_future_invocations_and_enforce_minimum ... ok
+test checker::tests::named_retry_cannot_apply_twice_or_change_receipt ... ok
+test checker::tests::outcome_absence_and_identity_mismatch_are_state_observations ... ok
+test checker::tests::overlapping_calls_are_searched_not_sorted_by_input_or_node ... ok
+test checker::tests::real_time_and_lost_acknowledged_commit_are_rejected ... ok
+test checker::tests::reducer_preserves_mutation_context_and_never_claims_global_minimum ... ok
+test checker::tests::schema_round_trip_preserves_real_observations_and_replay_metadata ... ok
+test checker::tests::stale_local_prefix_is_allowed_but_quorum_stale_read_is_not ... ok
+test checker::tests::timeout_can_commit_after_its_response_without_becoming_an_abort ... ok
+test checker::tests::unknown_future_fields_are_rejected_instead_of_silently_dropped ... ok
+test checker::tests::unknown_original_is_anchored_by_later_named_retry ... ok
+test checker::tests::unknown_overwritten_proposal_can_be_omitted ... ok
+test checker::tests::unknown_term_uses_observed_anchor_and_rejects_split_brain_positions ... ok
+test checker::tests::hard_operation_and_model_memory_limits_are_distinct ... ok
+test tests::every_local_profile_executes_real_durable_restarts_and_interrupted_chunks ... ok
+test tests::seed_replay_preserves_observed_results_and_exact_transport_schedule ... ok
+test checker::tests::exhaustive_tiny_register_oracle_agrees_on_6144_synthetic_histories ... ok
+test checker::tests::independent_pending_oracle_agrees_on_12288_ambiguous_traces ... ok
+
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.45s
+

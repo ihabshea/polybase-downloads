@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "inputs": {
+    "source_sha": "54c92946abbaea30bae25e2e8178676e17cbd9e8",
+    "engine_git_tree": "96cc6504b050e03ab76f4fbd7dbd439e3720b8a9",
+    "benchmark_source_sha256": {
+      "crates/engine/examples/atlas_bench.rs": "e668d876fa82def216a531cc8c73aa692337be991489e17f10e99d55147ce164",
+      "crates/engine/examples/janus_bench_support/mod.rs": "c64ae4a22a443bf48e252fab40a9da9cabe1edafbaaec6dfd701f9d47ddc4f6b"
+    },
+    "rust": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+    "rustflags": {
+      "RUSTFLAGS": null,
+      "CARGO_ENCODED_RUSTFLAGS": null
+    },
+    "profile": "release",
+    "features": "default"
+  },
+  "executable_sha256": "4c681dc2457534c7f7b048174d5f7fcc39ead9d20113c2102f176ed5fab1ab30",
+  "source_archive_directory": "/tmp/polybase-atlas-baseline-abwnl9td",
+  "origin": "read-only git archive of pinned commit, with only the identical recorded benchmark files added; no worktree or engine patch",
+  "build_command": "cargo build --release --locked -p polybase-engine --example atlas_bench"
+}

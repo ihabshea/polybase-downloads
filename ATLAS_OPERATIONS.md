@@ -2,7 +2,7 @@
 
 **Polybase 1.5.0-preview.1 candidate.** This guide describes implemented candidate
 commands and their operating contract. It does not declare Atlas qualified or
-downloadable. The public database download remains 0.9.0. The real three-host
+downloadable. The public database download is 1.0.0. The real three-host
 qualification gates remain open; local processes, simulated transport and tmpfs
 reopen tests cannot close them. See the [release contract](ATLAS_1_5.md),
 [tracker](ATLAS_1_5_TRACKER.md) and [cross-host procedure](ATLAS_CROSS_HOST.md).

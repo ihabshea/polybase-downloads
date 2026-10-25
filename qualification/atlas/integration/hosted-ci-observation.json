@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "scope": "Observed hosted private-repository CI, separate from locally executed passing checks",
+  "run_id": 40200711460,
+  "url": "https://github.com/ihabshea/polybase/actions/runs/40200711460",
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "conclusion": "failure",
+  "passed": false,
+  "jobs": [
+    {
+      "name": "minimum-rust",
+      "status": "completed",
+      "conclusion": "failure",
+      "executed_steps": 0
+    },
+    {
+      "name": "check (ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "failure",
+      "executed_steps": 0
+    },
+    {
+      "name": "check (macos-latest)",
+      "status": "completed",
+      "conclusion": "failure",
+      "executed_steps": 0
+    },
+    {
+      "name": "evaluation-packages",
+      "status": "completed",
+      "conclusion": "skipped",
+      "executed_steps": 0
+    },
+    {
+      "name": "public-website",
+      "status": "completed",
+      "conclusion": "skipped",
+      "executed_steps": 0
+    }
+  ],
+  "diagnosis": "Jobs report no executed steps. Runner/account cause is not established; annotations access was unavailable. This is not a passing hosted build."
+}

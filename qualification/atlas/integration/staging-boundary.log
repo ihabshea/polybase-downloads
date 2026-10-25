@@ -1,0 +1,1 @@
+PASS: dangling checksum symlink refused; no write outside staging

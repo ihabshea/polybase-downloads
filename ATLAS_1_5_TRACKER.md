@@ -11,11 +11,12 @@ rechecked the stored observations. Those reopenings are not process deaths or
 cross-host faults. A separate rolling run recorded eight actual SIGKILL restarts
 and verified the supported fixed-mode version pair.
 
-The first unchanged paired benchmark passed all 36 cold-history p95 targets and
-missed seven of twelve current-head p50/p95 targets. Its raw samples and source
-remain a counterexample during focused follow-up optimization. The baseline and
-workload have not changed. New measurements are required before assigning the
-follow-up source any performance claim.
+The final measured candidate at `b2c865f` repeated those same seeded histories;
+these are not 100,000 distinct histories. Its clean-source paired benchmark passes
+**11/12 current-head** and **36/36 cold-history p95** targets. The 1K range p95
+is 34.927 µs versus baseline 30.202 µs (1.156×), so the performance gate remains
+open. The original `333c2f0` run's seven current-head misses remain unchanged.
+The pinned 1.0 baseline, workload and targets never moved.
 
 - [ ] No acknowledged quorum commit loss.
 - [ ] No partially visible transactions.

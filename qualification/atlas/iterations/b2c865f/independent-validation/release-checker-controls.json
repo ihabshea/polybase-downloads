@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "new_engine_source_under_qualification": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "synthetic_checker_controls": true,
+  "actual_engine_cases": 0,
+  "checker_executable_sha256": "5a50260cb512623938817d60b3a8f6c70b819866aed82bb032e1281a997433b6",
+  "reference_model_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+  "python_eight_selftests_observed_pass": true,
+  "all_passed": true,
+  "controls": [
+    {
+      "name": "positive",
+      "returncode": 0,
+      "result": {
+        "explored": 5,
+        "local_prefix_reads": 1,
+        "status": "linearizable",
+        "witness": [
+          {
+            "effect": "local_prefix",
+            "operation": 3,
+            "position": {
+              "index": 0,
+              "term": 0
+            }
+          },
+          {
+            "effect": "applied",
+            "operation": 1,
+            "position": {
+              "index": 1,
+              "term": 1
+            }
+          },
+          {
+            "effect": "quorum_read",
+            "operation": 2,
+            "position": {
+              "index": 2,
+              "term": 1
+            }
+          }
+        ]
+      },
+      "summary": {
+        "schema": 1,
+        "type": "summary",
+        "records": 1,
+        "linearizable": 1,
+        "violations": 0,
+        "inconclusive": 0,
+        "invalid": 0,
+        "all_passed": true,
+        "engine_executed": false,
+        "checker_source_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+        "search_state_budget": 200000,
+        "input_stopped_at_limit": false
+      },
+      "input_sha256": "cd1d0bdd4a5adbfb520727c678ded631e70c2227cbae181093f89de2921c262e",
+      "passed": true
+    },
+    {
+      "name": "wrong_quorum_read",
+      "returncode": 1,
+      "result": {
+        "explored": 4,
+        "reason": "no_interval_compatible_atomic_cluster_history",
+        "status": "violation"
+      },
+      "summary": {
+        "schema": 1,
+        "type": "summary",
+        "records": 1,
+        "linearizable": 0,
+        "violations": 1,
+        "inconclusive": 0,
+        "invalid": 0,
+        "all_passed": false,
+        "engine_executed": false,
+        "checker_source_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+        "search_state_budget": 200000,
+        "input_stopped_at_limit": false
+      },
+      "input_sha256": "f6bdf9ef164878cbbd8547e47bd30a83af68bc4416296ce27409151bdd4357b3",
+      "passed": true
+    },
+    {
+      "name": "bounded_inconclusive",
+      "returncode": 1,
+      "result": {
+        "explored": 1,
+        "reason": "search_state_budget",
+        "status": "inconclusive"
+      },
+      "summary": {
+        "schema": 1,
+        "type": "summary",
+        "records": 1,
+        "linearizable": 0,
+        "violations": 0,
+        "inconclusive": 1,
+        "invalid": 0,
+        "all_passed": false,
+        "engine_executed": false,
+        "checker_source_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+        "search_state_budget": 1,
+        "input_stopped_at_limit": false
+      },
+      "input_sha256": "cd1d0bdd4a5adbfb520727c678ded631e70c2227cbae181093f89de2921c262e",
+      "passed": true
+    },
+    {
+      "name": "duplicate_json",
+      "returncode": 1,
+      "result": {
+        "reason": "invalid_json: duplicate JSON object field at line 1 column 20",
+        "status": "invalid"
+      },
+      "summary": {
+        "schema": 1,
+        "type": "summary",
+        "records": 1,
+        "linearizable": 0,
+        "violations": 0,
+        "inconclusive": 0,
+        "invalid": 1,
+        "all_passed": false,
+        "engine_executed": false,
+        "checker_source_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+        "search_state_budget": 200000,
+        "input_stopped_at_limit": false
+      },
+      "input_sha256": "fdd8ad6a55e43901b06203ff19d7f4cc653a89482f7897303234810f7d943ae4",
+      "passed": true
+    }
+  ]
+}

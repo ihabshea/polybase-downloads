@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "asset": "atlas-b2c865f-main50000-witnesses-shard-000.jsonl.gz",
+  "url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-000.jsonl.gz",
+  "bytes": 1050724,
+  "sha256": "b4737a9e7929ff5da8635c3fce609440c71e16b09cd1119e6df1df684970b7af",
+  "expected_github_digest": "sha256:b4737a9e7929ff5da8635c3fce609440c71e16b09cd1119e6df1df684970b7af",
+  "client_github_authentication": "none: GH_TOKEN and GITHUB_TOKEN unset, curl -q disables user configuration; no Authorization header supplied",
+  "gzip_integrity_verified": true,
+  "nonempty_jsonl_records": 6250,
+  "verified_utc": "2026-10-25T14:54:35.317959+00:00",
+  "scope": "Public download/hash/gzip integrity check only; does not execute the engine or authenticate capture."
+}

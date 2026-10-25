@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "release_id": 423465012,
+  "tag": "atlas-local-evidence-2026-10-25-b2c865f",
+  "draft_at_verification": true,
+  "prerelease": true,
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "publication_workflow": "https://github.com/ihabshea/polybase-downloads/actions/runs/40204194173",
+  "all_27_remote_sha256_and_sizes_match": true,
+  "raw_asset_count_at_publication": 27,
+  "native_engine_assets": 0,
+  "assets": [
+    {
+      "id": 675305902,
+      "name": "ASSET-MANIFEST.json",
+      "bytes": 23479,
+      "sha256": "334d978e5e89745cfb1e5f790eac4004487d28741c25a507917d287db5f03b2b",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/ASSET-MANIFEST.json"
+    },
+    {
+      "id": 675305531,
+      "name": "atlas-b2c865f-main50000-histories-shard-000.jsonl.gz",
+      "bytes": 99670844,
+      "sha256": "dddc4cdfc251e939697162bd3cae8250686fe1534f6413d06d3871f3fe8a6201",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-histories-shard-000.jsonl.gz"
+    },
+    {
+      "id": 675305530,
+      "name": "atlas-b2c865f-main50000-histories-shard-001.jsonl.gz",
+      "bytes": 99342694,
+      "sha256": "f4abc593dad2a2a58e3625efac00af9752f26a88e7a1793ed754d2aebe2ef868",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-histories-shard-001.jsonl.gz"
+    },
+    {
+      "id": 675305535,
+      "name": "atlas-b2c865f-main50000-histories-shard-002.jsonl.gz",
+      "bytes": 99604025,
+      "sha256": "115403f5c85224f6aabeeddfbd6148253dfdc43b620a03ad43c5ec4059783123",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-histories-shard-002.jsonl.gz"
+    },
+    {
+      "id": 675305533,
+      "name": "atlas-b2c865f-main50000-histories-shard-003.jsonl.gz",
+      "bytes": 99696612,
+      "sha256": "345c893e6e5fd3830515a427e7349c6d88753712dc46fb51e11b6d948bfef4c4",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-histories-shard-003.jsonl.gz"
+    },
+    {
+      "id": 675305536,
+      "name": "atlas-b2c865f-main50000-histories-shard-004.jsonl.gz",
+      "bytes": 99205841,
+      "sha256": "f9183c3b791facad376e8d6a43f9e3dc25a445595303b77e110c7ff61a86d843",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-histories-shard-004.jsonl.gz"
+    },
+    {
+      "id": 675305734,
+      "name": "atlas-b2c865f-main50000-histories-shard-005.jsonl.gz",
+      "bytes": 99720929,
+      "sha256": "d03e7d72f4b8b4b4a294a12872639b1600a96a143dc38ad1e4a044bdb383b849",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-histories-shard-005.jsonl.gz"
+    },
+    {
+      "id": 675305737,
+      "name": "atlas-b2c865f-main50000-histories-shard-006.jsonl.gz",
+      "bytes": 99715188,
+      "sha256": "b62746b2993121f5ebdf41269b7f96dfb3796d5289943737bc8664bf8100be73",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-histories-shard-006.jsonl.gz"
+    },
+    {
+      "id": 675305741,
+      "name": "atlas-b2c865f-main50000-histories-shard-007.jsonl.gz",
+      "bytes": 99795036,
+      "sha256": "8794ee39a3e5d76968d10852335ae362adf65b903bb3badaa5f66aea93e9d41e",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-histories-shard-007.jsonl.gz"
+    },
+    {
+      "id": 675305763,
+      "name": "atlas-b2c865f-main50000-witnesses-shard-000.jsonl.gz",
+      "bytes": 1050724,
+      "sha256": "b4737a9e7929ff5da8635c3fce609440c71e16b09cd1119e6df1df684970b7af",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-000.jsonl.gz"
+    },
+    {
+      "id": 675305769,
+      "name": "atlas-b2c865f-main50000-witnesses-shard-001.jsonl.gz",
+      "bytes": 1049100,
+      "sha256": "9147064c820e4a61ad5cfa77f5560b273a0c4ff0ca2921570bd850c0b051a431",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-001.jsonl.gz"
+    },
+    {
+      "id": 675305780,
+      "name": "atlas-b2c865f-main50000-witnesses-shard-002.jsonl.gz",
+      "bytes": 1049982,
+      "sha256": "e88982f5218bb206350ade2349ef470bf39d1a672bc9c2f4151038a27f2751f1",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-002.jsonl.gz"
+    },
+    {
+      "id": 675305781,
+      "name": "atlas-b2c865f-main50000-witnesses-shard-003.jsonl.gz",
+      "bytes": 1050632,
+      "sha256": "1d7284e2f63cbad045cecad83654355d3fa8f46104cf80146d98bfeab61d5f3e",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-003.jsonl.gz"
+    },
+    {
+      "id": 675305801,
+      "name": "atlas-b2c865f-main50000-witnesses-shard-004.jsonl.gz",
+      "bytes": 1050253,
+      "sha256": "b55215668a8aa6534e92d2ee8168b950dbee1b79515fb52d498edc0c3cf3e6cf",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-004.jsonl.gz"
+    },
+    {
+      "id": 675305805,
+      "name": "atlas-b2c865f-main50000-witnesses-shard-005.jsonl.gz",
+      "bytes": 1050590,
+      "sha256": "c590bd501fc1be0e3e8bd2c13ccaceb495483471f587d6d5d3ffe7ce22365459",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-005.jsonl.gz"
+    },
+    {
+      "id": 675305815,
+      "name": "atlas-b2c865f-main50000-witnesses-shard-006.jsonl.gz",
+      "bytes": 1051156,
+      "sha256": "44cbe02295f6f507d164581d3ce0322343c2f5dedc3c34000b4b3eb6040a95ec",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-006.jsonl.gz"
+    },
+    {
+      "id": 675305818,
+      "name": "atlas-b2c865f-main50000-witnesses-shard-007.jsonl.gz",
+      "bytes": 1050662,
+      "sha256": "e91011fbe368ec4c189ad3ee956c23251dcfdcfe84d26aef5f0d1c7d688ddc77",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-main50000-witnesses-shard-007.jsonl.gz"
+    },
+    {
+      "id": 675305838,
+      "name": "atlas-b2c865f-overlay1000-histories-shard-000.jsonl.gz",
+      "bytes": 2014846,
+      "sha256": "be63432ce3ee047dcac602e5b63b0c1e1b4bc4a623c4669fef50c3a2ca63f7b7",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-histories-shard-000.jsonl.gz"
+    },
+    {
+      "id": 675305842,
+      "name": "atlas-b2c865f-overlay1000-histories-shard-001.jsonl.gz",
+      "bytes": 1993393,
+      "sha256": "def7364feb386565ef6657e3e723f0bd6198524fc5db014dcddd24ad9b2db73e",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-histories-shard-001.jsonl.gz"
+    },
+    {
+      "id": 675305855,
+      "name": "atlas-b2c865f-overlay1000-histories-shard-002.jsonl.gz",
+      "bytes": 1979147,
+      "sha256": "4c7bea999d48f8b880b0d2ffc9d93b1b1e07e635fefc7ebdb678829cc1988380",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-histories-shard-002.jsonl.gz"
+    },
+    {
+      "id": 675305859,
+      "name": "atlas-b2c865f-overlay1000-histories-shard-003.jsonl.gz",
+      "bytes": 2002752,
+      "sha256": "1ce09aec5b39c398258f29e9014cc796fc79da4e7b1d92818ae96448bff84f54",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-histories-shard-003.jsonl.gz"
+    },
+    {
+      "id": 675305867,
+      "name": "atlas-b2c865f-overlay1000-histories-shard-004.jsonl.gz",
+      "bytes": 2021621,
+      "sha256": "3fb3632ed40c1cea1a148fd218ae601bdc1f0f9bccc3aed87a1168459ca7f0cf",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-histories-shard-004.jsonl.gz"
+    },
+    {
+      "id": 675305870,
+      "name": "atlas-b2c865f-overlay1000-histories-shard-005.jsonl.gz",
+      "bytes": 1979812,
+      "sha256": "c764acc9a253b544291b90573246457580acc8547eeb03c1d881e7e497a2c58a",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-histories-shard-005.jsonl.gz"
+    },
+    {
+      "id": 675305881,
+      "name": "atlas-b2c865f-overlay1000-histories-shard-006.jsonl.gz",
+      "bytes": 1972959,
+      "sha256": "580a5d57a8698c75ac639fbd9d1c6e3ec066f7244697c8b8a21451f2b69bb686",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-histories-shard-006.jsonl.gz"
+    },
+    {
+      "id": 675305887,
+      "name": "atlas-b2c865f-overlay1000-histories-shard-007.jsonl.gz",
+      "bytes": 1989225,
+      "sha256": "59754f26a6637800eba3fe6c56570b5c16456215a727db478a85605bac1baa34",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-histories-shard-007.jsonl.gz"
+    },
+    {
+      "id": 675305900,
+      "name": "atlas-b2c865f-overlay1000-witnesses.jsonl.gz",
+      "bytes": 168772,
+      "sha256": "d9c29d16a07636bcffcebe7f98f68d328767a10e65d7da3e9a1422cb85413f67",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/atlas-b2c865f-overlay1000-witnesses.jsonl.gz"
+    },
+    {
+      "id": 675305906,
+      "name": "SHA256SUMS.txt",
+      "bytes": 3069,
+      "sha256": "3f0744435451b0738db9120f6503206b0f4007aebff57b870ccec45296b30705",
+      "download_url": "https://github.com/ihabshea/polybase-downloads/releases/download/atlas-local-evidence-2026-10-25-b2c865f/SHA256SUMS.txt"
+    }
+  ],
+  "draft": false,
+  "published": true,
+  "html_url": "https://github.com/ihabshea/polybase-downloads/releases/tag/atlas-local-evidence-2026-10-25-b2c865f",
+  "published_at": "2026-10-25T14:53:29Z",
+  "anonymous_witness_download_sha256_verified": true,
+  "anonymous_probe_asset": "atlas-b2c865f-main50000-witnesses-shard-000.jsonl.gz",
+  "anonymous_probe_gzip_integrity_verified": true,
+  "anonymous_probe_records": 6250,
+  "all_asset_digests_scope": "GitHub-computed SHA256 and sizes matched every one of the 27 raw/witness/metadata files; one witness downloaded without GitHub authentication and gzip-verified. Any later website artifact has a separate inventory.",
+  "observed_stable_latest_tag": "v1.0.0",
+  "observed_stable_latest_release_id": 423364378,
+  "temporary_remote_branch_deleted": true,
+  "temporary_local_branch_deleted": true,
+  "transfer_commit": "9d0751e06a53c2b1cbd1ad85e0e4d30ae4ea7c1f",
+  "transfer_commit_parent_count": 0,
+  "source_branch_ancestry_contains_transfer_commit": false,
+  "current_head_targets_passed": 11,
+  "current_head_target_cases": 12,
+  "cold_history_targets_passed": 36,
+  "cold_history_target_cases": 36,
+  "remaining_current_head_miss": {
+    "records": 1000,
+    "workload": "narrow_range",
+    "p50_ratio": 0.8179787171497442,
+    "p95_ratio": 1.156446592940865
+  },
+  "performance_report_sha256": "3fcccfb9ac0e42a32cc0ffa2040b9d30de08f033d6c7eb1350df5dc1440d0082",
+  "same_seed_requalification_not_100000_distinct_histories": true,
+  "cross_host_histories": 0,
+  "cross_host_fault_schedules": 0,
+  "full_atlas_release_qualified": false,
+  "canonical_website_deployment_claimed": false,
+  "verified_utc": "2026-10-25T14:55:20.618100+00:00"
+}

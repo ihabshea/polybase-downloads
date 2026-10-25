@@ -1,0 +1,52 @@
+{
+  "cross_host_gate_passed": false,
+  "development_only": false,
+  "distributed_host_fault_schedules": 0,
+  "distributed_host_histories": 0,
+  "elapsed_seconds": 849.0291802960019,
+  "executable_sha256": "fe22f6a62b1390425a54ec1f13aedc89801c589865ff12c5e5ab841b130485fc",
+  "independent_checker_passed": true,
+  "limitations": [
+    "local scheduled transport is not a real network deployment",
+    "Replica directories are dropped/reopened in the same process; tmpfs cannot establish persistent-media survival",
+    "no disk-full, hardware power-loss, independent clocks or cross-host partitions",
+    "membership, rolling compatibility and performance gates require separate evidence"
+  ],
+  "local_thresholds_met": true,
+  "raw_capture_audit": {
+    "observed_counts": {
+      "client_operations": 825401,
+      "compactions": 100000,
+      "historical_expired_errors": 100000,
+      "historical_pages": 9431015,
+      "historical_point_reads": 10116092,
+      "historical_positions": 2426203,
+      "historical_searches": 2426203,
+      "interrupted_snapshots": 50000,
+      "leader_elections": 100000,
+      "leadership_changes": 50000,
+      "local_reads": 250000,
+      "message_delays": 272852,
+      "message_deliveries": 7815991,
+      "message_drops": 1325227,
+      "message_duplicates": 365652,
+      "message_reorders": 1696810,
+      "message_sends": 8775566,
+      "named_retries": 100000,
+      "quorum_reads": 150000,
+      "restarts": 250000,
+      "unknown_writes": 100000
+    },
+    "profiles": {
+      "asymmetric-leader-change": 16667,
+      "interrupted-snapshot": 16666,
+      "loss-delay-reorder": 16667
+    },
+    "raw_histories_audited": 50000,
+    "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512"
+  },
+  "release_qualified": false,
+  "schema": 1,
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "source_tree_sha256": "5603d9fdfb883b1df2414cad3f75d8a25caecff5725395ed8b428d87b6707be7"
+}

@@ -1,0 +1,22 @@
+{
+  "actual_execution_authenticated": false,
+  "all_canonical_history_hashes_unique": true,
+  "all_hash_linked_witnesses_verified": true,
+  "all_ids_unique": true,
+  "all_passed": true,
+  "all_record_order_verified": true,
+  "all_seeds_unique": true,
+  "declared_profile_totals": {
+    "asymmetric-leader-change": 16667,
+    "interrupted-snapshot": 16666,
+    "loss-delay-reorder": 16667
+  },
+  "engine_version": "1.5.0-preview.1",
+  "exact_history_ids": "0..49999",
+  "master_seed": 20261025,
+  "profile_scope": "Exact per-shard/global declared profile totals checked; per-record profile cycle not re-inferred from absent witness fields.",
+  "records": 50000,
+  "schema": 1,
+  "seed_rule": "(master_seed + history_id * 0x9e3779b97f4a7c15) modulo 2^64",
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512"
+}

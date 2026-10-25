@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "scope": "Private preservation of exact measured benchmark executables; no new build or public native release",
+  "source_sha": "b2c865f0c8299e7f54784d81d012d35aa7b79512",
+  "report_sha256": "3fcccfb9ac0e42a32cc0ffa2040b9d30de08f033d6c7eb1350df5dc1440d0082",
+  "binaries": [
+    {
+      "role": "baseline",
+      "private_path": "/workspace/polybase/target/atlas-preserved-binaries/b2c865f/baseline-atlas_bench",
+      "sha256": "4c681dc2457534c7f7b048174d5f7fcc39ead9d20113c2102f176ed5fab1ab30",
+      "bytes": 2478824,
+      "matches_measured_before_and_after": true
+    },
+    {
+      "role": "candidate",
+      "private_path": "/workspace/polybase/target/atlas-preserved-binaries/b2c865f/candidate-atlas_bench",
+      "sha256": "72d13e29ae19c54de8dabccf889405bc958dbb849bf1142eb4a7278cbd856eb9",
+      "bytes": 2514408,
+      "matches_measured_before_and_after": true
+    }
+  ],
+  "public_engine_binary_assets": 0
+}

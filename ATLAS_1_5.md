@@ -4,14 +4,16 @@
 
 Atlas carries the existing single-partition, three-voter replication architecture
 across machines, elections, voter replacement and operational lifecycle changes.
-The public database download remains 0.9.0. Cerberus's local fault campaign is
+The public database download is 1.0.0. See the [availability correction](qualification/atlas/AVAILABILITY_ERRATUM.md) for stale copy preserved in immutable snapshots. Cerberus's local fault campaign is
 evidence for a node; it does not qualify a distributed cluster.
 
-The first Atlas candidate at `333c2f0` has completed recorded local campaigns and
-independent trace validation. Its repeated paired benchmark passed 36 of 36
-cold-history p95 targets and missed seven of twelve current-head targets. These
-are measured results, preserved during follow-up work; they do not close the
-three-host or performance release gates.
+The measured candidate `b2c865f0c8299e7f54784d81d012d35aa7b79512` completed
+50,000 local same-process histories and a separate 1,000 overlay-backed histories,
+independently rechecked with no recorded reference mismatch or inconclusive pass.
+The repeated paired benchmark passed **11/12 current-head** and **36/36 cold-history**
+targets. The 1K range p95 remains 1.156× baseline, above the unchanged 1.10× gate.
+All first-iteration counterexamples remain preserved. Neither the three-host nor
+performance release gate is closed. See the [performance report](ATLAS_PERFORMANCE.md).
 
 ## Release gates
 
