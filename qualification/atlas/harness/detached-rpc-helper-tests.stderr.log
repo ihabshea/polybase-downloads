@@ -1,0 +1,9 @@
+test_crc_size_truncation_and_duplicate_fields_rejected (__main__.RpcCodecTests.test_crc_size_truncation_and_duplicate_fields_rejected) ... ok
+test_no_default_endpoint_or_unbounded_timeout (__main__.RpcCodecTests.test_no_default_endpoint_or_unbounded_timeout) ... ok
+test_structured_errors_preserve_unknown_and_leader_hint (__main__.RpcCodecTests.test_structured_errors_preserve_unknown_and_leader_hint) ... ok
+test_success_exact_framing_and_value_helper (__main__.RpcCodecTests.test_success_exact_framing_and_value_helper) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.006s
+
+OK

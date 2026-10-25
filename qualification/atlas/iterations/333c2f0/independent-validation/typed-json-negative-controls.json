@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "audit_python_sha256": "938d6a6961049438a2671a13325b6a5bd091b78feb10ce115122f8dca5d6fc99",
+  "synthetic_controls": true,
+  "actual_engine_histories": 0,
+  "cases": [
+    {
+      "stored_utf8": "{\"n\":true}",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": false,
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "stored_utf8": "{\"n\":false}",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": false,
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "stored_utf8": "{\"n\":null}",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": false,
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "stored_utf8": "{}",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": false,
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "stored_utf8": "{\"n\":\"1\"}",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": false,
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "stored_utf8": "{\"n\":{\"x\":1}}",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": false,
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "stored_utf8": "{\"n\":true",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": false,
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "stored_utf8": "[]",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": false,
+      "expected_acceptance": false,
+      "passed": true
+    },
+    {
+      "stored_utf8": "{\"n\":1}",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": true,
+      "expected_acceptance": true,
+      "passed": true
+    },
+    {
+      "stored_utf8": "{\"n\":1.0}",
+      "typed_result_falsely_or_correctly_includes_doc": true,
+      "accepted": true,
+      "expected_acceptance": true,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

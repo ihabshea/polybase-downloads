@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "action": "cancel serial public verification only",
+  "reason": "verification strategy change to eight full independent per-shard audits; not an engine failure or benchmark",
+  "wrapper_pid": 222881,
+  "checker_children": [
+    222884
+  ],
+  "qualification": false,
+  "partial_artifacts": [
+    "main50000-audit.json",
+    "main50000-witnesses.jsonl.gz"
+  ],
+  "all_partial_outputs_nonqualifying": true,
+  "limitation": "Any finally-produced completion flags in the interrupted serial report must not be used; explicit cancellation governs this prefix.",
+  "wrapper_exit_code": 130,
+  "wrapper_and_checker_pids_ended": true,
+  "retained_partial_sha256": {
+    "main50000-audit.json": "781f8df1cf194542198e5dfca526b02815beb5f649ae8f8866a7e4409db81732",
+    "main50000-witnesses.jsonl.gz": "b7b1f85f13a8090541a4629882e74f283630601723fe8d1fa0f08c8bf672624d"
+  }
+}

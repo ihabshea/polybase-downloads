@@ -1,0 +1,51 @@
+{
+  "sizes": [
+    1000,
+    10000,
+    100000
+  ],
+  "repeats": 3,
+  "warm_samples": 31,
+  "cold_samples": 5,
+  "warmups": 3,
+  "retained_commits": 128,
+  "updates_per_commit": 16,
+  "historical_depths": [
+    0,
+    64,
+    127
+  ],
+  "equality": "group == 1; approximately 1%, actual row counts in raw samples",
+  "narrow_range_keys": 64,
+  "point": "records/{floor(records/3):06}",
+  "text": "amber history; both whole words",
+  "max_index_bytes": 268435456,
+  "max_result_rows": 100000,
+  "max_result_bytes": 67108864,
+  "max_wal_bytes": 268435456,
+  "historical_limits": {
+    "max_cache_bytes": 67108864,
+    "max_replay_bytes": 67108864,
+    "max_versions": 200000
+  },
+  "memory": {
+    "readers": 4,
+    "reads_per_reader": 8,
+    "writer_commits": 32,
+    "updates_per_commit": 16,
+    "rss_sampling_ms": 1
+  },
+  "throughput": {
+    "commits": 64,
+    "mutations_per_commit": 2,
+    "value_bytes": 256,
+    "callers": 1,
+    "replicas": 3,
+    "transport": "FIFO in-process, real durable Replica API"
+  },
+  "targets": {
+    "current_head_p50_ratio_max": 1.1,
+    "current_head_p95_ratio_max": 1.1,
+    "cold_historical_p95_ratio_max": 0.5
+  }
+}

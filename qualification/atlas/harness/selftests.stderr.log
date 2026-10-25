@@ -1,0 +1,20 @@
+test_absent_does_not_resolve_unknown_and_conflict_receipts_are_carried (__main__.SyntheticControllerTests.test_absent_does_not_resolve_unknown_and_conflict_receipts_are_carried) ... ok
+test_container_and_artifact_pin_oracle (__main__.SyntheticControllerTests.test_container_and_artifact_pin_oracle) ... ok
+test_converter_preserves_uncertainty_and_rejects_receipt_lies (__main__.SyntheticControllerTests.test_converter_preserves_uncertainty_and_rejects_receipt_lies) ... ok
+test_data_release_requires_export_token_and_exact_owned_path (__main__.SyntheticControllerTests.test_data_release_requires_export_token_and_exact_owned_path) ... ok
+test_duplicate_machine_and_boot_oracle (__main__.SyntheticControllerTests.test_duplicate_machine_and_boot_oracle) ... ok
+test_export_rejects_unowned_evidence_names (__main__.SyntheticControllerTests.test_export_rejects_unowned_evidence_names) ... ok
+test_frame_crc_truncation_and_size_oracles (__main__.SyntheticControllerTests.test_frame_crc_truncation_and_size_oracles) ... ok
+test_legacy_or_client_packet_cannot_enter_peer_proxy (__main__.SyntheticControllerTests.test_legacy_or_client_packet_cannot_enter_peer_proxy) ... ok
+test_real_proxy_delay_and_partial_install_with_synthetic_peer (__main__.SyntheticControllerTests.test_real_proxy_delay_and_partial_install_with_synthetic_peer) ... ok
+test_real_proxy_delivery_loss_and_duplication_with_synthetic_peer (__main__.SyntheticControllerTests.test_real_proxy_delivery_loss_and_duplication_with_synthetic_peer) ... ok
+test_real_proxy_reordering_is_observed_not_assumed (__main__.SyntheticControllerTests.test_real_proxy_reordering_is_observed_not_assumed) ... ok
+test_seeded_schedule_is_stable_and_directed (__main__.SyntheticControllerTests.test_seeded_schedule_is_stable_and_directed) ... ok
+test_shared_or_oversized_disk_refused (__main__.SyntheticControllerTests.test_shared_or_oversized_disk_refused) ... ok
+test_synthetic_conversion_runs_independent_checker_and_catches_wrong_value (__main__.SyntheticControllerTests.test_synthetic_conversion_runs_independent_checker_and_catches_wrong_value) ... ok
+test_unresolved_retries_fail_without_discarding_producer (__main__.SyntheticControllerTests.test_unresolved_retries_fail_without_discarding_producer) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.172s
+
+OK

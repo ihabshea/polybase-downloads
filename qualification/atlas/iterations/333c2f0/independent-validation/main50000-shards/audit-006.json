@@ -1,0 +1,87 @@
+{
+  "all_recorded_observations_consistent": true,
+  "audit_python_sha256": "938d6a6961049438a2671a13325b6a5bd091b78feb10ce115122f8dca5d6fc99",
+  "canonical_histories_complete": true,
+  "canonical_histories_sha256": "eeb228785f8daa1b8a36ea8bba05ed9a90cb2fc69d93361806851ab529d7e798",
+  "checker_executable_sha256": "aa57adf0710b7a64db6e408fa3fce8dde598b94d2e13e1d40b4d1dca5e434e81",
+  "checker_responses_sha256": "64c662f0a8640d382c89c80247e3a58d768afd795a5c435659421a0512ea3da7",
+  "claims": {
+    "actual_engine_execution_verified": false,
+    "capture_completeness_verified": false,
+    "cross_host_faults_verified": false,
+    "release_qualification": false
+  },
+  "expected_engine_version": "1.5.0-preview.1",
+  "expected_records": 6250,
+  "expected_source_sha": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73",
+  "independently_recounted_stored_observations": {
+    "client_operations": 103251,
+    "compactions": 12500,
+    "delivery_reorder_observations": 154397,
+    "historical_expired_errors": 12500,
+    "historical_point_reads": 1265434,
+    "historical_positions": 303503,
+    "historical_searches": 303503,
+    "interrupted_snapshots": 6250,
+    "leader_elections": 12500,
+    "leadership_changes": 6250,
+    "local_reads": 31250,
+    "message_delays": 34696,
+    "message_deliveries": 978237,
+    "message_drops": 166388,
+    "message_duplicates": 46435,
+    "message_sends": 1098190,
+    "named_retries": 12500,
+    "quorum_reads": 18750,
+    "restarts": 31250,
+    "unknown_writes": 12500
+  },
+  "inputs": [
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "a8f4724a1b6a40aff109a43744f6f8fb2cc0ff5bfa6f1e87c312571ede8c3ab3",
+      "file_sha256": "3c74b016dbf0cf1a9a35aefbc6dc9b29e4794147dd3b4f299e280d2dc0809490",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-006/histories.jsonl.gz",
+      "records": 6250
+    }
+  ],
+  "limitations": [
+    "Validates supplied recorded observations against independent reference models; source labels and capture authenticity are not authenticated.",
+    "Transport events are recorded schedules, not independently witnessed deliveries or process terminations.",
+    "Historical checks cover stored point values, concatenated byte-range rows, typed n==1.0 and whole-word ATLAS shared results only.",
+    "Individual page boundaries/cursors, unrecorded queries, wall-clock behavior, storage survival and deployment faults are not inferred.",
+    "Local reads are committed-prefix consistency observations; only explicitly quorum reads receive the interval linearizability check."
+  ],
+  "profiles": {
+    "asymmetric-leader-change": 2083,
+    "interrupted-snapshot": 2083,
+    "loss-delay-reorder": 2084
+  },
+  "recorder_only_counters_not_independently_recounted": [
+    "historical_pages",
+    "message_reorders"
+  ],
+  "records_checked": 6250,
+  "schema": 1,
+  "standalone_checker_summary": {
+    "all_passed": true,
+    "checker_source_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+    "engine_executed": false,
+    "inconclusive": 0,
+    "input_stopped_at_limit": false,
+    "invalid": 0,
+    "linearizable": 6250,
+    "records": 6250,
+    "schema": 1,
+    "search_state_budget": 200000,
+    "type": "summary",
+    "violations": 0
+  },
+  "tool": "atlas-recorded-observation-audit",
+  "tool_version": "0.1.0",
+  "utc": "2026-10-25T13:20:24.120199+00:00",
+  "witnesses": {
+    "path": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-006.jsonl.gz",
+    "sha256": "607399d1cc49ebed0efd04ced786b1fc5024a552a5bb4ba3266875fcb3df3f5b"
+  }
+}

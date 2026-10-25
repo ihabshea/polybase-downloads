@@ -1,0 +1,139 @@
+{
+  "all_compressed_inputs_unchanged": true,
+  "audit_python_sha256": "938d6a6961049438a2671a13325b6a5bd091b78feb10ce115122f8dca5d6fc99",
+  "checker_executable_sha256": "aa57adf0710b7a64db6e408fa3fce8dde598b94d2e13e1d40b4d1dca5e434e81",
+  "inputs": [
+    {
+      "after_compressed_sha256": "5f9915cc0fe36f0b2187cc3cb787b1e70e27645206c3fa87199e09a14897a80d",
+      "before_compressed_sha256": "5f9915cc0fe36f0b2187cc3cb787b1e70e27645206c3fa87199e09a14897a80d",
+      "campaign": "main50000",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-000/histories.jsonl.gz",
+      "shard": 0,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "c4886fd89450fb01d7f4b910af83564e7ea83b8e13f145bcccf412b06a23d319",
+      "before_compressed_sha256": "c4886fd89450fb01d7f4b910af83564e7ea83b8e13f145bcccf412b06a23d319",
+      "campaign": "main50000",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-001/histories.jsonl.gz",
+      "shard": 1,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "452baab274b840641a09b80933bdab9a61034fa4e2c122a233707c710d79719f",
+      "before_compressed_sha256": "452baab274b840641a09b80933bdab9a61034fa4e2c122a233707c710d79719f",
+      "campaign": "main50000",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-002/histories.jsonl.gz",
+      "shard": 2,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "9fa45d74ab2accae807da90ac55f84376ca451395a2d2ebe1630df5b15d78200",
+      "before_compressed_sha256": "9fa45d74ab2accae807da90ac55f84376ca451395a2d2ebe1630df5b15d78200",
+      "campaign": "main50000",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-003/histories.jsonl.gz",
+      "shard": 3,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "0783066e6c125aee43ea5455c3340f897cf6815a188cb048c83ca9eaf7b5495d",
+      "before_compressed_sha256": "0783066e6c125aee43ea5455c3340f897cf6815a188cb048c83ca9eaf7b5495d",
+      "campaign": "main50000",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-004/histories.jsonl.gz",
+      "shard": 4,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "168a71608c50fb59a4201786d90a1a22794f3955414e308b479de62947319ff3",
+      "before_compressed_sha256": "168a71608c50fb59a4201786d90a1a22794f3955414e308b479de62947319ff3",
+      "campaign": "main50000",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-005/histories.jsonl.gz",
+      "shard": 5,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "3c74b016dbf0cf1a9a35aefbc6dc9b29e4794147dd3b4f299e280d2dc0809490",
+      "before_compressed_sha256": "3c74b016dbf0cf1a9a35aefbc6dc9b29e4794147dd3b4f299e280d2dc0809490",
+      "campaign": "main50000",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-006/histories.jsonl.gz",
+      "shard": 6,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "2a0666abf5b97aa13be1b91d82b5e4dde18ce25a32e79891adbf54ef47233b40",
+      "before_compressed_sha256": "2a0666abf5b97aa13be1b91d82b5e4dde18ce25a32e79891adbf54ef47233b40",
+      "campaign": "main50000",
+      "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-007/histories.jsonl.gz",
+      "shard": 7,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "5597708aa393f2df30facaac15c283ad3660065499fdfd523489985c36b08bd1",
+      "before_compressed_sha256": "5597708aa393f2df30facaac15c283ad3660065499fdfd523489985c36b08bd1",
+      "campaign": "overlay1000",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-000/histories.jsonl.gz",
+      "shard": 0,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "0ffedf9c3fb10b9f04dd3caf194d7ce04c534637f1738d45d580643c8cc47e1e",
+      "before_compressed_sha256": "0ffedf9c3fb10b9f04dd3caf194d7ce04c534637f1738d45d580643c8cc47e1e",
+      "campaign": "overlay1000",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-001/histories.jsonl.gz",
+      "shard": 1,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "6955a59af586e9e4cdb97fb156b3a5e171e77b361b1044fc402ab6ffb522bd7b",
+      "before_compressed_sha256": "6955a59af586e9e4cdb97fb156b3a5e171e77b361b1044fc402ab6ffb522bd7b",
+      "campaign": "overlay1000",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-002/histories.jsonl.gz",
+      "shard": 2,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "1d4a87e3ef8fd48a1f804b16d572c1d80dcd9f4cd672c086154ecc93307faa0e",
+      "before_compressed_sha256": "1d4a87e3ef8fd48a1f804b16d572c1d80dcd9f4cd672c086154ecc93307faa0e",
+      "campaign": "overlay1000",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-003/histories.jsonl.gz",
+      "shard": 3,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "9adc9148271f595fa446c5b905c9fa0add4f76021c84de36cc3f98768ee6b1b4",
+      "before_compressed_sha256": "9adc9148271f595fa446c5b905c9fa0add4f76021c84de36cc3f98768ee6b1b4",
+      "campaign": "overlay1000",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-004/histories.jsonl.gz",
+      "shard": 4,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "e342455a75f23f6d6b5d34954a78fb8ad2650eb61725c8e053d73dd9ca302597",
+      "before_compressed_sha256": "e342455a75f23f6d6b5d34954a78fb8ad2650eb61725c8e053d73dd9ca302597",
+      "campaign": "overlay1000",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-005/histories.jsonl.gz",
+      "shard": 5,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "167de70cee906a8881bd66746c7e2770f7e9b405fb3f886ed37adf728a404bd1",
+      "before_compressed_sha256": "167de70cee906a8881bd66746c7e2770f7e9b405fb3f886ed37adf728a404bd1",
+      "campaign": "overlay1000",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-006/histories.jsonl.gz",
+      "shard": 6,
+      "unchanged": true
+    },
+    {
+      "after_compressed_sha256": "9c88ddbc797e41ec8b2652fe953ac12bee0c46e63d838670cd22db6c79836737",
+      "before_compressed_sha256": "9c88ddbc797e41ec8b2652fe953ac12bee0c46e63d838670cd22db6c79836737",
+      "campaign": "overlay1000",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-007/histories.jsonl.gz",
+      "shard": 7,
+      "unchanged": true
+    }
+  ],
+  "schema": 1,
+  "source_reference_module_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+  "tool_manifest_sha256": "d361b0482b7fa6d707e2041940caf4b407077b40236b58700653f69322a3aead",
+  "tool_sources_unchanged": true
+}

@@ -1,0 +1,273 @@
+{
+  "all_audit_wrapper_and_checker_pids_ended": true,
+  "all_recorded_observations_consistent": true,
+  "audit_python_sha256": "938d6a6961049438a2671a13325b6a5bd091b78feb10ce115122f8dca5d6fc99",
+  "canceled_serial_prefix": {
+    "excluded": true,
+    "receipt": "/workspace/polybase/target/atlas-independent-validation/serial-audit-canceled.json",
+    "receipt_sha256": "626a453b2269d8eb675d38347eee9b2a51dcd514b168b60b7c694a58aac30b5c"
+  },
+  "checker_executable_sha256": "aa57adf0710b7a64db6e408fa3fce8dde598b94d2e13e1d40b4d1dca5e434e81",
+  "claims": {
+    "actual_engine_execution_verified": false,
+    "capture_completeness_verified": false,
+    "cross_host_faults_verified": false,
+    "release_qualification": false
+  },
+  "ended_wrapper_pids": [
+    223155,
+    223157,
+    223159,
+    223160,
+    223163,
+    223165,
+    223166,
+    223168
+  ],
+  "engine_version": "1.5.0-preview.1",
+  "full_shards_passed": 8,
+  "full_shards_required": 8,
+  "global_identity_report": "/workspace/polybase/target/atlas-independent-validation/main50000-identity.json",
+  "global_identity_sha256": "1ca1974fadc664581e951e75637bdcd550d278028072b08deecd8148b1a22d89",
+  "inconclusive": 0,
+  "independently_recounted_stored_observations": {
+    "client_operations": 825401,
+    "compactions": 100000,
+    "delivery_reorder_observations": 1252006,
+    "historical_expired_errors": 100000,
+    "historical_point_reads": 10116092,
+    "historical_positions": 2426203,
+    "historical_searches": 2426203,
+    "interrupted_snapshots": 50000,
+    "leader_elections": 100000,
+    "leadership_changes": 50000,
+    "local_reads": 250000,
+    "message_delays": 272852,
+    "message_deliveries": 7815991,
+    "message_drops": 1325227,
+    "message_duplicates": 365652,
+    "message_sends": 8775566,
+    "named_retries": 100000,
+    "quorum_reads": 150000,
+    "restarts": 250000,
+    "unknown_writes": 100000
+  },
+  "input_and_tool_stability_report": "/workspace/polybase/target/atlas-independent-validation/input-and-tool-stability.json",
+  "input_and_tool_stability_sha256": "5d636fa77ade1ff9f9d0572d4e15f651b9c2e29cc022128197f11deea6467a3b",
+  "invalid": 0,
+  "limitations": [
+    "Checks supplied recorded observations against independent reference models; execution/capture/provenance labels are not authenticated.",
+    "Recorded transport is not independently witnessed network/process execution.",
+    "Only stored historical payloads are checked; individual page cursors and dropped/delayed reorder offsets are absent.",
+    "Local reads are prefix consistency; only explicitly quorum observations receive the interval linearizability requirement."
+  ],
+  "master_seed": 20261025,
+  "ordered_certificate_manifest_sha256": "fa9a76c5690a6883212c867df49ac9aad1d9a8731904cfa52176f907f67e20db",
+  "profiles": {
+    "asymmetric-leader-change": 16667,
+    "interrupted-snapshot": 16666,
+    "loss-delay-reorder": 16667
+  },
+  "recorded_histories_checked": 50000,
+  "recorder_only_counters_not_independently_recounted": [
+    "historical_pages",
+    "message_reorders"
+  ],
+  "reference_module_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+  "schema": 1,
+  "shards": [
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/audit-000.json",
+      "audit_report_sha256": "68b641c9804456a1a3a718b53e7168428827bbe38585c91c9363c2563145c525",
+      "canonical_histories_sha256": "ca6b7a359a589fdc729b26adb34f702744b90efd41310107809e1a126e0aece5",
+      "checker_responses_sha256": "e55eea2d26d88bb7535f387065c3967dd53b699a5e7de6d7eedfda446b3fdc3e",
+      "client_operations": 103250,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "8e1aacc1650ea4f5c4f8ecb4764acb86e06030f7fce2602cd3fd855f0e7cb018",
+        "file_sha256": "5f9915cc0fe36f0b2187cc3cb787b1e70e27645206c3fa87199e09a14897a80d",
+        "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-000/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2084
+      },
+      "records": 6250,
+      "shard": 0,
+      "witnesses": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-000.jsonl.gz",
+      "witnesses_sha256": "86e9e6885707c27e5fee1de089f0543d268d342a7c9e0448a9b865ba0231ebbb"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/audit-001.json",
+      "audit_report_sha256": "a30187de5ccffb4ea89aeb7ab429e56f76609d720255a6a1e08ed7f8f90f79c4",
+      "canonical_histories_sha256": "633dd0eb006da216f8716c62fb5e18dbb1834ba5ae9cd4a17bc87dc5f64f3782",
+      "checker_responses_sha256": "73ef4bd331d818807dd9eb602332069d0e672c9ba7226effd3ee4915201148d9",
+      "client_operations": 102882,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "5d4abef402126df981cbd773f4d11c675abb6936fa0f3e5c748accc50a7df9de",
+        "file_sha256": "c4886fd89450fb01d7f4b910af83564e7ea83b8e13f145bcccf412b06a23d319",
+        "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-001/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2084,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 1,
+      "witnesses": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-001.jsonl.gz",
+      "witnesses_sha256": "6679f7a9812c41b3c22736c8c386747a6610fea77f8b3e6741b18aa72736a497"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/audit-002.json",
+      "audit_report_sha256": "26d18df234c87c952a1434fdad5d2b151718d45ea46f3787f455748f77d80841",
+      "canonical_histories_sha256": "80fc2ae4a2b9343698ae694ab2f55c2783470a0ead2b4f050495fb78609e86b3",
+      "checker_responses_sha256": "7e2fc9f5e2362fb140f1576485786ca209eac70f7a50892c92e1d428de2bd925",
+      "client_operations": 103210,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "33d69977bfc4f815b03c25890a08efdb01228edb1e41ab916d9e904bdb272bec",
+        "file_sha256": "452baab274b840641a09b80933bdab9a61034fa4e2c122a233707c710d79719f",
+        "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-002/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2084,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 2,
+      "witnesses": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-002.jsonl.gz",
+      "witnesses_sha256": "5595fc1e1b1d14362d0a48122f5b4ae34b157b7973841d4b8eaf369be7af8abb"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/audit-003.json",
+      "audit_report_sha256": "68ba4b29bfbba2856a5485f082f1a8212c6463dd345bbec61e34fd843a79ae8f",
+      "canonical_histories_sha256": "694816f78525f67cc2adf7033d9553766f32c4e511504fa0267d17ecf977412b",
+      "checker_responses_sha256": "cbcf85ac6a4cb903831cf003cc317b6516d0ca1790c7e0eca90723ae92f39508",
+      "client_operations": 103278,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "c1334484f6acc734092d12855fa760b075464d48dfd2906d35b16b59e2058ea6",
+        "file_sha256": "9fa45d74ab2accae807da90ac55f84376ca451395a2d2ebe1630df5b15d78200",
+        "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-003/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2084
+      },
+      "records": 6250,
+      "shard": 3,
+      "witnesses": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-003.jsonl.gz",
+      "witnesses_sha256": "708341b5cc0bdc413e40e8939257b0522281e6262886f983dbac4767549e88e8"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/audit-004.json",
+      "audit_report_sha256": "146f2cd8a49604cb464787f83b50d1f224b6dfa8bb072319080ba90530dc1818",
+      "canonical_histories_sha256": "e6a215d5b56ba06cf45f18da93392ea5ee1690ee72896059ef776d72d639049e",
+      "checker_responses_sha256": "d4671623e9afec78bf327042b277bc47e48fbb21d17db1b561a1112721465b76",
+      "client_operations": 102780,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "a54beffe0ce06653edc22055fac466ad6d52092ccec542abd66434d6a5d14f2a",
+        "file_sha256": "0783066e6c125aee43ea5455c3340f897cf6815a188cb048c83ca9eaf7b5495d",
+        "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-004/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2084,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 4,
+      "witnesses": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-004.jsonl.gz",
+      "witnesses_sha256": "38907a2784573856cae685f87cd501605cbe730ac36aff9035b2bea868faed12"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/audit-005.json",
+      "audit_report_sha256": "b126d9168209a841a103651bcc373a044b490fcbd3a52a48e83848fc2d50e8d2",
+      "canonical_histories_sha256": "c862b2beadb94ab1855a6d07dad61be14a33f2106da7d07d0fefb5b4c1ab96dd",
+      "checker_responses_sha256": "d80bef0f6c57f72da991939fac717c4c7a2acfa325c9c18ff5f3fab477791e37",
+      "client_operations": 103274,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "ae49237ba1e42aafc07bca74cad830e2649538a4750ba2c5dd8e502b3d46d395",
+        "file_sha256": "168a71608c50fb59a4201786d90a1a22794f3955414e308b479de62947319ff3",
+        "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-005/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2084,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 5,
+      "witnesses": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-005.jsonl.gz",
+      "witnesses_sha256": "eda1ed5a575b058dde39cd6ff7f3429f2aa6d725b3feea6b28f3a60a97104c11"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/audit-006.json",
+      "audit_report_sha256": "b246d8065394632b08716a085522f808e8a10833e680b26eed156a8ab1f708f2",
+      "canonical_histories_sha256": "eeb228785f8daa1b8a36ea8bba05ed9a90cb2fc69d93361806851ab529d7e798",
+      "checker_responses_sha256": "64c662f0a8640d382c89c80247e3a58d768afd795a5c435659421a0512ea3da7",
+      "client_operations": 103251,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "a8f4724a1b6a40aff109a43744f6f8fb2cc0ff5bfa6f1e87c312571ede8c3ab3",
+        "file_sha256": "3c74b016dbf0cf1a9a35aefbc6dc9b29e4794147dd3b4f299e280d2dc0809490",
+        "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-006/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2083,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2084
+      },
+      "records": 6250,
+      "shard": 6,
+      "witnesses": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-006.jsonl.gz",
+      "witnesses_sha256": "607399d1cc49ebed0efd04ced786b1fc5024a552a5bb4ba3266875fcb3df3f5b"
+    },
+    {
+      "audit_report": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/audit-007.json",
+      "audit_report_sha256": "a99681f9e331f6e579539fe6c00a0e3f498b70ff3163189b7a3a89a3bc283eae",
+      "canonical_histories_sha256": "31013bdd13014d6a6bb43cc6b8c2f6dca30718308112241cc7ae8e6e777c871d",
+      "checker_responses_sha256": "6a32a6e7fe17c7aaca9106165e8235917d82668b291990014666e37d766e6f4a",
+      "client_operations": 103476,
+      "input": {
+        "decompressed_complete": true,
+        "decompressed_sha256": "0164dd7ac66768a3896585ee86874b6184ecfb4392047e99caffa5f3c2893643",
+        "file_sha256": "2a0666abf5b97aa13be1b91d82b5e4dde18ce25a32e79891adbf54ef47233b40",
+        "path": "/workspace/polybase/target/atlas-50000-20261025/local-durable-007/histories.jsonl.gz",
+        "records": 6250
+      },
+      "profiles": {
+        "asymmetric-leader-change": 2084,
+        "interrupted-snapshot": 2083,
+        "loss-delay-reorder": 2083
+      },
+      "records": 6250,
+      "shard": 7,
+      "witnesses": "/workspace/polybase/target/atlas-independent-validation/main50000-shards/witnesses-007.jsonl.gz",
+      "witnesses_sha256": "ccdd449d70239208279cb93909340afee23441d2dbf8cd13dab21d2c2787d14a"
+    }
+  ],
+  "source_sha": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73",
+  "strategy": "Eight complete independent shard audits, one persistent reference checker per shard; strict global identity/hash/witness/count aggregation. Fresh-cluster histories are independent.",
+  "tool_manifest_sha256": "d361b0482b7fa6d707e2041940caf4b407077b40236b58700653f69322a3aead",
+  "violations": 0,
+  "witness_verified_local_prefix_reads": 250000,
+  "witness_verified_named_replays": 100000,
+  "witness_verified_operation_count": 825401,
+  "witness_verified_quorum_reads": 150000,
+  "witness_verified_unknown_calls": 100000
+}

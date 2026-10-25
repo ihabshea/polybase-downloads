@@ -1,0 +1,2 @@
+usage: atlas-cross-host.py self-test [-h] --checker-binary CHECKER_BINARY
+atlas-cross-host.py self-test: error: the following arguments are required: --checker-binary

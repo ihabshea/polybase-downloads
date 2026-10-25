@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "source_sha": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73",
+  "engine_version": "1.5.0-preview.1",
+  "master_seed": 20311025,
+  "records": 1000,
+  "all_passed": true,
+  "history_ids_exactly": "0..999",
+  "seed_rule": "(master_seed + history_id * 0x9e3779b97f4a7c15) modulo 2^64",
+  "seed_sequence_verified_from_independent_witness_records": true,
+  "declared_profile_totals": {
+    "asymmetric-leader-change": 333,
+    "interrupted-snapshot": 333,
+    "loss-delay-reorder": 334
+  },
+  "expected_rotating_profile_totals": {
+    "loss-delay-reorder": 334,
+    "asymmetric-leader-change": 333,
+    "interrupted-snapshot": 333
+  },
+  "profile_cycle_per_record_claim": false,
+  "audit_report_sha256": "a5bea9fc6c9e5f43dc752d7b5c7de993247b9c293fa0da66448cf35780422c7d",
+  "witnesses_sha256": "60c387d44e0cbde6ee081436e6b559cfc8d75b34b9365d4e28ab8fa9c3af45e3",
+  "actual_execution_authenticated": false,
+  "scope": "Supplemental identity validation of recorded/witnessed IDs and seeds; no execution, deployment or capture-authenticity claim."
+}

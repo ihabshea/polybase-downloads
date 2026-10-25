@@ -1,0 +1,136 @@
+{
+  "all_recorded_observations_consistent": true,
+  "audit_python_sha256": "938d6a6961049438a2671a13325b6a5bd091b78feb10ce115122f8dca5d6fc99",
+  "canonical_histories_complete": true,
+  "canonical_histories_sha256": "75a1a3f42bb69820d19f3e9417253bf2c37d5ae19e07a6892e38ac6a124d3d8e",
+  "checker_executable_sha256": "aa57adf0710b7a64db6e408fa3fce8dde598b94d2e13e1d40b4d1dca5e434e81",
+  "checker_responses_sha256": "2450b6ceb7bd53eb870077be4951802fddbca62ad08ded525e8e3b30825ffa92",
+  "claims": {
+    "actual_engine_execution_verified": false,
+    "capture_completeness_verified": false,
+    "cross_host_faults_verified": false,
+    "release_qualification": false
+  },
+  "expected_engine_version": "1.5.0-preview.1",
+  "expected_records": 1000,
+  "expected_source_sha": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73",
+  "independently_recounted_stored_observations": {
+    "client_operations": 16471,
+    "compactions": 2000,
+    "delivery_reorder_observations": 24633,
+    "historical_expired_errors": 2000,
+    "historical_point_reads": 201361,
+    "historical_positions": 48413,
+    "historical_searches": 48413,
+    "interrupted_snapshots": 1000,
+    "leader_elections": 2000,
+    "leadership_changes": 1000,
+    "local_reads": 5000,
+    "message_delays": 5459,
+    "message_deliveries": 156567,
+    "message_drops": 26649,
+    "message_duplicates": 7857,
+    "message_sends": 175359,
+    "named_retries": 2000,
+    "quorum_reads": 3000,
+    "restarts": 5000,
+    "unknown_writes": 2000
+  },
+  "inputs": [
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "9f59cff47b932a26c751e46e356751025ed41b68c5d5c3a86d41dccb781f72ab",
+      "file_sha256": "5597708aa393f2df30facaac15c283ad3660065499fdfd523489985c36b08bd1",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-000/histories.jsonl.gz",
+      "records": 125
+    },
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "1f124427cbbbb6c74375be90b8c7fc9bfb4e88aae740b049fc4d4b4639083f85",
+      "file_sha256": "0ffedf9c3fb10b9f04dd3caf194d7ce04c534637f1738d45d580643c8cc47e1e",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-001/histories.jsonl.gz",
+      "records": 125
+    },
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "da27ec20ffc9eb94704867fba03225c546a9e45907a28b7d57c540fbf5c2eb3a",
+      "file_sha256": "6955a59af586e9e4cdb97fb156b3a5e171e77b361b1044fc402ab6ffb522bd7b",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-002/histories.jsonl.gz",
+      "records": 125
+    },
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "18e1c5b167f58ed5e09ea6e399d6c4d6317026762b58b21e202159bca0867bff",
+      "file_sha256": "1d4a87e3ef8fd48a1f804b16d572c1d80dcd9f4cd672c086154ecc93307faa0e",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-003/histories.jsonl.gz",
+      "records": 125
+    },
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "763824d193d9516a6003e74d33f29b109043709977daf4cefb60604e58ddd811",
+      "file_sha256": "9adc9148271f595fa446c5b905c9fa0add4f76021c84de36cc3f98768ee6b1b4",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-004/histories.jsonl.gz",
+      "records": 125
+    },
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "c3e826a299b6f8739e085d96e2ec5ac631b678c6ce14581171130a56e023e625",
+      "file_sha256": "e342455a75f23f6d6b5d34954a78fb8ad2650eb61725c8e053d73dd9ca302597",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-005/histories.jsonl.gz",
+      "records": 125
+    },
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "515bd9a3539bf1c2cc17b8590ce9c8533a46c580f0bda9094f55d03438db817b",
+      "file_sha256": "167de70cee906a8881bd66746c7e2770f7e9b405fb3f886ed37adf728a404bd1",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-006/histories.jsonl.gz",
+      "records": 125
+    },
+    {
+      "decompressed_complete": true,
+      "decompressed_sha256": "a4b09c040e9b79fb9af7ba982450133304f7f003687e401af7a4bc0b44c039ec",
+      "file_sha256": "9c88ddbc797e41ec8b2652fe953ac12bee0c46e63d838670cd22db6c79836737",
+      "path": "/workspace/polybase/target/atlas-overlay1000-20261025/local-durable-007/histories.jsonl.gz",
+      "records": 125
+    }
+  ],
+  "limitations": [
+    "Validates supplied recorded observations against independent reference models; source labels and capture authenticity are not authenticated.",
+    "Transport events are recorded schedules, not independently witnessed deliveries or process terminations.",
+    "Historical checks cover stored point values, concatenated byte-range rows, typed n==1.0 and whole-word ATLAS shared results only.",
+    "Individual page boundaries/cursors, unrecorded queries, wall-clock behavior, storage survival and deployment faults are not inferred.",
+    "Local reads are committed-prefix consistency observations; only explicitly quorum reads receive the interval linearizability check."
+  ],
+  "profiles": {
+    "asymmetric-leader-change": 333,
+    "interrupted-snapshot": 333,
+    "loss-delay-reorder": 334
+  },
+  "recorder_only_counters_not_independently_recounted": [
+    "historical_pages",
+    "message_reorders"
+  ],
+  "records_checked": 1000,
+  "schema": 1,
+  "standalone_checker_summary": {
+    "all_passed": true,
+    "checker_source_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+    "engine_executed": false,
+    "inconclusive": 0,
+    "input_stopped_at_limit": false,
+    "invalid": 0,
+    "linearizable": 1000,
+    "records": 1000,
+    "schema": 1,
+    "search_state_budget": 200000,
+    "type": "summary",
+    "violations": 0
+  },
+  "tool": "atlas-recorded-observation-audit",
+  "tool_version": "0.1.0",
+  "utc": "2026-10-25T13:11:23.918978+00:00",
+  "witnesses": {
+    "path": "/workspace/polybase/target/atlas-independent-validation/overlay1000-witnesses.jsonl.gz",
+    "sha256": "60c387d44e0cbde6ee081436e6b559cfc8d75b34b9365d4e28ab8fa9c3af45e3"
+  }
+}

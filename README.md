@@ -4,6 +4,21 @@ Official free evaluation downloads for Polybase, an independent database researc
 
 Get the preview and documentation at **https://base.polymathlabs.xyz/download.html**.
 
+## Project Atlas — 1.5 candidate, qualification open
+
+Atlas adds bounded voter replacement, exact cluster history and lifecycle tools.
+Read the [contract](ATLAS_1_5.md), [operator guide](ATLAS_OPERATIONS.md),
+[public fault-testing harness](qualification/atlas/harness/README.md) and
+[independent reference tools](qualification/atlas/tools/README.md).
+
+The [first recorded iteration](qualification/atlas/iterations/333c2f0/README.md)
+preserves 50,000 local tmpfs histories, a separate 1,000 overlay histories and
+supported fixed-mode rolling checks. It also preserves every performance miss:
+**5/12 current-head targets passed; 36/36 cold-history targets passed**.
+Follow-up code is being requalified against the same pinned 1.0 baseline.
+Cross-host schedules executed remain **zero**, by the user's local-only choice.
+This is an unqualified candidate; published downloads remain 0.9.0.
+
 ## Project Cerberus — 1.0 candidate qualification
 
 The [Cerberus evidence](qualification/1.0.0/README.md) records a passing clean-source

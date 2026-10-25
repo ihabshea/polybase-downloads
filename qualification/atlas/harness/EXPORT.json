@@ -1,0 +1,55 @@
+{
+  "actual_cross_host_schedules_executed": 0,
+  "classification": "public_MIT_QA_harness_export_not_engine_release",
+  "credentials_included": false,
+  "cross_host_gate": "open_unrun",
+  "engine_source_provenance_verified": false,
+  "file_sha256": {
+    "LICENSE": "a1de9ae1f6836cb49144724e1bd22753fca8bc3f4e94882c2665697dc19b2a00",
+    "README.md": "9f40a4f46e2bbe2d6affe3f0eb5ed23ea65d4be01d37fce46418a724cb9b3642",
+    "atlas-cross-host.py": "7c71886e1b8a03e68d2443178ce6a1e48b6f70c63985890298352fa6c9f10958",
+    "cluster_driver.py": "357f6b8d912f1703ba7e3a5642fc295cbf96a292141648cfeda124f8209cd40c",
+    "examples/artifact-manifest.example.json": "aa7d01edaf40d103d6be4e5f97cb2222d37b37f14179d6c6354e6c6fb8696a55",
+    "examples/enrollment-node1.example.json": "cb96dd2090411d804f1ee27ee7a3e4d6d9a606877f94bf5773e00484d26481cd",
+    "examples/enrollment-node2.example.json": "d935efeda531382b7cd2daf4e3d95ada4ba34a99a3c11eea650eaa4b7160a759",
+    "examples/enrollment-node3.example.json": "b084aa16da939a48e4bc5d14332db1d7a1184f1b4fbd433f22c323492c1efb7c",
+    "examples/inventory.example.json": "130d8941e7f133901ee32a4ff7eab341885a94f51991e6225c8a2bf23aacd7b0",
+    "test-rpc-helper.py": "03955297b1a43f151a21758b61a9176798707869092224ce744b4e22d6ba132a"
+  },
+  "intentional_adapter_differences": [
+    "public standalone stdin checker with record/summary validation instead of private example CLI",
+    "explicit required --checker-binary for run and all selftests",
+    "public QA bundle file fingerprints without private checkout or Git dependency",
+    "node source SHA retained as unauthenticated operator manifest label; provenance verified false",
+    "strict duplicate-field/nonfinite JSON rejection",
+    "public RPC-only helper without database server or process fixture",
+    "public paths and supplied-artifact templates; no engine build command assumed"
+  ],
+  "license": "MIT for QA harness/docs/templates only; no grant for engine, server, binaries or application data",
+  "node_binary_included": false,
+  "original_qa_driver": {
+    "frozen_original_unchanged": true,
+    "path": "scripts/atlas-cross-host.py",
+    "sha256": "193b36321baea2acd9e852fde55d617c01643bd896e19835538fb0b08dcb134b",
+    "source_sha": "333c2f0ecf25c5987087f7cecc0bcd9fe269af73"
+  },
+  "preserved_contract": [
+    "exact History schema",
+    "pending writes remain uncertain until chosen terminal receipt",
+    "absent lookup retries exact same token and intent",
+    "Applied and Conflict receipts retained across completed-call segment boundaries",
+    "independent checker violations/invalid/inconclusive fail closed",
+    "unchanged bounded TCP proxy, host pins, listener ownership and ENOSPC guard",
+    "two-phase owned fixture evidence export then explicit release"
+  ],
+  "private_engine_or_server_implementation_included": false,
+  "public_adapter_sha256": "7c71886e1b8a03e68d2443178ce6a1e48b6f70c63985890298352fa6c9f10958",
+  "public_checker": {
+    "interface": "one compact History JSON per stdin line; one record response and final EOF summary",
+    "private_engine_dependency": false,
+    "reference_source_sha256": "9b9e18dd96d112b531183815260e71434680fcdb74cb28566486a3b8cba31e7e",
+    "source": "../tools/atlas-history-checker"
+  },
+  "release_qualified": false,
+  "schema": 1
+}

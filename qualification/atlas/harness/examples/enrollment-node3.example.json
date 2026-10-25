@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "node": 3,
+  "binary": "/opt/polybase-atlas/polybase-node",
+  "artifact_manifest": "/opt/polybase-atlas/artifact-manifest.json",
+  "scratch_root": "/var/tmp/polybase-atlas-evidence",
+  "storage_mount": "/mnt/polybase-atlas-fault-volume",
+  "dedicated_volume": false,
+  "allowed_peers": {"1": "10.90.0.11:29001", "2": "10.90.0.12:29001", "3": "10.90.0.13:29001"},
+  "proxy_ports": {"1": 29011, "2": 29012},
+  "independence_attestation": {
+    "kind": "isolated_vm",
+    "storage": false,
+    "network": false,
+    "clocks": false,
+    "evidence": "REPLACE_WITH_OPERATOR_VERIFIED_VM_AND_VOLUME_IDENTITIES"
+  }
+}
