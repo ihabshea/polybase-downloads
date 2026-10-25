@@ -1,0 +1,1950 @@
+{
+  "utc": "2026-10-25T10:08:20.882Z",
+  "base": "http://127.0.0.1:14330",
+  "browser": "154.0.8037.57",
+  "widths": [
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/clients.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/docs.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/docs-tutorial.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/docs-how-to.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/docs-reference.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/docs-concepts.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/privacy.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/preview-0-7.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/preview-0-8.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/preview-0-8-2.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/janus-0-9.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    }
+  ],
+  "accessibility": [
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/",
+      "position": "1",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/",
+      "position": "2",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/",
+      "position": "4",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/download.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/clients.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs-tutorial.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs-how-to.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs-reference.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/docs-concepts.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/release-notes.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/privacy.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/preview-0-7.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/preview-0-8.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/preview-0-8-2.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "position": "1",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "position": "2",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "position": "4",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "position": "order",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "position": "history",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/",
+      "position": "1",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/",
+      "position": "2",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/",
+      "position": "4",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/download.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/clients.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs-tutorial.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs-how-to.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs-reference.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/docs-concepts.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/release-notes.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/privacy.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/preview-0-7.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/preview-0-8.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/preview-0-8-2.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "position": "1",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "position": "2",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "position": "4",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "position": "order",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "position": "history",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/",
+      "position": "1",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/",
+      "position": "2",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/",
+      "position": "4",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/download.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/clients.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs-tutorial.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs-how-to.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs-reference.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/docs-concepts.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/release-notes.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/privacy.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/preview-0-7.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/preview-0-8.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/preview-0-8-2.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "position": "1",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "position": "2",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/janus-0-9.html",
+      "position": "4",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "position": "order",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "position": "history",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/",
+      "position": "1",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/",
+      "position": "2",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/",
+      "position": "4",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/download.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/clients.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs-tutorial.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs-how-to.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs-reference.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/docs-concepts.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/release-notes.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/privacy.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/preview-0-7.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/preview-0-8.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/preview-0-8-2.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "position": "1",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "position": "2",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/janus-0-9.html",
+      "position": "4",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "position": null,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "position": "order",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "position": "history",
+      "violations": []
+    }
+  ],
+  "behavior": [
+    {
+      "theme": "light",
+      "check": "persisted appearance, downloads, keyboard commit-position/guardian controls, FAQ and reduced motion",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "check": "persisted appearance, downloads, keyboard commit-position/guardian controls, FAQ and reduced motion",
+      "passed": true
+    },
+    {
+      "check": "System follows OS changes; explicit preferences survive reload and synchronize tabs; reset returns each tab to its OS setting",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "check": "JavaScript disabled: system palette, historical/guardian illustrations and downloads remain usable",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "check": "JavaScript disabled: system palette, historical/guardian illustrations and downloads remain usable",
+      "passed": true
+    },
+    {
+      "check": "Blocked storage: appearance control still works without an exception",
+      "passed": true
+    },
+    {
+      "check": "Stored preference is applied by the head bootstrap even when the deferred controller is unavailable",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "passed": true
+}

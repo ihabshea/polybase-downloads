@@ -1,0 +1,30 @@
+
+running 25 tests
+test cerberus_support::checker::tests::distinguishes_search_and_model_limits_from_a_proved_violation ... ok
+test cerberus_support::checker::tests::failed_comparisons_and_provisional_abort_reads_are_not_commits ... ok
+test cerberus_support::checker::tests::history_and_result_round_trip_for_deterministic_trace_replay ... ok
+test cerberus_support::checker::tests::finds_an_overlap_witness_without_using_vector_or_id_order ... ok
+test cerberus_support::checker::tests::old_recorded_outcomes_decode_without_an_observed_write_flag ... ok
+test cerberus_support::checker::tests::reducer_cannot_manufacture_a_missing_producer_or_position_gap ... ok
+test cerberus_support::checker::tests::reducer_does_not_claim_minimality_after_budget_exhaustion ... ok
+test cerberus_support::checker::tests::reducer_keeps_all_acknowledged_mutation_context_and_only_real_observations ... ok
+test cerberus_support::checker::tests::rejects_a_visible_partial_batch_from_a_definite_abort ... ok
+test cerberus_support::checker::tests::rejects_lost_acknowledged_data_after_restart ... ok
+test cerberus_support::checker::tests::rejects_successful_transaction_read_skew ... ok
+test cerberus_support::checker::tests::rejects_write_skew_and_accepts_the_rejected_transaction_as_an_abort ... ok
+test cerberus_support::checker::tests::rejects_wrong_reads_despite_ordered_valid_commit_positions ... ok
+test cerberus_support::checker::tests::respects_real_time_even_when_the_same_values_fit_an_overlap ... ok
+test cerberus_support::checker::tests::supports_own_writes_aba_absence_and_noop_event_positions ... ok
+test cerberus_support::checker::tests::uncertain_call_outcomes_never_become_abort_noops_or_serial_witnesses ... ok
+test cerberus_support::checker::tests::validates_binary_range_bounds_ordering_duplicates_and_expectations ... ok
+test cerberus_support::checker::tests::validates_input_and_handles_the_full_64_bit_mask_without_overflow ... ok
+test cerberus_support::checker::tests::validates_the_observed_write_flag_without_fabricating_missing_metadata ... ok
+test cerberus_support::history::tests::workload_generation_is_seeded_and_bounded ... ok
+test cerberus_support::history::tests::independent_numeric_missing_null_and_text_domains_are_distinct ... ok
+test tests::generated_engine_history_replays_its_observed_model ... ok
+test cerberus_support::checker::tests::search_matches_an_independent_exhaustive_three_operation_oracle ... ok
+test tests::a_synthetic_bad_read_produces_a_minimal_replayable_failure_envelope ... ok
+test tests::a_synthetic_historical_wrong_version_replays_with_its_mutation_context ... ok
+
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+
