@@ -1,0 +1,3 @@
+    Checking polybase-engine v1.0.0 (/workspace/polybase/crates/engine)
+    Checking polybase-cli v1.0.0 (/workspace/polybase/crates/cli)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 6.89s

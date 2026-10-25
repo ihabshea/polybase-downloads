@@ -1,0 +1,9 @@
+
+running 3 tests
+test generated_sigkill_campaign_checks_every_retained_prefix ... {"actual_sigkill_count":1116,"boundaries_in_full_sweep":86,"cases":1056,"cerberus_crash_campaign":true,"passed":true,"publication_crashes_with_pending_maintenance":180,"retained_prefix_checks":18900,"seed":20261025}
+ok
+test reducer_reaches_one_minimal_history_without_changing_failure_category ... ok
+test replay_saved_cerberus_crash ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.57s
+

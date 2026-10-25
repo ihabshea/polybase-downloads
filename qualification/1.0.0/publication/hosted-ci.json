@@ -1,0 +1,114 @@
+{
+  "source": "15ac0fd831c2e35a5d067c51d8d18805908940ab",
+  "runs": [
+    {
+      "id": 40187016198,
+      "name": "Cerberus qualification",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_number": 3,
+      "jobs_url": "https://api.github.com/repos/ihabshea/polybase/actions/runs/40187016198/jobs",
+      "logs_url": "https://api.github.com/repos/ihabshea/polybase/actions/runs/40187016198/logs",
+      "workflow_id": 395868599
+    },
+    {
+      "id": 40187016199,
+      "name": "CI",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_number": 106,
+      "jobs_url": "https://api.github.com/repos/ihabshea/polybase/actions/runs/40187016199/jobs",
+      "logs_url": "https://api.github.com/repos/ihabshea/polybase/actions/runs/40187016199/logs",
+      "workflow_id": 380533501
+    }
+  ],
+  "jobs": [
+    {
+      "id": 121149872861,
+      "name": "smoke",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 40187016198,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 121149873731,
+      "name": "qualification",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 40187016198,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 121149873054,
+      "name": "check (ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 40187016199,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 121149873234,
+      "name": "check (macos-latest)",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 40187016199,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 121149873304,
+      "name": "minimum-rust",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 40187016199,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 121149881552,
+      "name": "public-website",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 40187016199,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 121149881706,
+      "name": "evaluation-packages",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 40187016199,
+      "logs_url": null,
+      "steps": null
+    }
+  ],
+  "failed_jobs_step_counts": [
+    {
+      "job_id": 121149872861,
+      "name": "smoke",
+      "steps": 0
+    },
+    {
+      "job_id": 121149873054,
+      "name": "check (ubuntu-latest)",
+      "steps": 0
+    },
+    {
+      "job_id": 121149873234,
+      "name": "check (macos-latest)",
+      "steps": 0
+    },
+    {
+      "job_id": 121149873304,
+      "name": "minimum-rust",
+      "steps": 0
+    }
+  ],
+  "hosted_ci_passed": false,
+  "cause": "Unverified hosting-side failure before job steps"
+}

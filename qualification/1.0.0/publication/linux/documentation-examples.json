@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "target": "x86_64-unknown-linux-gnu",
+  "source_commit": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "package_sha256": "4fe3aca6dd326f54b1231092588c7da04efc5d28f5fdd7699c0d2e226e809f91",
+  "cases": [
+    "tutorial CLI commands, exact output, cross-collection batch and event boundary",
+    "runnable Python client, exact-request replay, one-file result/cursor resume and existing-state refusal",
+    "CLI reference, JSON replacement, deletion and application-maintained view",
+    "copyable curl health/read/query/checkpoint examples with exact Origin",
+    "closed-directory backup and reopened record/history verification"
+  ]
+}

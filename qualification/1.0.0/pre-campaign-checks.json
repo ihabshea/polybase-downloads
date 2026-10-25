@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "challenge": "Project Cerberus",
+  "status": "pre-campaign development checks",
+  "source_base_sha": "6093703b7c9769eff26b9ce76318b0fa2b1a78b5",
+  "source_dirty": true,
+  "checks": [
+    {
+      "command": "cargo test --workspace --all-features --locked",
+      "passed": 236,
+      "failed": 0,
+      "ignored": 0
+    },
+    {
+      "command": "cargo test -p polybase-engine --example cerberus_verify --all-features --locked",
+      "passed": 25,
+      "failed": 0,
+      "ignored": 0
+    },
+    {
+      "command": "cargo test -p polybase-engine --locked",
+      "passed": 181,
+      "failed": 0,
+      "ignored": 0
+    },
+    {
+      "command": "cargo clippy --workspace --all-targets --all-features --locked -- -D warnings",
+      "status": "passed"
+    },
+    {
+      "command": "cargo +1.89.0 check --workspace --all-targets --all-features --locked",
+      "status": "passed"
+    },
+    {
+      "command": "RUSTDOCFLAGS='-D warnings' cargo doc --workspace --all-features --no-deps --locked",
+      "status": "passed"
+    },
+    {
+      "command": "cargo fmt --all -- --check",
+      "status": "passed"
+    },
+    {
+      "command": "node --test scripts/test-console.mjs scripts/test-cluster-console.mjs website/test-release-inputs.mjs website/test-cerberus-evidence.mjs",
+      "passed": 54,
+      "failed": 0
+    },
+    {
+      "command": "npm --prefix clients/typescript run check",
+      "status": "passed"
+    },
+    {
+      "command": "npm --prefix clients/typescript test",
+      "passed": 3,
+      "failed": 0
+    }
+  ],
+  "limitations": "These source-development checks precede the clean-source qualification; full campaign counts will be recorded separately."
+}

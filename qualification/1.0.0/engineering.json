@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "qualified_implementation_sha": "54c92946abbaea30bae25e2e8178676e17cbd9e8",
+  "engine_client_runner_inputs_unchanged_after_campaign": true,
+  "workspace_rust_tests": 236,
+  "checker_and_harness_tests": 25,
+  "default_engine_tests": 181,
+  "console_and_website_node_tests": 55,
+  "typescript_client_tests": 3,
+  "strict_clippy": "passed",
+  "formatting": "passed",
+  "rust_1_89_check": "passed",
+  "rustdoc_warnings_denied": "passed",
+  "independent_python_selftests": 19,
+  "hosted_ci_claimed": false,
+  "binary_1_0_publication_claimed": false,
+  "website_deployment_claimed": false,
+  "scope": "Engine checks ran before the source-freeze commit with the same implementation inputs; the clean campaign and checker selftests used the frozen SHA. Post-data website guards are checked separately.",
+  "logs": {
+    "engineering/fmt.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "engineering/clippy.log": {
+      "bytes": 281,
+      "sha256": "3a3edd713b367d5a6978ed17d1b79fbf22da40310044356520109732a7301213"
+    },
+    "engineering/workspace-tests.log": {
+      "bytes": 26715,
+      "sha256": "2a2dbfb6e44107b336d3abc4504120b7bcefd4be95087b82c3bcb653ca23b4b7"
+    },
+    "engineering/checker-tests.log": {
+      "bytes": 2881,
+      "sha256": "3f703de39425f1388184f3ed186c05827a975fd0147787f131e61d50d75656b2"
+    },
+    "engineering/default-tests.log": {
+      "bytes": 18075,
+      "sha256": "5fe6a4c984965a9ef15f25ef31f639328778bdb317fc636dc4b64e929db62eb5"
+    },
+    "engineering/msrv.log": {
+      "bytes": 210,
+      "sha256": "d95d9dbde6a880a94d9fddec7de1141c6dd47f0993d8c2287f9c2787e2fc579b"
+    },
+    "engineering/rustdoc.log": {
+      "bytes": 434,
+      "sha256": "c111ae694a89d6473a006d7991b53a175b6ed4a1b9147408771863af68787058"
+    },
+    "engineering/ts-check.log": {
+      "bytes": 339,
+      "sha256": "7896009e55ef1b87277a2f365336585debe9821ed64fc49181a3aea8b70a2b5c"
+    },
+    "engineering/ts-tests.log": {
+      "bytes": 693,
+      "sha256": "3c4813c9f7ac2f817dc0e2d8d898ebfd886582d9144fc61f6f192f8e12aac57f"
+    },
+    "engineering/final-node-tests.log": {
+      "bytes": 5194,
+      "sha256": "11ecd4f1418294ef3870f6a16cb5c3625576c724f670e15bdd2d53946b7853e7"
+    },
+    "engineering/final-site-check.log": {
+      "bytes": 144,
+      "sha256": "fb5a91ef2eedda9e6aaf658e1171025389725244843ada2fc446e275cddef698"
+    }
+  }
+}

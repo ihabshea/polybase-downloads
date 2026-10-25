@@ -1,0 +1,101 @@
+{
+  "kind": "measured Cerberus links decorative-font follow-up",
+  "utc": "2026-10-25T10:16:37.161Z",
+  "widths": [
+    {
+      "theme": "light",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "passed": true
+    }
+  ],
+  "accessibility": [
+    {
+      "theme": "light",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "passed": true
+}

@@ -1,0 +1,148 @@
+{
+  "accepted": true,
+  "changed_bytes": {
+    "after_bytes": 192,
+    "after_crc32": 3529651477,
+    "before_bytes": 192,
+    "before_crc32": 996523610,
+    "patches": [
+      {
+        "after": "7996c8d19ed59160",
+        "before": "c3c7c1484eaf3127",
+        "offset": 36
+      },
+      {
+        "after": "42",
+        "before": "41",
+        "offset": 63
+      },
+      {
+        "after": "c3bf936aeccf5c16",
+        "before": "13c5332d29f3d12f",
+        "offset": 84
+      },
+      {
+        "after": "7996c8d1",
+        "before": "c3c7c148",
+        "offset": 100
+      }
+    ],
+    "path": "wal"
+  },
+  "classification": "known_unsupported_negative_control",
+  "count_in_covered_silent_corruption_total": false,
+  "current_head_unchanged": true,
+  "deletion_minimal_operations": true,
+  "engine_version": "1.0.0",
+  "failure_point": "valid_crc_preserving_earlier_wal_rewrite",
+  "forged_fixture": [
+    {
+      "hex": "454e444243415431f4f8853a7e8cf61a0beb88432e29a24b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bd3660a1",
+      "path": "CURRENT"
+    },
+    {
+      "hex": "454e444249443031f4f8853a7e8cf61a0beb88432e29a24b000000003cad76e0",
+      "path": "IDENTITY"
+    },
+    {
+      "hex": "454e4442445552310200000000000000c0000000000000007961b5756fced751",
+      "path": "durable"
+    },
+    {
+      "hex": "454e444257414c31010000006b00e6d1454e4652010100001400000001000000000000007996c8d19ed5916001000000010600000001000000646f63732f6142454e4652010200000c0000000100000000000000c3bf936aeccf5c1610000000000000007996c8d1454e465201010000140000000200000000000000efa6cfa6de2e6f2a01000000010600000001000000646f63732f6143454e4652010200000c00000002000000000000007961b5750925ccda6800000000000000efa6cfa6",
+      "path": "wal"
+    }
+  ],
+  "forged_observed_history_at_position_1": [
+    [
+      [
+        100,
+        111,
+        99,
+        115,
+        47,
+        97
+      ],
+      [
+        66
+      ]
+    ]
+  ],
+  "limit": "CRC checks are not cryptographic authentication; a self-consistent earlier WAL rewrite with recomputed frame checksums and binding remains undetectable by the current v1 format",
+  "metadata_and_frontier_bytes_unchanged": true,
+  "minimality_scope": "two one-key commits are required for an earlier changed value while the final durable frontier and current head remain unchanged; no byte-string minimality claim",
+  "observed_wrong_historical_version": true,
+  "operation_history": [
+    [
+      {
+        "key": [
+          100,
+          111,
+          99,
+          115,
+          47,
+          97
+        ],
+        "op": "put",
+        "value": [
+          65
+        ]
+      }
+    ],
+    [
+      {
+        "key": [
+          100,
+          111,
+          99,
+          115,
+          47,
+          97
+        ],
+        "op": "put",
+        "value": [
+          67
+        ]
+      }
+    ]
+  ],
+  "original_expected_history_at_position_1": [
+    [
+      [
+        100,
+        111,
+        99,
+        115,
+        47,
+        97
+      ],
+      [
+        65
+      ]
+    ]
+  ],
+  "original_fixture": [
+    {
+      "hex": "454e444243415431f4f8853a7e8cf61a0beb88432e29a24b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bd3660a1",
+      "path": "CURRENT"
+    },
+    {
+      "hex": "454e444249443031f4f8853a7e8cf61a0beb88432e29a24b000000003cad76e0",
+      "path": "IDENTITY"
+    },
+    {
+      "hex": "454e4442445552310200000000000000c0000000000000007961b5756fced751",
+      "path": "durable"
+    },
+    {
+      "hex": "454e444257414c31010000006b00e6d1454e465201010000140000000100000000000000c3c7c1484eaf312701000000010600000001000000646f63732f6141454e4652010200000c000000010000000000000013c5332d29f3d12f1000000000000000c3c7c148454e465201010000140000000200000000000000efa6cfa6de2e6f2a01000000010600000001000000646f63732f6143454e4652010200000c00000002000000000000007961b5750925ccda6800000000000000efa6cfa6",
+      "path": "wal"
+    }
+  ],
+  "qualifying_corruption_case": false,
+  "reference_model_violation": "historical_point_version",
+  "replay_command": "CERBERUS_CORRUPTION_FORGERY_REPLAY='/workspace/polybase/target/cerberus-1.0-qualification-20261025/corruption-receipts/negative-controls/valid-crc-preserving-wal-forgery.json' cargo test -p polybase-cli --test cerberus_corruption --locked -- --exact checksum_forgery_negative_control --nocapture",
+  "schema": 1,
+  "seed": 20261025,
+  "source_sha": "54c92946abbaea30bae25e2e8178676e17cbd9e8"
+}

@@ -1,0 +1,69 @@
+{
+  "checker_explored_states": 254592,
+  "configuration": {
+    "checker_limits": {
+      "max_input_bytes": 8388608,
+      "max_model_bytes": 262144,
+      "max_model_rows": 1024,
+      "max_operations": 64,
+      "max_reduction_checks": 10000,
+      "max_states": 100000
+    },
+    "concurrent_auditor": "one reader per history; captured head calls are checker operations; four historical query types per synchronized round; actual interval overlaps counted",
+    "histories": 10000,
+    "operations": 12,
+    "retained_positions": "every retained position after concurrent maintenance, after named retry/reopen, and after expiring compaction",
+    "threads": 3
+  },
+  "correctness_verified": true,
+  "counts": {
+    "acknowledged_writes": 87993,
+    "captured_head_reads": 40000,
+    "concurrent_historical_queries": 160000,
+    "conditional_rejections": 10000,
+    "definite_aborts": 71855,
+    "expired_position_checks": 41615,
+    "historical_maintenance_interval_overlaps": 78322,
+    "historical_phases": 30000,
+    "historical_positions": 242364,
+    "historical_queries": 5816736,
+    "historical_write_interval_overlaps": 100047,
+    "maintenance_operations": 40000,
+    "named_retry_checks": 30000,
+    "operations": 220000,
+    "query_kinds": {
+      "bounded_byte_range": 242364,
+      "byte_range": 242364,
+      "forced_scan": 969456,
+      "point": 2666004,
+      "typed_missing": 242364,
+      "typed_nested_all_any_not": 242364,
+      "typed_null": 242364,
+      "typed_numeric_equality_1_1point0": 242364,
+      "unicode_whole_word": 242364,
+      "whole_word": 242364,
+      "whole_word_conjunction": 242364
+    },
+    "readonly_commits": 60152,
+    "reopened_acknowledged_writes": 87993
+  },
+  "elapsed_millis": 85693,
+  "engine_version": "1.0.0",
+  "failure_artifact": null,
+  "histories_completed": 10000,
+  "history_threshold_met": true,
+  "limitations": [
+    "bounded completed-transaction linearizability checking, not an exhaustive formal proof",
+    "definite abort observations remain provisional; uncertain outcomes never become definite aborts",
+    "seed reproduces generated program, not OS thread scheduling; recorded-response checker replay is deterministic",
+    "historical results are compared in complete ordered bytes, with numeric/missing/null and whole-word reference evaluation independent of engine helpers",
+    "successful quiescent all-position historical reads are checked live; their phase counters are retained, while offline trace replay checks stored response payloads only",
+    "SIGKILL/process corruption qualification is a separate required campaign; no power-loss claim"
+  ],
+  "linearizable_histories": 10000,
+  "schema": 1,
+  "seed": 20261025,
+  "source_sha": "54c92946abbaea30bae25e2e8178676e17cbd9e8",
+  "suite": "cerberus_histories",
+  "trace": "histories.jsonl"
+}

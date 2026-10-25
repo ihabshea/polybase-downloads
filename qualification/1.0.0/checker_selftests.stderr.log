@@ -1,0 +1,3 @@
+   Compiling polybase-engine v1.0.0 (/workspace/polybase/crates/engine)
+    Finished `release` profile [optimized] target(s) in 5.75s
+     Running unittests examples/cerberus_verify.rs (target/release/examples/cerberus_verify-7bbfa02c656541e3)

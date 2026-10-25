@@ -4,7 +4,7 @@ Official free evaluation downloads for Polybase, an independent database researc
 
 Get the preview and documentation at **https://base.polymathlabs.xyz/download.html**.
 
-The 0.9.0 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains five executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
+The 1.0.0 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains five executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
 
 Mac executables are ad-hoc signed and not notarized. Linux executables are unsigned. Use disposable data for this experimental preview. The [evaluation license](LICENSE) permits personal or internal evaluation, experimentation and development; production use and commercial redistribution are outside those terms.
 
@@ -57,3 +57,13 @@ Read [the release notes](RELEASE_0_9.md), [historical-query contract](JANUS_0_9.
 [platform qualification](qualification/0.9.0/README.md). Matching clean-source Mac
 and Linux archives are in [the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v0.9.0).
 Published SDK install versions remain 0.8.3; SDK 0.9.0 helpers remain unpublished.
+
+## 1.0.0 — Project Cerberus
+
+Cerberus qualifies crash recovery, concurrent ordering and retained history.
+Read [the contract](CERBERUS_1_0.md), [release notes](CERBERUS_1_0_RELEASE.md) and
+[the complete measured campaign](qualification/1.0.0/README.md). Matching Mac and
+Linux archives, checksums and runtime receipts are in
+[the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v1.0.0).
+SIGKILL is not hardware power loss; CRCs are not authentication. Published MIT
+SDKs remain independently versioned at 0.8.3.
