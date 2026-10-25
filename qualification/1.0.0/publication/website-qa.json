@@ -1,0 +1,316 @@
+{
+  "base": "http://127.0.0.1:4330",
+  "utc": "2026-10-25T11:42:32.694Z",
+  "navigation_timeout_ms": 60000,
+  "responsive": [
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/download.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/release-notes.html",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "passed": true
+    }
+  ],
+  "accessibility": [
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/download.html",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/release-notes.html",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/download.html",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/release-notes.html",
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/download.html",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/release-notes.html",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "path": "/cerberus-1-0.html",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/download.html",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/release-notes.html",
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/cerberus-1-0.html",
+      "violations": []
+    }
+  ],
+  "behavior": [
+    {
+      "theme": "light",
+      "check": "keyboard guardian controls, FAQ and reduced motion",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "check": "keyboard guardian controls, FAQ and reduced motion",
+      "passed": true
+    },
+    {
+      "check": "no-JavaScript guardian and versioned downloads",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "passed": true
+}
