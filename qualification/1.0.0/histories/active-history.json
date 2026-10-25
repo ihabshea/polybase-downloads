@@ -1,0 +1,152 @@
+{
+  "phase": "verified",
+  "schema": 1,
+  "seed": 20271024,
+  "workload": {
+    "clients": [
+      [
+        {
+          "algorithm": 0,
+          "delete": false,
+          "key": 2,
+          "other": 9,
+          "own_read": false,
+          "range": false,
+          "value": 7,
+          "write": true,
+          "yields": 0
+        },
+        {
+          "algorithm": 1,
+          "delete": false,
+          "key": 5,
+          "other": 3,
+          "own_read": true,
+          "range": true,
+          "value": 1,
+          "write": true,
+          "yields": 1
+        },
+        {
+          "algorithm": 2,
+          "delete": false,
+          "key": 5,
+          "other": 0,
+          "own_read": false,
+          "range": false,
+          "value": 4,
+          "write": true,
+          "yields": 0
+        },
+        {
+          "algorithm": 0,
+          "delete": false,
+          "key": 9,
+          "other": 1,
+          "own_read": false,
+          "range": true,
+          "value": 6,
+          "write": true,
+          "yields": 2
+        }
+      ],
+      [
+        {
+          "algorithm": 1,
+          "delete": false,
+          "key": 9,
+          "other": 2,
+          "own_read": false,
+          "range": true,
+          "value": 5,
+          "write": true,
+          "yields": 3
+        },
+        {
+          "algorithm": 2,
+          "delete": false,
+          "key": 7,
+          "other": 5,
+          "own_read": true,
+          "range": false,
+          "value": 4,
+          "write": true,
+          "yields": 1
+        },
+        {
+          "algorithm": 0,
+          "delete": false,
+          "key": 4,
+          "other": 7,
+          "own_read": true,
+          "range": false,
+          "value": 3,
+          "write": true,
+          "yields": 2
+        },
+        {
+          "algorithm": 1,
+          "delete": false,
+          "key": 3,
+          "other": 2,
+          "own_read": false,
+          "range": true,
+          "value": 1,
+          "write": true,
+          "yields": 1
+        }
+      ],
+      [
+        {
+          "algorithm": 2,
+          "delete": false,
+          "key": 4,
+          "other": 3,
+          "own_read": false,
+          "range": false,
+          "value": 6,
+          "write": true,
+          "yields": 0
+        },
+        {
+          "algorithm": 0,
+          "delete": false,
+          "key": 1,
+          "other": 7,
+          "own_read": false,
+          "range": true,
+          "value": 0,
+          "write": true,
+          "yields": 1
+        },
+        {
+          "algorithm": 1,
+          "delete": false,
+          "key": 2,
+          "other": 2,
+          "own_read": false,
+          "range": false,
+          "value": 2,
+          "write": true,
+          "yields": 2
+        },
+        {
+          "algorithm": 2,
+          "delete": false,
+          "key": 8,
+          "other": 5,
+          "own_read": true,
+          "range": false,
+          "value": 5,
+          "write": true,
+          "yields": 1
+        }
+      ]
+    ],
+    "spec": {
+      "operations": 12,
+      "seed": 20271024,
+      "threads": 3
+    }
+  }
+}

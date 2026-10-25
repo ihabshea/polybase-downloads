@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "source_sha": "54c92946abbaea30bae25e2e8178676e17cbd9e8",
+  "archives": [
+    {
+      "file": "termination-receipts.tar.gz",
+      "members": 1056,
+      "bytes": 427773,
+      "sha256": "b905092fa351c34faee72417074760347d7cf47938829fc298de70e713445c94"
+    },
+    {
+      "file": "corruption-receipts.tar.gz",
+      "members": 1000,
+      "bytes": 444882,
+      "sha256": "4908a93a5543990d45140746f51543a40dd837d5b5fc199e5541deada06b92be"
+    },
+    {
+      "file": "client-programs.tar.gz",
+      "members": 64,
+      "bytes": 11575,
+      "sha256": "45e8747d35ff910553cf963d7c7c30ca0a9a6e46d052baaf2b21321e77093b60"
+    }
+  ],
+  "raw_trace": {
+    "uncompressed_bytes": 485334174,
+    "uncompressed_sha256": "b52c4be9b2af6f03a572d3022e65ec00a5b5591a5b70fc2249541c22f99a6d07",
+    "gzip_bytes": 24296188,
+    "gzip_sha256": "3370211abad06e55b4c7347113c0a629f31ddf8d72caad98ed9d582eb0a2d5ab"
+  },
+  "scope": "Raw receipt members and the gzip trace preserve exact original bytes. Original manifest paths are restored by archive extraction and optional gzip decompression. Uncompressed 485MB trace is omitted from git; stream gzip with the independent witness validator."
+}

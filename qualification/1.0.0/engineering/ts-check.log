@@ -1,0 +1,9 @@
+
+> @polymathbase/polybase-client@0.9.0 check
+> tsc --noEmit --strict --target ES2022 --module nodenext --lib ES2022,DOM client.ts
+
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

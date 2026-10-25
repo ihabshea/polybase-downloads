@@ -4,6 +4,20 @@ Official free evaluation downloads for Polybase, an independent database researc
 
 Get the preview and documentation at **https://base.polymathlabs.xyz/download.html**.
 
+## Project Cerberus — 1.0 candidate qualification
+
+The [Cerberus evidence](qualification/1.0.0/README.md) records a passing clean-source
+campaign: **10,000 concurrent histories, 1,056 termination cases with 1,116 actual
+SIGKILLs, and 1,000 covered corruption cases**. In-scope mismatches, lost
+acknowledged commits, partial batches and silent corruption were zero. All 64
+same-program Rust/Node trials matched their reference model. An independent
+Python tool validates the supplied witnesses without the private engine.
+
+Read the [contract](CERBERUS_1_0.md) and [engineering tracker](CERBERUS_1_0_TRACKER.md),
+including the explicitly excluded checksum-forgery control and replay limits.
+This qualification does not publish a 1.0 download; the current release below
+remains 0.9.0.
+
 The 0.9.0 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains five executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
 
 Mac executables are ad-hoc signed and not notarized. Linux executables are unsigned. Use disposable data for this experimental preview. The [evaluation license](LICENSE) permits personal or internal evaluation, experimentation and development; production use and commercial redistribution are outside those terms.

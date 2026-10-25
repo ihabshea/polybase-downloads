@@ -1,0 +1,232 @@
+   Compiling polybase-engine v1.0.0 (/workspace/polybase/crates/engine)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 16.59s
+     Running unittests src/lib.rs (target/debug/deps/polybase_engine-7cd3ec785f3ca5ec)
+
+running 128 tests
+test concurrent::calibration::tests::measured_pairs_learn_only_when_enabled_and_with_matching_head ... ok
+test concurrent::calibration::tests::measurement_history_and_learning_are_bounded ... ok
+test concurrent::calibration::tests::zero_work_and_invalid_predicate_sizes_are_not_samples ... ok
+test concurrent::query_work::tests::concurrent_pollers_compute_each_shared_projection_once ... ok
+test concurrent::query_work::tests::empty_excluded_range_has_no_dependencies_and_does_not_panic ... ok
+test concurrent::query_work::tests::identical_queries_share_projection_with_independent_cursors ... ok
+test concurrent::search::tests::coverage_is_disposable_bounded_and_bound_to_one_head ... ok
+test concurrent::calibration::tests::enabling_learning_preserves_page_cursor_and_restart_restores_defaults ... ok
+test concurrent::search::tests::zero_term_records_are_counted_and_charged ... ok
+test concurrent::search::tests::published_changes_update_live_and_coverage_statistics ... ok
+test concurrent::subscription::tests::arbitrary_resume_tokens_never_panic ... ok
+test concurrent::subscription::tests::atomic_query_deltas_noops_and_query_bound_resume_survive_restart ... ok
+test concurrent::query_work::tests::cache_eviction_and_disabled_sharing_preserve_result_transitions ... ok
+test concurrent::subscription::tests::checkpoint_preserves_transaction_version_pins_and_subscription_lifecycle ... ok
+test concurrent::subscription::tests::live_corrupt_event_reads_fence_all_handles_and_tokens_ahead_reject ... ok
+test concurrent::subscription::tests::retention_protects_live_cursors_and_explicit_expiry_is_observable ... ok
+test concurrent::subscription::tests::raw_repeated_mutations_coalesce_and_pages_preserve_transaction_boundaries ... ok
+test concurrent::subscription::tests::subscription_count_result_page_lag_and_idle_expiry_are_bounded ... ok
+test concurrent::tests::absent_present_aba_and_blind_writes_retain_validation_evidence ... ok
+test concurrent::tests::a_captured_cursor_reads_unlinked_generation_then_relocates_without_gaps ... ok
+test concurrent::tests::active_admission_expiry_abort_and_foreign_instance_lifecycle ... ok
+test concurrent::calibration::tests::planner_learns_from_measured_warm_execution_but_not_cold_or_historical_reads ... ok
+test concurrent::tests::captured_historical_query_survives_publication_and_generation_reclamation ... ok
+test concurrent::tests::byte_range_phantoms_boundaries_and_aba_are_validated ... ok
+test concurrent::tests::captured_read_pins_survive_publication_and_expiry_is_rechecked ... ok
+test concurrent::tests::declared_key_locks_are_honored_by_every_writer_and_abort_releases ... ok
+test concurrent::tests::configured_byte_range_history_and_initial_limits_reject_before_append ... ok
+test concurrent::tests::deterministic_thread_race_allows_one_lost_update_winner ... ok
+test concurrent::tests::every_concurrent_write_fault_fences_all_handles_and_reopens ... ok
+test concurrent::tests::group_validation_sees_earlier_plans_and_recovery_matches_receipts ... ok
+test concurrent::tests::grouped_read_only_prefixes_and_uncertain_member_outcomes ... ok
+test concurrent::tests::grouped_read_only_sessions_are_not_classified_as_uncertain_writes ... ok
+test concurrent::tests::in_flight_polls_are_bounded_and_forced_retention_is_rechecked ... ok
+test concurrent::tests::lost_update_is_rejected_for_both_optimistic_paths ... ok
+test concurrent::tests::multi_shard_installation_stays_invisible_until_published_head ... ok
+test concurrent::tests::mvcc_is_a_fixed_view_and_occ_reads_are_cached_but_provisional ... ok
+test concurrent::tests::named_request_bounds_are_checked_before_queue_admission ... ok
+test concurrent::tests::narrow_query_handoff_survives_partial_publication_and_reopen ... ok
+test concurrent::tests::native_snapshot_during_partial_publication_transitions_once ... ok
+test concurrent::tests::old_mvcc_views_apply_backpressure_and_drop_reclaims_history ... ok
+test concurrent::tests::operation_errors_invalidate_the_transaction_and_never_commit_a_prefix ... ok
+test concurrent::tests::planned_candidates_and_values_share_the_publication_boundary ... ok
+test concurrent::tests::planned_queries_fail_closed_after_partial_publication_and_rebuild_on_recovery ... ok
+test concurrent::tests::generated_interleavings_agree_with_successful_serial_observations ... ok
+test concurrent::tests::post_durability_publication_failure_and_worker_panic_require_recovery ... ok
+test concurrent::subscription::tests::snapshot_and_generated_net_deltas_equal_reference ... ok
+test concurrent::tests::reclamation_precedes_success_reply ... ok
+test concurrent::tests::queue_admission_is_bounded_and_pending_reservations_do_not_expire ... ok
+test concurrent::tests::search_index_changes_only_with_published_commit_and_recovers_after_publication_failure ... ok
+test incremental_tests::incremental_depth_and_byte_limits_fall_back_to_full_materialization ... ok
+test incremental_tests::every_incremental_publication_boundary_preserves_acknowledged_state_and_outcome ... ok
+test concurrent::tests::write_skew_and_stale_read_only_transactions_conflict ... ok
+test incremental_tests::incremental_layers_reuse_wal_and_survive_repeated_recovery_and_full_compaction ... ok
+test replication::durable_tests::a_panic_after_persistence_fences_the_instance_before_any_effects_escape ... ok
+test incremental_tests::missing_or_corrupted_incremental_layers_never_fall_back_or_replace_selection ... ok
+test replication::durable_tests::an_existing_replica_binding_never_reinitializes_missing_backing_storage ... ok
+test replication::durable_tests::chosen_conflicts_are_stable_no_mutation_outcomes_and_request_expiry_is_replicated ... ok
+test incremental_tests::subscribers_relocate_over_delta_generations_without_losing_transitions ... ok
+test replication::durable_tests::committed_event_batches_reconstruct_state_and_reject_false_term_positions ... ok
+test replication::durable_tests::durable_majority_publish_links_atomic_state_request_and_event ... ok
+test replication::durable_tests::equal_commit_snapshot_frees_a_full_followers_retained_log_for_the_next_write ... ok
+test replication::durable_tests::every_vote_persistence_failure_releases_no_reply_and_recovers_one_durable_vote ... ok
+test replication::durable_tests::equal_commit_snapshot_with_valid_checksums_cannot_change_state_or_outcomes ... ok
+test replication::durable_tests::chunked_snapshot_restart_duplicate_and_lost_reply_preserve_state_and_outcomes ... ok
+test replication::durable_tests::lost_acknowledgment_retries_after_failover_have_no_second_transition ... ok
+test replication::durable_tests::invalid_snapshot_transfers_cannot_replace_an_acknowledged_view ... ok
+test replication::durable_tests::malformed_replication_input_and_existing_single_node_directories_are_not_mutated ... ok
+test replication::durable_tests::minority_uncommitted_commands_are_hidden_then_discarded_without_losing_acknowledgments ... ok
+test replication::durable_tests::pending_expiry_cannot_admit_a_descending_floor_that_poisoned_future_commits ... ok
+test replication::durable_tests::protected_wal_corruption_and_missing_internal_records_fail_closed ... ok
+test replication::durable_tests::snapshot_install_persistence_faults_preserve_the_old_or_complete_new_application_view ... ok
+test replication::durable_tests::snapshots_retain_request_outcomes_independent_of_physical_log_boundary ... ok
+test replication::durable_tests::term_bound_query_cursor_survives_failover_and_detects_expired_or_foreign_history ... ok
+test replication::model_tests::an_isolated_former_leader_cannot_commit_and_its_suffix_is_replaced ... ok
+test replication::model_tests::delayed_append_reply_remains_valid_across_heartbeat_retries ... ok
+test replication::model_tests::durable_votes_and_freshness_prevent_double_votes_and_stale_leaders ... ok
+test replication::model_tests::election_atomic_prefix_and_restarts_have_one_committed_history ... ok
+test replication::durable_tests::snapshot_publication_faults_recover_one_complete_state_and_keep_valid_request_ids ... ok
+test replication::model_tests::generated_snapshot_chunk_reordering_duplication_loss_and_restart_never_publish_partial_data ... ok
+test replication::model_tests::malformed_or_foreign_messages_and_capacity_do_not_replace_committed_data ... ok
+test replication::model_tests::old_term_majority_is_not_committed_until_a_current_term_entry ... ok
+test replication::model_tests::rejected_stale_vote_does_not_postpone_the_fresh_voters_election ... ok
+test replication::model_tests::stale_correlated_replies_never_advance_or_rewind_peer_progress ... ok
+test request_tests::all_request_commit_fault_boundaries_resolve_without_duplicate_writes ... ok
+test request_tests::canonical_request_retries_resolve_after_restart_and_checkpoint ... ok
+test request_tests::concurrent_duplicate_request_has_one_state_transition_and_event ... ok
+test request_tests::corrupted_request_is_not_silently_repaired ... ok
+test request_tests::maintenance_faults_preserve_request_outcomes ... ok
+test request_tests::request_byte_budget_and_foreign_token_do_not_write ... ok
+test request_tests::request_condition_failure_and_capacity_are_definite_prewrite_rejections ... ok
+test storage_tests::checkpoint_compaction_replay_and_append_keep_positions ... ok
+test storage_tests::compaction_validates_old_history_before_deleting_and_rejects_invalid_floor ... ok
+test storage_tests::empty_checkpoints_and_legacy_upgrade_are_supported ... ok
+test storage_tests::every_maintenance_error_boundary_preserves_acked_state ... ok
+test storage_tests::generated_histories_survive_repeated_rewrite ... ok
+test storage_tests::maintenance_rejects_live_selected_file_corruption_without_replacement ... ok
+test storage_tests::missing_selection_metadata_cannot_initialize_over_generation_data ... ok
+test storage_tests::recovery_synchronizes_selected_manifest_before_any_cleanup ... ok
+test storage_tests::selected_generation_corruption_never_falls_back_or_repairs ... ok
+test tests::arbitrary_transaction_payloads_never_panic ... ok
+test tests::corrupt_full_unacknowledged_record_is_not_an_incomplete_tail ... ok
+test tests::dropped_and_rejected_transactions_have_no_effects_or_positions ... ok
+test tests::event_pages_bound_bytes_and_count_without_skipping_positions ... ok
+test tests::every_acknowledged_wal_truncation_fails_closed ... ok
+test tests::every_fault_boundary_fences_and_recovers_atomic_outcome ... ok
+test concurrent::tests::adaptive_restart_keeps_the_captured_head_while_a_writer_waits_to_publish ... ok
+test tests::every_single_byte_wal_damage_fails_closed ... ok
+test tests::every_unprotected_tail_cut_recovers_only_complete_commits ... ok
+test tests::exclusive_ownership_and_release_are_deterministic ... ok
+test tests::frontier_damage_or_missing_files_never_regenerates_metadata ... ok
+test tests::every_group_tail_cut_recovers_exactly_the_complete_transaction_prefix ... ok
+test tests::group_preflight_and_individual_ordering ... ok
+test tests::header_lengths_are_validated_before_allocation ... ok
+test tests::interrupted_group_recovers_a_prefix_without_exposing_partial_transactions ... ok
+test tests::invalid_options_do_not_initialize_database ... ok
+test tests::limits_reject_before_writing_and_final_duplicate_key_state_is_counted ... ok
+test tests::multi_mutation_atomic_commit_and_event_correspondence ... ok
+test tests::owner_drop_releases_lock_even_with_a_duplicated_descriptor ... ok
+test tests::pairing_sequence_and_frontier_boundary_are_validated ... ok
+test tests::repeated_recovery_and_stale_temporary_frontier_are_deterministic ... ok
+test tests::sequence_overflow_rejects_without_writing ... ok
+test tests::snapshot_followed_by_events_has_one_unambiguous_boundary ... ok
+test tests::stricter_recovery_limits_fail_without_discarding_history ... ok
+test tests::valid_checksums_cannot_hide_invalid_transaction_structure ... ok
+test tests::wal_capacity_stops_writes_without_eviction ... ok
+test replication::durable_tests::generated_snapshot_delta_handoff_matches_filtered_state_across_leader_changes ... ok
+test tests::generated_histories_match_model_and_replay ... ok
+test replication::model_tests::generated_message_loss_reordering_duplication_and_restart_preserve_safety ... ok
+
+test result: ok. 128 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.84s
+
+     Running tests/adaptive.rs (target/debug/deps/adaptive-9a5f0316c669b060)
+
+running 9 tests
+test intersections_and_overlapping_unions_keep_canonical_residuals_and_order ... ok
+test correlated_intersection_restarts_once_without_duplicate_or_missing_page_rows ... ok
+test concurrent_index_field_publications_never_mix_candidate_and_value_heads ... ok
+test preview_08_public_page_types_and_exhaustive_plan_matches_remain_source_compatible ... ok
+test selectivity_costs_and_disposable_statistics_track_the_captured_head ... ok
+test union_explains_only_complete_alternatives_and_rechecks_flattened_intersections ... ok
+test generated_nested_boolean_predicates_match_forced_scan_across_byte_ranges ... ok
+test optimization_failure_and_index_deletion_never_return_partial_results ... ok
+test pages_subscriptions_and_rebuilds_preserve_original_positions ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s
+
+     Running tests/collections.rs (target/debug/deps/collections-612f11506fdaa809)
+
+running 2 tests
+test a_stale_condition_in_one_collection_rejects_the_whole_cross_collection_request ... ok
+test user_defined_collections_keep_separate_queries_across_atomic_updates_and_reopen ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/historical.rs (target/debug/deps/historical-0994a4cb9bc93ed1)
+
+running 12 tests
+test disposable_cache_failure_uses_complete_scoped_replay_and_replay_cap_rejects ... ok
+test current_diagnostics_distinguish_reuse_from_empty_builds_and_disabled_indexes ... ok
+test checkpoints_compaction_and_reopen_preserve_every_retained_historical_value ... ok
+test historical_pages_are_bound_to_position_query_and_database_and_expire_explicitly ... ok
+test cold_historical_reads_fail_closed_on_corrupt_or_truncated_protected_history ... ok
+test historical_query_and_predicate_limits_reject_instead_of_truncating ... ok
+test historical_ranges_preserve_byte_order_and_inclusive_exclusive_boundaries ... ok
+test historical_whole_word_search_is_case_folded_bounded_and_position_consistent ... ok
+test point_reads_name_one_atomic_commit_and_distinguish_empty_future_and_expired ... ok
+test immutable_history_cache_reuses_verified_versions_across_positions_and_newer_writes ... ok
+test generated_nested_historical_predicates_equal_canonical_scan_at_each_position ... ok
+test historical_json_matches_typed_predicates_and_never_uses_newer_definitions_or_values ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/planner.rs (target/debug/deps/planner-c78932e409c15f21)
+
+running 8 tests
+test arbitrary_ranges_and_empty_results_remain_sorted ... ok
+test explicit_plans_conjunction_residuals_and_numeric_null_semantics ... ok
+test a_warm_cache_that_exceeds_its_budget_on_update_falls_back_completely ... ok
+test limits_order_duplicates_and_historical_continuations_are_plan_independent ... ok
+test typed_postings_share_zero_exponent_and_exact_large_integer_equivalence ... ok
+test postings_rebuild_after_checkpoint_compaction_and_reopen_and_live_resume_is_complete ... ok
+test fallback_missing_deleted_unusable_and_noncovering_indexes_has_no_false_negatives ... ok
+test differential_generated_numeric_fields ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+     Running tests/preview7.rs (target/debug/deps/preview7-31ab08987ed10023)
+
+running 12 tests
+test corrupted_retained_wal_fences_historical_reads ... ok
+test advisor_respects_subscriber_pin_and_never_changes_storage ... ok
+test backup_preserves_identity_requests_history_and_rejects_damage ... ok
+test historical_snapshots_match_retained_prefix_and_fail_after_expiry ... ok
+test live_json_transitions_replay_recovery_and_compaction ... ok
+test integer_comparisons_preserve_exact_order ... ok
+test named_indexes_rebuild_and_follow_updates_with_bounded_scan_fallback ... ok
+test pagination_has_no_duplicates_or_drift_and_is_query_database_bound ... ok
+test typed_predicates_distinguish_missing_null_types_and_large_integers ... ok
+test streams_apply_backpressure_resume_and_never_skip_no_match_commits ... ok
+test revisions_reject_aba_and_allow_unrelated_writes_after_reopen ... ok
+test maximum_key_cursor_round_trips_without_losing_the_next_row ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/search.rs (target/debug/deps/search-7c23cd0ca07d16e9)
+
+running 8 tests
+test index_update_crossing_capacity_falls_back_to_complete_scan ... ok
+test json_scalar_types_and_text_word_boundaries_are_distinct ... ok
+test byte_limit_rejects_entire_indexed_and_scanned_results ... ok
+test search_cannot_rebuild_from_corrupt_acknowledged_wal ... ok
+test unbounded_search_configuration_is_rejected_before_open ... ok
+test search_capacity_and_bad_queries_reject_without_partial_results ... ok
+test json_and_text_indexes_match_full_scan_through_updates_maintenance_and_reopen ... ok
+test oversized_value_term_set_uses_complete_scan_without_losing_matches ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests polybase_engine
+
+running 2 tests
+test crates/engine/src/lib.rs - (line 7) ... ok
+test crates/engine/src/concurrent/mod.rs - concurrent::Database (line 249) ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.33s; merged doctests compilation took 0.32s

@@ -1,0 +1,1 @@
+{"correctness_verified":true,"engine_executed":false,"explored_states":254592,"histories_checked":10000,"mode":"observed_trace_stream_replay","replay_scope":"stored transaction observations, concurrent historical responses, and visible head/events only; successful quiescent all-position reads were checked live and retained as phase counters, not full response payloads"}
