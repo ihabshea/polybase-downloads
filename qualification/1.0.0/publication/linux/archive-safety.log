@@ -1,0 +1,11 @@
+PASS rejected private source file: raw tar inventory exceeds bound
+PASS rejected path traversal: unsafe archive path
+PASS rejected symlink: unsupported tar extension or entry type
+PASS rejected duplicate path: raw tar inventory exceeds bound
+PASS rejected binary byte damage: content mismatch: bin/polybase
+PASS legitimate candidate and five altered archives
+PASS rejected extra gzip member: extra gzip member or compressed trailer
+PASS rejected hidden tar trailer: noncanonical tar record padding
+PASS rejected PAX extension before allocation: unsupported tar extension or entry type
+PASS rejected member padding: hidden member padding payload
+PASS rejected optional gzip metadata: package gzip header must not contain optional fields

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "files": 46,
+  "bytes": 779740,
+  "sha256": "a9ccec0f02d2c68d2878b0381a000ec140d4ce4ac9a983eab03c2f9e312ef64f",
+  "hosting_source": "4a8da1b765df5d540ce158d1304c7d48eb21db2e",
+  "hosting_manifest_layout": "dist/.openai/hosting.json, normalized by the official Sites package helper"
+}

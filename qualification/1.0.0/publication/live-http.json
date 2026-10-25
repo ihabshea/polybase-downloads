@@ -1,0 +1,323 @@
+{
+  "utc": "2026-10-25T11:48:57.319413+00:00",
+  "base": "https://base.polymathlabs.xyz/",
+  "passed": true,
+  "paths": [
+    {
+      "path": "SHA256SUMS.txt",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/SHA256SUMS.txt",
+      "bytes": 222,
+      "sha256": "e7303c7cd883b1e793d8451ac756f22a70704f555d0382163a0151be299098c0"
+    },
+    {
+      "path": "assets/cerberus-preview.png",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/cerberus-preview.png",
+      "bytes": 73528,
+      "sha256": "920a1f4f704c24f32736fb86bb3478ce9368cd85b6effa0ee87b6bb13fc8779c"
+    },
+    {
+      "path": "assets/console.png",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/console.png",
+      "bytes": 115443,
+      "sha256": "741cb6e2aa5fe0b19c753fa8424ac33962ac97de1942afc5fed7122c3ef53b58"
+    },
+    {
+      "path": "assets/fonts/README.txt",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/fonts/README.txt",
+      "bytes": 614,
+      "sha256": "4bda40a9e67d2f33768d0a9fccc466f4524c2f45270f767e7c6fb335395c1817"
+    },
+    {
+      "path": "assets/fonts/dm-sans-latin.woff2",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/fonts/dm-sans-latin.woff2",
+      "bytes": 36980,
+      "sha256": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb"
+    },
+    {
+      "path": "assets/fonts/dmsans-OFL.txt",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/fonts/dmsans-OFL.txt",
+      "bytes": 4482,
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1"
+    },
+    {
+      "path": "assets/fonts/instrument-serif-italic-latin.woff2",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/fonts/instrument-serif-italic-latin.woff2",
+      "bytes": 15684,
+      "sha256": "6ee678c33f388dd7ba59700ebea635deb98821baafd817b09891f7927177f702"
+    },
+    {
+      "path": "assets/fonts/instrument-serif-normal-latin.woff2",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/fonts/instrument-serif-normal-latin.woff2",
+      "bytes": 15040,
+      "sha256": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d"
+    },
+    {
+      "path": "assets/fonts/instrumentserif-OFL.txt",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/fonts/instrumentserif-OFL.txt",
+      "bytes": 4405,
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+    },
+    {
+      "path": "assets/mark.svg",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/mark.svg",
+      "bytes": 266,
+      "sha256": "0884b51f4652cfe8709bf8be12eacedde3792e2a4490a554e5ffdf20cf116383"
+    },
+    {
+      "path": "assets/social-preview.png",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/assets/social-preview.png",
+      "bytes": 67268,
+      "sha256": "e48dec0875e7553b9a1a62baf717bbe03fd121e57499929be7bad19f474559b2"
+    },
+    {
+      "path": "cerberus-1-0-validation.json",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/cerberus-1-0-validation.json",
+      "bytes": 18268,
+      "sha256": "9a5f77681901c25f460c2c878a28a4cf803451006a2538cd63716a75cc0b83dc"
+    },
+    {
+      "path": "cerberus-1-0.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/cerberus-1-0",
+      "bytes": 22609,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "cerberus-independent-witness-validation.json",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/cerberus-independent-witness-validation.json",
+      "bytes": 2005,
+      "sha256": "8e448dfb81ded879de10371b972eeaadbcbbd8d51343d4e1182563d530fa67b4"
+    },
+    {
+      "path": "cerberus.css",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/cerberus.css",
+      "bytes": 13529,
+      "sha256": "3b6e66416da8c691bce60da9cf25d13edb1b63793335e06a3645b381944b0e8b"
+    },
+    {
+      "path": "clients.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/clients",
+      "bytes": 9989,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "docs-concepts.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/docs-concepts",
+      "bytes": 32323,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "docs-how-to.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/docs-how-to",
+      "bytes": 29568,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "docs-reference.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/docs-reference",
+      "bytes": 37516,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "docs-tutorial.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/docs-tutorial",
+      "bytes": 19905,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "docs.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/docs",
+      "bytes": 9899,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "download.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/download",
+      "bytes": 8647,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "examples/live-workspace.py",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/examples/live-workspace.py",
+      "bytes": 3377,
+      "sha256": "868761133f4a2bc448a990b4e9ee8e5941d11eac313fbdd7c4b34ec23ebaeb4c"
+    },
+    {
+      "path": "examples/local_client.py",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/examples/local_client.py",
+      "bytes": 4194,
+      "sha256": "f48222130541f7b8e798ef1606832971fd624220bb1802268c14edf52e5af9bd"
+    },
+    {
+      "path": "examples/polybase-client.rs",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/examples/polybase-client.rs",
+      "bytes": 16932,
+      "sha256": "88cf8d7ab466044850e60e8a20a833279c636d2836064b71000d4cfbc6b34572"
+    },
+    {
+      "path": "examples/polybase-client.ts",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/examples/polybase-client.ts",
+      "bytes": 12299,
+      "sha256": "dea178c87d6f18d418427a87ef244001a26ec5fd0c2b6958495793affca431e1"
+    },
+    {
+      "path": "home.css",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/home.css",
+      "bytes": 19678,
+      "sha256": "96c15689b02e369aa85fb8dee1a44fe636870b305a7c7d48a8ef656f49267e8b"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/",
+      "bytes": 23818,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "janus-0-9-validation.json",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/janus-0-9-validation.json",
+      "bytes": 619615,
+      "sha256": "6c762f119fc62de8cfd5b2f0bd007574307e0b71fef95cb28189e0c7d062c605"
+    },
+    {
+      "path": "janus-0-9.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/janus-0-9",
+      "bytes": 29269,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "janus.css",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/janus.css",
+      "bytes": 9708,
+      "sha256": "9889cc5057583bb7ba51938406d45875963937a15631553a457e38deba41b6b6"
+    },
+    {
+      "path": "npm-downloads.json",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/npm-downloads.json",
+      "bytes": 597,
+      "sha256": "16636a80700e0aa004b42fe63b089624393489d437708697864af139e13aab3d"
+    },
+    {
+      "path": "preview-0-7-validation.json",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/preview-0-7-validation.json",
+      "bytes": 8367,
+      "sha256": "d705d5da74a249a8ca15abb4b9c1a52bf4d1e5b55f883be422d61eb389ee6609"
+    },
+    {
+      "path": "preview-0-7.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/preview-0-7",
+      "bytes": 21734,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "preview-0-8-2-validation.json",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/preview-0-8-2-validation.json",
+      "bytes": 10467287,
+      "sha256": "b7617e427b109cebd2412c170e0d44600655419b3b428773ab95115cbdb95913"
+    },
+    {
+      "path": "preview-0-8-2.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/preview-0-8-2",
+      "bytes": 22054,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "preview-0-8-validation.json",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/preview-0-8-validation.json",
+      "bytes": 28680,
+      "sha256": "fe38734a61428dacc4a7c227588de0a3fb72813b20c95d758e27584186e14a3c"
+    },
+    {
+      "path": "preview-0-8.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/preview-0-8",
+      "bytes": 17516,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "privacy.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/privacy",
+      "bytes": 6677,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "release-notes.html",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/release-notes",
+      "bytes": 7813,
+      "application_title_and_scope_verified": true
+    },
+    {
+      "path": "release.json",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/release.json",
+      "bytes": 593,
+      "sha256": "e923171b95e6286a21a49f26a866df6344b2155f873e29cde84f5617129b51a3"
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/robots.txt",
+      "bytes": 74,
+      "sha256": "f8a0a98884646a808becf53cc11dafe2b7295caa8d8fbb21d2162546e7c084b3"
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/sitemap.xml",
+      "bytes": 1104,
+      "sha256": "ee9bace919760596a4a21cf791241ae96053673331d3d2b6fde96a5bb2cb7ee6"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/styles.css",
+      "bytes": 15848,
+      "sha256": "d062f561db84ee335fd3774cfad50399ea588c9e7320007afd8332ca1c853161"
+    },
+    {
+      "path": "theme.js",
+      "status": 200,
+      "url": "https://base.polymathlabs.xyz/theme.js",
+      "bytes": 1398,
+      "sha256": "95a1fc1937b3c95bf6b93dec706576bb75db8655dd7503d5d88d1406653b5f11"
+    }
+  ],
+  "html_scope": "title, application marker, release version and versioned download targets; raw HTML equality is not claimed"
+}

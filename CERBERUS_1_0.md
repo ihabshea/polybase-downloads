@@ -1,8 +1,8 @@
-# Project Cerberus — 1.0.x candidate
+# Project Cerberus — 1.0.0
 
-Cerberus challenges the database's atomic commit, recovery and retained-history contracts under process termination, independent file damage and overlapping maintenance. A successful test is evidence for its recorded workload and machine. The candidate is not a published 1.0 release.
+Cerberus challenges the database's atomic commit, recovery and retained-history contracts under process termination, independent file damage and overlapping maintenance. A successful test is evidence for its recorded workload and machine. The 1.0.0 release preserves the documented local evaluation scope.
 
-The published database remains 0.9.0 and published SDKs remain 0.8.3. [Download the current evaluation](https://base.polymathlabs.xyz/download.html) or read [the Janus historical query contract](https://base.polymathlabs.xyz/janus-0-9.html). No new storage or WAL format is introduced by this challenge.
+The database release is 1.0.0; published SDKs remain 0.8.3. [Download the current evaluation](/download.html) or read [the Janus historical query contract](/janus-0-9.html). No new storage or WAL format is introduced by this challenge.
 
 ## Mission
 
@@ -19,7 +19,7 @@ The challenge thresholds are now distinguished from the completed recorded campa
 
 ## Recorded qualification
 
-The complete campaign passed on clean source `54c92946abbaea30bae25e2e8178676e17cbd9e8`. Its before/after source fingerprint is `59414ad073b25ef09fe956f73a0b134eeb5a520e9eed07f2004f19590b076765`. The [raw campaign report](qualification/1.0.0/results.json) has SHA-256 `9a5f77681901c25f460c2c878a28a4cf803451006a2538cd63716a75cc0b83dc` and records exact executable hashes, configuration, stages and scope.
+The complete campaign passed on clean source `54c92946abbaea30bae25e2e8178676e17cbd9e8`. Its before/after source fingerprint is `59414ad073b25ef09fe956f73a0b134eeb5a520e9eed07f2004f19590b076765`. The [raw campaign report](/cerberus-1-0-validation.json) has SHA-256 `9a5f77681901c25f460c2c878a28a4cf803451006a2538cd63716a75cc0b83dc` and records exact executable hashes, configuration, stages and scope.
 
 The recorded host was native x86-64 Linux with glibc 2.41, Rust/Cargo 1.99.1, Node 24.19.0 and Python 3.12.14, with five available CPUs. These are correctness results for the recorded workloads, not performance claims or proof of every possible execution.
 
@@ -27,7 +27,7 @@ Historical integrity checks made 242,364 cumulative retained-position audits acr
 
 The covered corruption outcomes were 875 strict rejections without repair, 100 recoveries preserving a verified boundary and 25 recoveries of a complete unacknowledged commit. Their 7,381 historical-position checks include pristine reference preflight and post-recovery audits when recovery succeeds; rejected damaged fixtures expose no query results. The separate valid-CRC forgery control was accepted, demonstrating the non-authentication limit; it is excluded from these passing counts.
 
-The public [independent Python witness report](qualification/1.0.0/independent-witness-validation.json) validates all 10,000 supplied witnesses, 220,000 recorded operations and 40,000 stored visible-head/event observations. It runs no engine and performs no alternative-order search. It does not recheck historical predicates or unstored live responses. It independently validates supplied serial witnesses rather than proving the absence of a witness.
+The public [independent Python witness report](/cerberus-independent-witness-validation.json) validates all 10,000 supplied witnesses, 220,000 recorded operations and 40,000 stored visible-head/event observations. It runs no engine and performs no alternative-order search. It does not recheck historical predicates or unstored live responses. It independently validates supplied serial witnesses rather than proving the absence of a witness.
 
 ## Deterministic crash boundaries
 
@@ -47,7 +47,7 @@ The search is bounded to at most 64 completed operations with 64 steps each. Def
 
 For every retained commit position, point reads, byte-key ranges, typed JSON predicates and whole-word text queries must match the reference's complete transaction state. Checks interleave history reads with writes and maintenance, then repeat after checkpoint, compaction and reopen. Expired positions remain explicit errors rather than valid empty results.
 
-Typed JSON equality preserves the existing numeric equivalence of `1` and `1.0`, with distinct missing and null semantics. Legacy scalar search retains its exact scalar encoding. Byte-key ordering and zero duplicates remain part of the comparison. The [Janus contract](https://base.polymathlabs.xyz/janus-0-9.html) describes the bounded cache, replay and captured-generation strategy.
+Typed JSON equality preserves the existing numeric equivalence of `1` and `1.0`, with distinct missing and null semantics. Legacy scalar search retains its exact scalar encoding. Byte-key ordering and zero duplicates remain part of the comparison. The [Janus contract](/janus-0-9.html) describes the bounded cache, replay and captured-generation strategy.
 
 ## Independent corruption
 
@@ -89,4 +89,4 @@ Within the supported process-termination and independent-damage scope, any ackno
 
 SIGKILL tests process termination, not sudden hardware power loss. Filesystem synchronization and atomic rename assumptions remain unchanged. The suite does not certify every storage device, filesystem or scheduler interleaving. Corruption checks do not provide cryptographic authenticity.
 
-The database engine remains private. Only synthetic evidence, public client code and operational qualification recipes may be published. Native package and registry availability are separate publication checks. A candidate page, a local binary and an unexecuted target are not a released download. Hosted SaaS is coming soon.
+The database engine remains private. Only synthetic evidence, public client code and operational qualification recipes may be published. Native package and registry availability are separate publication checks. A local binary or an unexecuted target alone does not establish release qualification. Hosted SaaS is coming soon.

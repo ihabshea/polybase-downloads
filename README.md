@@ -11,29 +11,20 @@ Read the [contract](ATLAS_1_5.md), [operator guide](ATLAS_OPERATIONS.md),
 [public fault-testing harness](qualification/atlas/harness/README.md) and
 [independent reference tools](qualification/atlas/tools/README.md).
 
-The [first recorded iteration](qualification/atlas/iterations/333c2f0/README.md)
-preserves 50,000 local tmpfs histories, a separate 1,000 overlay histories and
-supported fixed-mode rolling checks. It also preserves every performance miss:
-**5/12 current-head targets passed; 36/36 cold-history targets passed**.
-Follow-up code is being requalified against the same pinned 1.0 baseline.
+The [current local qualification](qualification/atlas/README.md) records 50,000
+same-process Replica histories plus a separate 1,000 overlay-backed histories,
+independently checked with no recorded mismatch or inconclusive pass. The repeated
+paired benchmark passes **11/12 current-head and 36/36 cold-history targets**;
+the 1K range p95 misses the unchanged 1.10× gate at 1.156×. All samples and the
+[first iteration's counterexamples](qualification/atlas/iterations/333c2f0/README.md)
+remain available. Same seeded histories are not counted twice across source revisions.
+
 Cross-host schedules executed remain **zero**, by the user's local-only choice.
-This is an unqualified candidate; published downloads remain 0.9.0.
+Atlas is an unqualified candidate. The current downloadable database is **1.0.0**;
+there are no native 1.5 packages. See the [availability correction](qualification/atlas/AVAILABILITY_ERRATUM.md)
+for stale copy retained inside immutable candidate snapshots.
 
-## Project Cerberus — 1.0 candidate qualification
-
-The [Cerberus evidence](qualification/1.0.0/README.md) records a passing clean-source
-campaign: **10,000 concurrent histories, 1,056 termination cases with 1,116 actual
-SIGKILLs, and 1,000 covered corruption cases**. In-scope mismatches, lost
-acknowledged commits, partial batches and silent corruption were zero. All 64
-same-program Rust/Node trials matched their reference model. An independent
-Python tool validates the supplied witnesses without the private engine.
-
-Read the [contract](CERBERUS_1_0.md) and [engineering tracker](CERBERUS_1_0_TRACKER.md),
-including the explicitly excluded checksum-forgery control and replay limits.
-This qualification does not publish a 1.0 download; the current release below
-remains 0.9.0.
-
-The 0.9.0 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains five executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
+The 1.0.0 release provides Apple Silicon macOS 15+ and x86-64 Linux with glibc 2.35+ (Ubuntu 22.04+). Each archive contains five executables, installation and operational guides, evaluation terms, dependency notices, a build manifest and file hashes. Rust, Node and a cloud account are not required. Python 3.10+ is needed only for the optional three-node launcher.
 
 Mac executables are ad-hoc signed and not notarized. Linux executables are unsigned. Use disposable data for this experimental preview. The [evaluation license](LICENSE) permits personal or internal evaluation, experimentation and development; production use and commercial redistribution are outside those terms.
 
@@ -86,3 +77,13 @@ Read [the release notes](RELEASE_0_9.md), [historical-query contract](JANUS_0_9.
 [platform qualification](qualification/0.9.0/README.md). Matching clean-source Mac
 and Linux archives are in [the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v0.9.0).
 Published SDK install versions remain 0.8.3; SDK 0.9.0 helpers remain unpublished.
+
+## 1.0.0 — Project Cerberus
+
+Cerberus qualifies crash recovery, concurrent ordering and retained history.
+Read [the contract](CERBERUS_1_0.md), [release notes](CERBERUS_1_0_RELEASE.md) and
+[the complete measured campaign](qualification/1.0.0/README.md). Matching Mac and
+Linux archives, checksums and runtime receipts are in
+[the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v1.0.0).
+SIGKILL is not hardware power loss; CRCs are not authentication. Published MIT
+SDKs remain independently versioned at 0.8.3.

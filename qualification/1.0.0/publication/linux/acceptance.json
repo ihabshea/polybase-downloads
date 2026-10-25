@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "archive": "polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz",
+  "sha256": "4fe3aca6dd326f54b1231092588c7da04efc5d28f5fdd7699c0d2e226e809f91",
+  "source_commit": "826f0bc0329e8c2e25333b60a8b9adf6d60c27d9",
+  "source_dirty": false,
+  "target": "x86_64-unknown-linux-gnu",
+  "files": 23,
+  "dependencies": 13,
+  "runtime_checks": [
+    "all five binary identities/help",
+    "atomic batch across independent reopens",
+    "event/state prefix agreement",
+    "malformed write has no partial effect",
+    "protected WAL checksum corruption fails closed and is preserved",
+    "packaged loopback console and query deltas",
+    "discarded receipt reconciles original request",
+    "same-token retry has one event",
+    "stale edit and foreign origin reject",
+    "checkpoint/restart preserves state and receipt",
+    "user-defined collections: JSON/text/hex, prefix isolation, cross-collection writes and restart",
+    "extracted JSON-field and Unicode text search update and rebuild",
+    "three extracted node processes commit across collections with separate queries",
+    "leader SIGKILL preserves acknowledged receipt",
+    "same request reconciles and replays across failover",
+    "restarted original voter catches up",
+    "0.7 typed live JSON, pagination, revisions, history, explain, indexes, backup and advisor across restart",
+    "0.8 typed index planning, forced-scan parity, explain and dropped-index fallback across restart",
+    "0.8.2 selectivity-aware scan and lookup, AND intersection, OR union, explain, forced-scan parity and historical continuation across restart",
+    "private-pipe embedding identity, atomic batch, ordered scan and immediate close/reopen",
+    "0.9 historical point/range/typed JSON/text, explain, atomic snapshots, stable cursors, explicit position errors and checkpoint/compaction/reopen"
+  ]
+}

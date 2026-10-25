@@ -1,4 +1,4 @@
-# Project Cerberus — 1.0.0 engineering candidate
+# Project Cerberus — 1.0.0 release
 
 Cerberus qualifies the local engine under deterministic process termination,
 overlapping transactions/maintenance, retained historical reads and independent
@@ -36,7 +36,9 @@ is evidence for those observations, not a formal proof of every schedule.
 [Full report, raw compressed traces, receipts and independent verifier](qualification/1.0.0/README.md)
 · [Contract](CERBERUS_1_0.md) · [Engineering tracker](CERBERUS_1_0_TRACKER.md)
 
-The database source remains private. This candidate has not been published as a
-new native download or registry version; the live database remains 0.9.0 and
-published SDKs remain 0.8.3. Native 1.0 artifact verification and website
-publication remain separate requirements.
+The database source remains private. Matching 1.0.0 Mac and Linux evaluation
+archives, checksum sidecars and extracted-runtime receipts are distributed in
+[the versioned release](https://github.com/ihabshea/polybase-downloads/releases/tag/v1.0.0).
+Published client SDKs remain independently versioned at 0.8.3. The original
+campaign evidence is preserved unchanged; native-package publication records
+are retained separately under `qualification/1.0.0/publication/`.

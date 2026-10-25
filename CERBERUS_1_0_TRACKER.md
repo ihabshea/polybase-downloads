@@ -1,6 +1,6 @@
 # Project Cerberus — acceptance tracker
 
-**6 / 6 engineering acceptance checks complete.** The full campaign passed on clean source `54c92946abbaea30bae25e2e8178676e17cbd9e8`, with identical before/after source fingerprints. Publication remains a separate candidate gate; no downloadable 1.0 release is claimed.
+**6 / 6 engineering acceptance checks complete.** The full campaign passed on clean source `54c92946abbaea30bae25e2e8178676e17cbd9e8`, with identical before/after source fingerprints. Native release qualification and publication records are kept separately under `qualification/1.0.0/publication/`.
 
 - [x] Named failpoints reach WAL, synchronization, publication, checkpoint, snapshot-installation and compaction boundaries: all 33 required points, 1,056 primary cases and 1,116 actual SIGKILL deaths pass. Acknowledged commit losses and partial batches are zero; 180 publication kills had maintenance pending.
 - [x] All 10,000 generated concurrent histories have valid real-time-compatible reference witnesses across 220,000 operations, with zero mismatches, inconclusive checks or invalid traces. Deterministic stored-trace replay passes.
@@ -13,4 +13,4 @@ Extra credit passes: 64 identical generated Rust/Node histories using candidate 
 
 The accepted valid-CRC forgery control demonstrates the non-authentication limit and is excluded from the passing damage count. Successful quiescent historical responses were checked live but are not all archived; offline replay covers stored payloads only. The [contract](CERBERUS_1_0.md) states those limits and the exact report hash.
 
-The current download remains database 0.9.0 with published client SDKs 0.8.3. The engine/CLI 1.0.0 source is a candidate. Native release availability, registry publication and website deployment must be verified before claiming a published 1.0 build.
+The database release is 1.0.0, with published client SDKs independently versioned at 0.8.3. The original campaign and native package receipts remain distinct evidence.

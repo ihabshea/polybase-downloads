@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-25T11:46:41.403756+00:00",
+  "passed": true,
+  "release": "https://github.com/ihabshea/polybase-downloads/releases/tag/v1.0.0",
+  "release_id": 423364378,
+  "published_at": "2026-10-25T11:45:19Z",
+  "target": "83a85aedb46d097bcc7ce4330782ad09712afe68",
+  "assets": [
+    {
+      "filename": "artifact-manifest.json",
+      "bytes": 2320,
+      "sha256": "01211feda09ccfe4c31053b258b39e7214678deb8965c345e7762ec302fa285d",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/artifact-manifest.json",
+      "anonymous": true
+    },
+    {
+      "filename": "cerberus-independent-witness-validation.json",
+      "bytes": 2005,
+      "sha256": "8e448dfb81ded879de10371b972eeaadbcbbd8d51343d4e1182563d530fa67b4",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/cerberus-independent-witness-validation.json",
+      "anonymous": true
+    },
+    {
+      "filename": "cerberus-qualification.json",
+      "bytes": 18268,
+      "sha256": "9a5f77681901c25f460c2c878a28a4cf803451006a2538cd63716a75cc0b83dc",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/cerberus-qualification.json",
+      "anonymous": true
+    },
+    {
+      "filename": "engineering-summary.json",
+      "bytes": 520,
+      "sha256": "d2e0b879f0e4c2c4743e3479797751137fbcd84bd96f90b6ebb55928813e0f60",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/engineering-summary.json",
+      "anonymous": true
+    },
+    {
+      "filename": "linux-acceptance.json",
+      "bytes": 1854,
+      "sha256": "6d65e7a12117923bf2c91cc3d043d3b8482669131c252857f0339a597b75e620",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/linux-acceptance.json",
+      "anonymous": true
+    },
+    {
+      "filename": "linux-documentation-examples.json",
+      "bytes": 655,
+      "sha256": "5bd7fbffcc689d15961c76d613d75d1c7571e544f9b38b548f328ddf7e04a868",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/linux-documentation-examples.json",
+      "anonymous": true
+    },
+    {
+      "filename": "mac-acceptance.json",
+      "bytes": 1846,
+      "sha256": "9432f3a3b2a976a4d5e42c258d56f5129ec65c4353623191d499212bf8c839cb",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/mac-acceptance.json",
+      "anonymous": true
+    },
+    {
+      "filename": "mac-documentation-examples.json",
+      "bytes": 651,
+      "sha256": "91227d6209e713c6dd0bb2845dd0bbca72d7e90025113d9409b1c9991bc958b3",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/mac-documentation-examples.json",
+      "anonymous": true
+    },
+    {
+      "filename": "polybase-1.0.0-aarch64-apple-darwin.tar.gz",
+      "bytes": 2895227,
+      "sha256": "60aafbc978793134da58155233c39d3e30ab8328002b7ce1c2ab63bcab16325f",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/polybase-1.0.0-aarch64-apple-darwin.tar.gz",
+      "anonymous": true
+    },
+    {
+      "filename": "polybase-1.0.0-aarch64-apple-darwin.tar.gz.sha256",
+      "bytes": 109,
+      "sha256": "ba88bbb2eeb50699d7b700bda148c3d319a701ec3e7ef70d71b820214ce43ca0",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/polybase-1.0.0-aarch64-apple-darwin.tar.gz.sha256",
+      "anonymous": true
+    },
+    {
+      "filename": "polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz",
+      "bytes": 3414108,
+      "sha256": "4fe3aca6dd326f54b1231092588c7da04efc5d28f5fdd7699c0d2e226e809f91",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz",
+      "anonymous": true
+    },
+    {
+      "filename": "polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz.sha256",
+      "bytes": 113,
+      "sha256": "a84d544cdbdfa5e3ccbb4caec17c741c0412d8da0a145d7e3ac8562c58dcf763",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/polybase-1.0.0-x86_64-unknown-linux-gnu.tar.gz.sha256",
+      "anonymous": true
+    },
+    {
+      "filename": "release.json",
+      "bytes": 593,
+      "sha256": "e923171b95e6286a21a49f26a866df6344b2155f873e29cde84f5617129b51a3",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/release.json",
+      "anonymous": true
+    },
+    {
+      "filename": "SHA256SUMS.txt",
+      "bytes": 222,
+      "sha256": "e7303c7cd883b1e793d8451ac756f22a70704f555d0382163a0151be299098c0",
+      "url": "https://github.com/ihabshea/polybase-downloads/releases/download/v1.0.0/SHA256SUMS.txt",
+      "anonymous": true
+    }
+  ]
+}

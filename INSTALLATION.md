@@ -1,5 +1,9 @@
 # Use the Polybase evaluation download
 
+Project Cerberus 1.0.0 qualifies crash recovery, concurrent ordering and retained
+history through a recorded process-termination and independent-damage campaign.
+See [the Cerberus contract](CERBERUS_1_0.md) for exact evidence and limitations.
+
 Project Janus adds read-only historical point, range, JSON and whole-word queries
 at one exact retained commit. See [historical execution](JANUS_0_9.md) for the
 verified horizon, bounded reconstruction, explain output and limitations.
@@ -14,7 +18,7 @@ typed live JSON queries, stable pagination, revisions, online backup and verific
 query metrics, Rust/TypeScript clients, retained historical reads, compaction advice,
 named equality indexes, demand-driven streams and the expanded replication lab.
 
-Polybase 0.9.0 is a free database evaluation preview. The package runs
+Polybase 1.0.0 is a free database evaluation preview. The package runs
 locally without Rust, Cargo, Node, Docker or a cloud account. Its source is private.
 The hosted SaaS is coming soon and is not available in this download.
 
